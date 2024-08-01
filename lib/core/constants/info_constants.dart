@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/domain/contact.dart';
-import 'package:portfolio/domain/infos.dart';
+import 'package:portfolio/domain/entities/contact.dart';
+import 'package:portfolio/domain/entities/infos.dart';
 import 'package:portfolio/generated/l10n.dart';
 import 'package:unicons/unicons.dart';
 

@@ -1,4 +1,4 @@
-import 'package:portfolio/domain/experience.dart';
+import 'package:portfolio/domain/entities/experience.dart';
 import 'package:portfolio/generated/l10n.dart';
 
 final experiences = [

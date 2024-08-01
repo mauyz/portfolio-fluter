@@ -1,4 +1,4 @@
-import 'package:portfolio/domain/skill.dart';
+import 'package:portfolio/domain/entities/skill.dart';
 import 'package:unicons/unicons.dart';
 
 final languages = [

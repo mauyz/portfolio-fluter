@@ -1,4 +1,4 @@
-import 'package:portfolio/domain/formation.dart';
+import 'package:portfolio/domain/entities/formation.dart';
 import 'package:portfolio/generated/l10n.dart';
 
 final formations = [

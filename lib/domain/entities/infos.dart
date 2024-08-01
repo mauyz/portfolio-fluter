@@ -1,4 +1,4 @@
-import 'package:portfolio/domain/contact.dart';
+import 'package:portfolio/domain/entities/contact.dart';
 
 class Infos {
   final String photo;
