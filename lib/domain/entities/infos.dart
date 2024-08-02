@@ -5,7 +5,7 @@ class Infos {
   final String name;
   final String firstName;
   final String job;
-  final List<Contact> contacts;
+  final Set<Contact> contacts;
 
   Infos({
     required this.photo,

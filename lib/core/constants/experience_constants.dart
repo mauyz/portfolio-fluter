@@ -1,7 +1,7 @@
 import 'package:portfolio/domain/entities/experience.dart';
 import 'package:portfolio/generated/l10n.dart';
 
-final experiences = [
+final experiences = {
   Experience(
     job: S.current.consultantDeveloperFlutter,
     date: S.current.sinceMai2024,
@@ -76,4 +76,4 @@ final experiences = [
       "PHP",
     },
   ),
-];
+};
