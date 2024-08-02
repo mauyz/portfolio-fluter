@@ -29,10 +29,10 @@ final infos = Infos(
   name: "TSIORINAMBININA",
   firstName: "Pierre Moïse",
   job: S.current.jobTitle,
-  contacts: [
+  contacts: {
     phone,
     mail,
     linkedIn,
     github,
-  ],
+  },
 );

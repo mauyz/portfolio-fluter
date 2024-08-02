@@ -1,7 +1,7 @@
 import 'package:portfolio/domain/entities/formation.dart';
 import 'package:portfolio/generated/l10n.dart';
 
-final formations = [
+final formations = {
   Formation(
     degree: S.current.masterDegree,
     date: "2015 - 2017",
@@ -14,4 +14,4 @@ final formations = [
     school: "Ecole Nationale d'Informatique (ENI)",
     address: "Fianarantsoa",
   )
-];
+};

@@ -1,7 +1,7 @@
 import 'package:portfolio/domain/entities/skill.dart';
 import 'package:unicons/unicons.dart';
 
-final languages = [
+final languages = {
   Skill(
     name: "Java",
     icon: UniconsLine.language,
@@ -17,8 +17,9 @@ final languages = [
     icon: UniconsLine.language,
     note: 50,
   ),
-];
-final framework = [
+};
+
+final framework = {
   Skill(
     name: "Flutter",
     icon: UniconsLine.language,
@@ -39,4 +40,4 @@ final framework = [
     icon: UniconsLine.language,
     note: 50,
   ),
-];
+};
