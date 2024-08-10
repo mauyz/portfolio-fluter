@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AppThemeProvider {
+class AppTheme {
   static final ThemeData light = ThemeData(
     colorScheme: ColorScheme.fromSeed(
       seedColor: const Color(0X002196f3),
