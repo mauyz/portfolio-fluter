@@ -10,5 +10,9 @@
   "flutterDeveloper": "Développeur flutter",
   "androidDeveloper": "Développeur d'application Android",
   "systemAdministrator": "Administrateur systèmes et réseaux",
-  "internship": "Stage"
+  "internship": "Stage",
+  "aboutTitile": "A propos",
+  "techTitle": "Technologies",
+  "experienceTitle": "Expériences",
+  "contactTitle": "Contact"
 }

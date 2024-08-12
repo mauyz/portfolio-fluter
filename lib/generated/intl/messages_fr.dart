@@ -22,10 +22,13 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "aboutTitile": MessageLookupByLibrary.simpleMessage("A propos"),
         "androidDeveloper": MessageLookupByLibrary.simpleMessage(
             "Développeur d\'application Android"),
         "consultantDeveloperFlutter": MessageLookupByLibrary.simpleMessage(
             "Consultant développeur flutter"),
+        "contactTitle": MessageLookupByLibrary.simpleMessage("Contact"),
+        "experienceTitle": MessageLookupByLibrary.simpleMessage("Expériences"),
         "flutterDeveloper":
             MessageLookupByLibrary.simpleMessage("Développeur flutter"),
         "freelance": MessageLookupByLibrary.simpleMessage("Freelance"),
@@ -37,6 +40,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Master professionnel"),
         "sinceMai2024": MessageLookupByLibrary.simpleMessage("Depuis Mai 2024"),
         "systemAdministrator": MessageLookupByLibrary.simpleMessage(
-            "Administrateur systèmes et réseaux")
+            "Administrateur systèmes et réseaux"),
+        "techTitle": MessageLookupByLibrary.simpleMessage("Technologies")
       };
 }
