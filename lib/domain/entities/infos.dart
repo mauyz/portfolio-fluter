@@ -5,6 +5,7 @@ class Infos {
   final String name;
   final String firstName;
   final String job;
+  final String bio;
   final Set<Contact> contacts;
 
   Infos({
@@ -12,6 +13,7 @@ class Infos {
     required this.name,
     required this.firstName,
     required this.job,
+    required this.bio,
     required this.contacts,
   });
 }
