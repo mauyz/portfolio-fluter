@@ -20,11 +20,16 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'fr';
 
+  static String m0(name) =>
+      "Je m\'appelle ${name}, ingénieur développeur et passionné de technologie";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "aboutTitle": MessageLookupByLibrary.simpleMessage("A propos"),
         "androidDeveloper": MessageLookupByLibrary.simpleMessage(
             "Développeur d\'application Android"),
+        "bioContentent": MessageLookupByLibrary.simpleMessage(
+            "Je suis passionné par la programmation et les nouvelles technologies.\nJ\'ai une expérience significative dans la création d\'applications mobiles utilisant des langages tels que Dart, Java et Kotlin.\nJ\'ai travaillé avec plusieurs frameworks, notamment Flutter, Android SDK et JetPack Compose pour la conception d\'interfaces utilisateur mobiles, ainsi que Spring Boot pour les applications backend.\n\nCollaborons et construisons une belle chose !"),
         "consultantDeveloperFlutter": MessageLookupByLibrary.simpleMessage(
             "Consultant développeur flutter"),
         "contactTitle": MessageLookupByLibrary.simpleMessage("Contact"),
@@ -33,6 +38,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Développeur flutter"),
         "freelance": MessageLookupByLibrary.simpleMessage("Freelance"),
         "internship": MessageLookupByLibrary.simpleMessage("Stage"),
+        "introContent": m0,
         "jobTitle": MessageLookupByLibrary.simpleMessage("Développeur Mobile"),
         "licenseDegree":
             MessageLookupByLibrary.simpleMessage("Licence professionnelle"),
@@ -42,6 +48,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "sinceMai2024": MessageLookupByLibrary.simpleMessage("Depuis Mai 2024"),
         "systemAdministrator": MessageLookupByLibrary.simpleMessage(
             "Administrateur systèmes et réseaux"),
-        "techTitle": MessageLookupByLibrary.simpleMessage("Technologies")
+        "techTitle": MessageLookupByLibrary.simpleMessage("Technologies"),
+        "whoIam": MessageLookupByLibrary.simpleMessage("Qui suis-je ?")
       };
 }
