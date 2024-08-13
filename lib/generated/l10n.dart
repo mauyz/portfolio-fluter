@@ -151,10 +151,10 @@ class S {
   }
 
   /// `A propos`
-  String get aboutTitile {
+  String get aboutTitle {
     return Intl.message(
       'A propos',
-      name: 'aboutTitile',
+      name: 'aboutTitle',
       desc: '',
       args: [],
     );
@@ -185,6 +185,16 @@ class S {
     return Intl.message(
       'Contact',
       name: 'contactTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mode dark`
+  String get modeDark {
+    return Intl.message(
+      'Mode dark',
+      name: 'modeDark',
       desc: '',
       args: [],
     );

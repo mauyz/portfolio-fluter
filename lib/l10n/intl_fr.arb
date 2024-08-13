@@ -11,8 +11,9 @@
   "androidDeveloper": "Développeur d'application Android",
   "systemAdministrator": "Administrateur systèmes et réseaux",
   "internship": "Stage",
-  "aboutTitile": "A propos",
+  "aboutTitle": "A propos",
   "techTitle": "Technologies",
   "experienceTitle": "Expériences",
-  "contactTitle": "Contact"
+  "contactTitle": "Contact",
+  "modeDark": "Mode dark"
 }
