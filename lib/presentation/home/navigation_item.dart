@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/domain/entities/menu.dart';
 import 'package:portfolio/presentation/common_widgets/responsive_widget.dart';
-import 'package:portfolio/presentation/home/provider/controller_provider.dart';
 import 'package:portfolio/presentation/home/provider/selected_menu.dart';
 
 class NavigationItem extends ConsumerWidget {
@@ -19,6 +18,13 @@ class NavigationItem extends ConsumerWidget {
     final title = Text(menu.title);
     final selectedMenu = ref.watch(selectedMenuProvider);
     final selected = selectedMenu.index == menu.index;
+    onTapMenu () {
+      Scrollable.ensureVisible(
+        menu.key.currentContext!,
+        duration: const Duration(milliseconds: 400),
+        curve: Curves.easeOut,
+      );
+    }
     return isMobile
         ? ListTile(
             selectedTileColor: Theme.of(context).colorScheme.primaryContainer,
@@ -33,15 +39,8 @@ class NavigationItem extends ConsumerWidget {
             title: title,
             selected: selected,
             onTap: () {
-              final pageController = ref.read(getPageControllerProvider);
-              Navigator.pop(context);
-              if (menu.index != selectedMenu.index) {
-                pageController.animateToPage(
-                  menu.index,
-                  duration: const Duration(milliseconds: 500),
-                  curve: Curves.ease,
-                );
-              }
+              Navigator.of(context).pop();
+              onTapMenu();
             },
           )
         : TextButton(
@@ -52,13 +51,7 @@ class NavigationItem extends ConsumerWidget {
                     ), // Set your desired background color
                   )
                 : null,
-            onPressed: () {
-              Scrollable.ensureVisible(
-                menu.key.currentContext!,
-                duration: const Duration(milliseconds: 400),
-                curve: Curves.easeOut,
-              );
-            },
+            onPressed: onTapMenu,
             child: title,
           );
   }
