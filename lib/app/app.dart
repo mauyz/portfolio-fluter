@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -15,6 +16,7 @@ class App extends ConsumerWidget {
     final themeModeProvider = ref.watch(appThemeModeProvider);
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
+      scrollBehavior: AppScrollBehavior(),
       themeMode: themeModeProvider,
       theme: AppTheme.light,
       darkTheme: AppTheme.dark,
@@ -28,4 +30,13 @@ class App extends ConsumerWidget {
       supportedLocales: S.delegate.supportedLocales,
     );
   }
+}
+
+class AppScrollBehavior extends MaterialScrollBehavior {
+  @override
+  Set<PointerDeviceKind> get dragDevices => {
+    PointerDeviceKind.touch,
+    PointerDeviceKind.mouse,
+    PointerDeviceKind.trackpad,
+  };
 }
