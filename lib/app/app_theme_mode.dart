@@ -14,7 +14,7 @@ class AppThemeMode extends _$AppThemeMode {
   @override
   ThemeMode build() {
     final darkMode =
-        ref.read(sharedPreferencesProvider).value?.getBool("darkMode");
+        ref.read(sharedPreferencesProvider).value?.getBool("darkMode") ?? true;
     return darkMode == true ? ThemeMode.dark : ThemeMode.light;
   }
 
