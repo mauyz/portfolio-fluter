@@ -25,7 +25,7 @@ final github = Contact(
 );
 
 final infos = Infos(
-  photo: "assets/images/mauyz.png",
+  photo: "assets/images/mauyz.jpg",
   name: "TSIORINAMBININA",
   firstName: "Moïse",
   job: S.current.jobTitle,
