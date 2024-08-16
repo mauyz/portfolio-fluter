@@ -7,6 +7,7 @@ import 'package:portfolio/presentation/common_widgets/responsive_widget.dart';
 import 'package:portfolio/presentation/contact/contact_section.dart';
 import 'package:portfolio/presentation/experience/experience_section.dart';
 import 'package:portfolio/presentation/footer/footer_page.dart';
+import 'package:portfolio/presentation/home/home_section.dart';
 import 'package:portfolio/presentation/home/nav_desktop.dart';
 import 'package:portfolio/presentation/home/nav_mobile.dart';
 import 'package:portfolio/presentation/home/provider/page_scroll_controller.dart';
@@ -45,24 +46,58 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
     return Scaffold(
       appBar: isMobile ? AppBar() : null,
       drawer: isMobile ? const NavMobile() : null,
-      body: Padding(
-        padding: EdgeInsets.all(isMobile ? 0.0 : 8.0),
+      body: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage(
+              "assets/images/bvb4.jpg",
+            ),
+            fit: BoxFit.cover,
+            opacity: 0.1,
+          ),
+        ),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             if (!isMobile) const NavDesktop(),
             Expanded(
-              child: SingleChildScrollView(
+              child: Scrollbar(
+                thumbVisibility: true,
                 controller: scrollController,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    AboutSection(key: menu.elementAt(0).key),
-                    SkillSection(key: menu.elementAt(1).key),
-                    ExperienceSection(key: menu.elementAt(2).key),
-                    ContactSection(key: menu.elementAt(3).key),
-                    const FooterPage(),
-                  ],
+                child: SingleChildScrollView(
+                  controller: scrollController,
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: isMobile ? 8.0 : 20.0,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        ...menu.map(
+                          (e) {
+                            return switch (e.index) {
+                              0 => HomeSection(
+                                  menu: menu.elementAt(e.index),
+                                ),
+                              1 => AboutSection(
+                                  menu: menu.elementAt(e.index),
+                                ),
+                              2 => SkillSection(
+                                  menu: menu.elementAt(e.index),
+                                ),
+                              3 => ExperienceSection(
+                                  menu: menu.elementAt(e.index),
+                                ),
+                              _ => ContactSection(
+                                  menu: menu.elementAt(e.index),
+                                ),
+                            };
+                          },
+                        ),
+                        const FooterPage(),
+                      ],
+                    ),
+                  ),
                 ),
               ),
             ),
