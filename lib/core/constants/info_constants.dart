@@ -6,30 +6,43 @@ import 'package:unicons/unicons.dart';
 
 final phone = Contact(
   icon: Icons.call,
-  value: "+261 34 90 637 88\n+261 32 92 037 67",
+  values: [
+    "+261 34 90 637 88 ",
+    "+261 32 92 037 67",
+  ],
 );
 
 final mail = Contact(
   icon: Icons.mail,
-  value: "tsiorymauyz@gmail.com",
+  values: [
+    "tsiorymauyz@gmail.com",
+  ],
 );
 
 final linkedIn = Contact(
   icon: UniconsLine.linkedin,
-  value: "Moïse Tsiorinambinina",
+  values: [
+    "www.linkedin.com/in/moise-tsiorinambinina",
+  ],
 );
 
 final github = Contact(
   icon: UniconsLine.github,
-  value: "https://github.com/mauyz",
+  values: [
+    "https://github.com/mauyz",
+  ],
 );
 
 final infos = Infos(
-  photo: "assets/images/mauyz.jpg",
-  name: "TSIORINAMBININA",
+  photo: "assets/images/mauyz_resized.jpg",
+  name: "Tsiorinambinina",
   firstName: "Moïse",
-  job: S.current.jobTitle,
-  bio: S.current.bioContentent,
+  titles: [
+    S.current.softwareIng,
+    S.current.devMobileTitle,
+    S.current.passionnateTech
+  ],
+  bio: S.current.bioContent,
   contacts: {
     phone,
     mail,
