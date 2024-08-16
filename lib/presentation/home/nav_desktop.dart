@@ -14,22 +14,26 @@ class NavDesktop extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final dataRepository = ref.read(dataRepositoryProvider);
-    return Row(
-      children: [
-        const LogoWidget(),
-        const Spacer(),
-        ...dataRepository.getMenu().map(
-          (e) {
-            return Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: NavigationItem(
-                menu: e,
-              ),
-            );
-          },
-        ),
-        const ThemeSwitcher(),
-      ],
+    return Container(
+      color: Theme.of(context).colorScheme.onPrimary,
+      padding: const EdgeInsets.all(20.0),
+      child: Row(
+        children: [
+          const LogoWidget(),
+          const Spacer(),
+          ...dataRepository.getMenu().map(
+            (e) {
+              return Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: NavigationItem(
+                  menu: e,
+                ),
+              );
+            },
+          ),
+          const ThemeSwitcher(),
+        ],
+      ),
     );
   }
 }
