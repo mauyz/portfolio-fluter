@@ -1,7 +1,7 @@
 {
   "@@author": "Mauyz",
   "@@locale": "fr",
-  "jobTitle": "Développeur Mobile",
+  "devMobileTitle": "Développeur mobile",
   "masterDegree": "Master professionnel",
   "licenseDegree": "Licence professionnelle",
   "consultantDeveloperFlutter": "Consultant développeur flutter",
@@ -17,6 +17,11 @@
   "contactTitle": "Contact",
   "modeDark": "Mode dark",
   "whoIam": "Qui suis-je ?",
-  "bioContentent": "Je suis passionné par la programmation et les nouvelles technologies.\nJ'ai une expérience significative dans la création d'applications mobiles utilisant des langages tels que Dart, Java et Kotlin.\nJ'ai travaillé avec plusieurs frameworks, notamment Flutter, Android SDK et JetPack Compose pour la conception d'interfaces utilisateur mobiles, ainsi que Spring Boot pour les applications backend.\n\nCollaborons et construisons une belle chose !",
-  "introContent": "Je m'appelle {name}, ingénieur développeur et passionné de technologie"
+  "bioContent": "Je suis passionné par la programmation et les nouvelles technologies.\n\nJ'ai une expérience significative dans des langages tels que Dart, Java et Kotlin.\nJe travaillé avec frameworks comme Flutter, Android SDK et JetPack Compose ainsi que Spring Boot.\n\nCollaborons et construisons des belles choses !",
+  "introContent": "Je m'appelle",
+  "softwareIng": "Ingénieur développeur",
+  "passionnateTech": "Passionné des technologies",
+  "home": "Accueil",
+  "welcomeTitle": "Bienvenu dans mon portfolio",
+  "iam": "Je suis"
 }

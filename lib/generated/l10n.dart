@@ -50,11 +50,11 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Développeur Mobile`
-  String get jobTitle {
+  /// `Développeur mobile`
+  String get devMobileTitle {
     return Intl.message(
-      'Développeur Mobile',
-      name: 'jobTitle',
+      'Développeur mobile',
+      name: 'devMobileTitle',
       desc: '',
       args: [],
     );
@@ -210,23 +210,73 @@ class S {
     );
   }
 
-  /// `Je suis passionné par la programmation et les nouvelles technologies.\nJ'ai une expérience significative dans la création d'applications mobiles utilisant des langages tels que Dart, Java et Kotlin.\nJ'ai travaillé avec plusieurs frameworks, notamment Flutter, Android SDK et JetPack Compose pour la conception d'interfaces utilisateur mobiles, ainsi que Spring Boot pour les applications backend.\n\nCollaborons et construisons une belle chose !`
-  String get bioContentent {
+  /// `Je suis passionné par la programmation et les nouvelles technologies.\n\nJ'ai une expérience significative dans des langages tels que Dart, Java et Kotlin.\nJe travaillé avec frameworks comme Flutter, Android SDK et JetPack Compose ainsi que Spring Boot.\n\nCollaborons et construisons des belles choses !`
+  String get bioContent {
     return Intl.message(
-      'Je suis passionné par la programmation et les nouvelles technologies.\nJ\'ai une expérience significative dans la création d\'applications mobiles utilisant des langages tels que Dart, Java et Kotlin.\nJ\'ai travaillé avec plusieurs frameworks, notamment Flutter, Android SDK et JetPack Compose pour la conception d\'interfaces utilisateur mobiles, ainsi que Spring Boot pour les applications backend.\n\nCollaborons et construisons une belle chose !',
-      name: 'bioContentent',
+      'Je suis passionné par la programmation et les nouvelles technologies.\n\nJ\'ai une expérience significative dans des langages tels que Dart, Java et Kotlin.\nJe travaillé avec frameworks comme Flutter, Android SDK et JetPack Compose ainsi que Spring Boot.\n\nCollaborons et construisons des belles choses !',
+      name: 'bioContent',
       desc: '',
       args: [],
     );
   }
 
-  /// `Je m'appelle {name}, ingénieur développeur et passionné de technologie`
-  String introContent(Object name) {
+  /// `Je m'appelle`
+  String get introContent {
     return Intl.message(
-      'Je m\'appelle $name, ingénieur développeur et passionné de technologie',
+      'Je m\'appelle',
       name: 'introContent',
       desc: '',
-      args: [name],
+      args: [],
+    );
+  }
+
+  /// `Ingénieur développeur`
+  String get softwareIng {
+    return Intl.message(
+      'Ingénieur développeur',
+      name: 'softwareIng',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Passionné des technologies`
+  String get passionnateTech {
+    return Intl.message(
+      'Passionné des technologies',
+      name: 'passionnateTech',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Accueil`
+  String get home {
+    return Intl.message(
+      'Accueil',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Bienvenu dans mon portfolio`
+  String get welcomeTitle {
+    return Intl.message(
+      'Bienvenu dans mon portfolio',
+      name: 'welcomeTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Je suis`
+  String get iam {
+    return Intl.message(
+      'Je suis',
+      name: 'iam',
+      desc: '',
+      args: [],
     );
   }
 }

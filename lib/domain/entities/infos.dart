@@ -4,7 +4,7 @@ class Infos {
   final String photo;
   final String name;
   final String firstName;
-  final String job;
+  final List<String> titles;
   final String bio;
   final Set<Contact> contacts;
 
@@ -12,7 +12,7 @@ class Infos {
     required this.photo,
     required this.name,
     required this.firstName,
-    required this.job,
+    required this.titles,
     required this.bio,
     required this.contacts,
   });

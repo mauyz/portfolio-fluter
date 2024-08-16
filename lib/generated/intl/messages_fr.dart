@@ -20,35 +20,41 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'fr';
 
-  static String m0(name) =>
-      "Je m\'appelle ${name}, ingénieur développeur et passionné de technologie";
-
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "aboutTitle": MessageLookupByLibrary.simpleMessage("A propos"),
         "androidDeveloper": MessageLookupByLibrary.simpleMessage(
             "Développeur d\'application Android"),
-        "bioContentent": MessageLookupByLibrary.simpleMessage(
-            "Je suis passionné par la programmation et les nouvelles technologies.\nJ\'ai une expérience significative dans la création d\'applications mobiles utilisant des langages tels que Dart, Java et Kotlin.\nJ\'ai travaillé avec plusieurs frameworks, notamment Flutter, Android SDK et JetPack Compose pour la conception d\'interfaces utilisateur mobiles, ainsi que Spring Boot pour les applications backend.\n\nCollaborons et construisons une belle chose !"),
+        "bioContent": MessageLookupByLibrary.simpleMessage(
+            "Je suis passionné par la programmation et les nouvelles technologies.\n\nJ\'ai une expérience significative dans des langages tels que Dart, Java et Kotlin.\nJe travaillé avec frameworks comme Flutter, Android SDK et JetPack Compose ainsi que Spring Boot.\n\nCollaborons et construisons des belles choses !"),
         "consultantDeveloperFlutter": MessageLookupByLibrary.simpleMessage(
             "Consultant développeur flutter"),
         "contactTitle": MessageLookupByLibrary.simpleMessage("Contact"),
+        "devMobileTitle":
+            MessageLookupByLibrary.simpleMessage("Développeur mobile"),
         "experienceTitle": MessageLookupByLibrary.simpleMessage("Expériences"),
         "flutterDeveloper":
             MessageLookupByLibrary.simpleMessage("Développeur flutter"),
         "freelance": MessageLookupByLibrary.simpleMessage("Freelance"),
+        "home": MessageLookupByLibrary.simpleMessage("Accueil"),
+        "iam": MessageLookupByLibrary.simpleMessage("Je suis"),
         "internship": MessageLookupByLibrary.simpleMessage("Stage"),
-        "introContent": m0,
-        "jobTitle": MessageLookupByLibrary.simpleMessage("Développeur Mobile"),
+        "introContent": MessageLookupByLibrary.simpleMessage("Je m\'appelle"),
         "licenseDegree":
             MessageLookupByLibrary.simpleMessage("Licence professionnelle"),
         "masterDegree":
             MessageLookupByLibrary.simpleMessage("Master professionnel"),
         "modeDark": MessageLookupByLibrary.simpleMessage("Mode dark"),
+        "passionnateTech":
+            MessageLookupByLibrary.simpleMessage("Passionné des technologies"),
         "sinceMai2024": MessageLookupByLibrary.simpleMessage("Depuis Mai 2024"),
+        "softwareIng":
+            MessageLookupByLibrary.simpleMessage("Ingénieur développeur"),
         "systemAdministrator": MessageLookupByLibrary.simpleMessage(
             "Administrateur systèmes et réseaux"),
         "techTitle": MessageLookupByLibrary.simpleMessage("Technologies"),
+        "welcomeTitle":
+            MessageLookupByLibrary.simpleMessage("Bienvenu dans mon portfolio"),
         "whoIam": MessageLookupByLibrary.simpleMessage("Qui suis-je ?")
       };
 }
