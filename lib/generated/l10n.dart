@@ -210,10 +210,10 @@ class S {
     );
   }
 
-  /// `Je suis passionné par la programmation et les nouvelles technologies.\n\nJ'ai une expérience significative dans des langages tels que Dart, Java et Kotlin.\nJe travaillé avec frameworks comme Flutter, Android SDK et JetPack Compose ainsi que Spring Boot.\n\nCollaborons et construisons des belles choses !`
+  /// `Développeur autodidacte et diplômé de l'École Nationale d'Informatique de Fianarantsoa, avec une solide expérience dans la conception et la mise en production d'applications mobiles.\n\nAu cours des trois dernières années, j'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques.\n\nCollaborons et construisons des belles choses !`
   String get bioContent {
     return Intl.message(
-      'Je suis passionné par la programmation et les nouvelles technologies.\n\nJ\'ai une expérience significative dans des langages tels que Dart, Java et Kotlin.\nJe travaillé avec frameworks comme Flutter, Android SDK et JetPack Compose ainsi que Spring Boot.\n\nCollaborons et construisons des belles choses !',
+      'Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa, avec une solide expérience dans la conception et la mise en production d\'applications mobiles.\n\nAu cours des trois dernières années, j\'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j\'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques.\n\nCollaborons et construisons des belles choses !',
       name: 'bioContent',
       desc: '',
       args: [],
