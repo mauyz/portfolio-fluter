@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class Contact {
   final IconData icon;
-  final String value;
+  final List<String> values;
 
   Contact({
     required this.icon,
-    required this.value,
+    required this.values,
   });
 }
