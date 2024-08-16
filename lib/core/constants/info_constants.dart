@@ -7,9 +7,10 @@ import 'package:unicons/unicons.dart';
 final phone = Contact(
   icon: Icons.call,
   values: [
-    "+261 34 90 637 88 ",
-    "+261 32 92 037 67",
+    "261 34 90 637 88 ",
+    "261 32 92 037 67",
   ],
+  type: ContactType.phone,
 );
 
 final mail = Contact(
@@ -17,13 +18,15 @@ final mail = Contact(
   values: [
     "tsiorymauyz@gmail.com",
   ],
+  type: ContactType.mail,
 );
 
 final linkedIn = Contact(
   icon: UniconsLine.linkedin,
   values: [
-    "www.linkedin.com/in/moise-tsiorinambinina",
+    "https://linkedin.com/in/moise-tsiorinambinina",
   ],
+  type: ContactType.link,
 );
 
 final github = Contact(
@@ -31,6 +34,7 @@ final github = Contact(
   values: [
     "https://github.com/mauyz",
   ],
+  type: ContactType.link,
 );
 
 final infos = Infos(
