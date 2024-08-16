@@ -19,6 +19,7 @@ class AppTheme {
       brightness: Brightness.light,
     ),
     useMaterial3: true,
+    fontFamily: 'FiraSans',
   );
 
   static final ThemeData dark = ThemeData(
@@ -39,5 +40,6 @@ class AppTheme {
       brightness: Brightness.dark,
     ),
     useMaterial3: true,
+    fontFamily: 'FiraSans',
   );
 }
