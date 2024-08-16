@@ -15,7 +15,28 @@ class NavigationItem extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final isMobile = ResponsiveWidget.isMobile(context);
-    final title = Text(menu.title);
+    final children = <TextSpan>[];
+    for (final char in menu.title.characters) {
+      children.add(
+        TextSpan(
+          text: char,
+          style: TextStyle.lerp(
+            Theme.of(context).textTheme.titleMedium?.copyWith(
+              color: Theme.of(context).colorScheme.onSecondaryContainer,
+            ),
+            Theme.of(context).textTheme.titleMedium?.copyWith(
+              color: Theme.of(context).colorScheme.error,
+            ),
+            children.length / menu.title.length,
+          ),
+        ),
+      );
+    }
+    final title = RichText(
+      text: TextSpan(
+        children: children,
+      ),
+    );
     final selectedMenu = ref.watch(selectedMenuProvider);
     final selected = selectedMenu.index == menu.index;
     onTapMenu () {
