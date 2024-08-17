@@ -30,5 +30,6 @@
   "closeTitle": "Fermer",
   "cantOpenContactError": "Impossible d'ouvrir {contactType}",
   "Mailaddress": "l'adresse mail",
-  "linkTitle": "le lien"
+  "linkTitle": "le lien",
+  "academicTitle": "Académique"
 }

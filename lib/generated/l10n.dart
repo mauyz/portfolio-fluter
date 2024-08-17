@@ -349,6 +349,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Académique`
+  String get academicTitle {
+    return Intl.message(
+      'Académique',
+      name: 'academicTitle',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
