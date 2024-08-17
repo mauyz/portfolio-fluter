@@ -14,14 +14,14 @@ class AvatarWidget extends StatelessWidget {
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            color: Theme.of(context).colorScheme.onSecondaryContainer,
+            color: Theme.of(context).colorScheme.error,
             blurRadius: 10.0,
-            spreadRadius: 3.0,
+            spreadRadius: 5.0,
             offset: const Offset(
               0.0,
               0.0,
             ),
-          )
+          ),
         ],
         shape: BoxShape.circle,
       ),
