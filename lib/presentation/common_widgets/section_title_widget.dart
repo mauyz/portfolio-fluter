@@ -17,28 +17,33 @@ class SectionTitleWidget extends StatelessWidget {
           text: char,
           style: TextStyle.lerp(
             Theme.of(context).textTheme.displayMedium?.copyWith(
-              color: Theme.of(context).colorScheme.onSecondaryContainer,
-            ),
+                  color: Theme.of(context).colorScheme.onSecondaryContainer,
+                ),
             Theme.of(context).textTheme.displayMedium?.copyWith(
-              color: Theme.of(context).colorScheme.error,
-            ),
+                  color: Theme.of(context).colorScheme.error,
+                ),
             children.length / menu.title.length,
           ),
         ),
       );
     }
-    return Wrap(
+    return Row(
       children: [
         Padding(
-          padding: const EdgeInsets.symmetric(vertical: 8.0, horizontal: 20.0,),
+          padding: const EdgeInsets.symmetric(
+            vertical: 8.0,
+          ),
           child: Icon(
             menu.icon,
             size: 36.0,
           ),
         ),
-        RichText(
-          text: TextSpan(
-            children: children,
+        Padding(
+          padding: const EdgeInsets.only(left: 20.0),
+          child: RichText(
+            text: TextSpan(
+              children: children,
+            ),
           ),
         ),
       ],
