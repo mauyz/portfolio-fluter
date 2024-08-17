@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/presentation/common_widgets/responsive_widget.dart';
 
 class SectionCard extends StatelessWidget {
   final Widget child;
@@ -10,14 +11,12 @@ class SectionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 5.0),
-      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+      margin: const EdgeInsets.symmetric(vertical: 20.0),
+      padding: EdgeInsets.symmetric(
+        horizontal: 20.0,
+        vertical: ResponsiveWidget.isMobile(context)? 20.0 : 30.0,
+      ),
       decoration: BoxDecoration(
-        borderRadius: const BorderRadius.all(
-          Radius.circular(
-            10.0,
-          ),
-        ),
         gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
