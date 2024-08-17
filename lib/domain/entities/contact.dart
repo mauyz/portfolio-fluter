@@ -4,6 +4,7 @@ enum ContactType {
   phone,
   mail,
   link,
+  skype
 }
 
 class Contact {
