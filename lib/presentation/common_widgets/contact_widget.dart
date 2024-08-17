@@ -2,6 +2,8 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:portfolio/domain/entities/contact.dart';
+import 'package:portfolio/generated/l10n.dart';
+import 'package:portfolio/presentation/popup/snack_bar.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
@@ -26,13 +28,16 @@ class ContactWidget extends StatelessWidget {
       onPressed: () {
         switch (contact.type) {
           case ContactType.phone:
-            openWhatsApp(contact.values.first);
+            openWhatsApp(context, contact.values.first);
             break;
           case ContactType.mail:
-            sendEmail(contact.values.first);
+            sendEmail(context, contact.values.first);
+            break;
+          case ContactType.skype:
+            openSkype(context, contact.values.first);
             break;
           case ContactType.link:
-            openLink(contact.values.first);
+            openLink(context, contact.values.first);
             break;
         }
       },
@@ -40,13 +45,14 @@ class ContactWidget extends StatelessWidget {
     );
   }
 
-  void openWhatsApp(String phoneNumber) async {
-    phoneNumber = phoneNumber.replaceAll(" ", "");
+  void openWhatsApp(BuildContext context, String phoneNumber) async {
+    phoneNumber = phoneNumber.replaceAll(" ", "").replaceAll("+", "");
     String text = '';
     String androidUrl = "whatsapp://send?phone=$phoneNumber&text=$text";
     String iosUrl = "https://wa.me/$phoneNumber?text=${Uri.parse(text)}";
     String webUrl =
-        'https://api.whatsapp.com/send/?phone=$phoneNumber&text=$text&type=phone_number&app_absent=0';
+        'https://api.whatsapp.com/send/?phone=$phoneNumber&text=$text&type='
+        'phone_number&app_absent=0';
 
     try {
       if (Platform.isIOS) {
@@ -58,27 +64,63 @@ class ContactWidget extends StatelessWidget {
           await launchUrl(Uri.parse(androidUrl));
         }
       }
-    } catch (e) {
-      debugPrint(e.toString());
-      await launchUrl(Uri.parse(webUrl), mode: LaunchMode.externalApplication);
+    } catch (_) {
+      try {
+        await launchUrl(
+          Uri.parse(webUrl),
+          mode: LaunchMode.externalApplication,
+        );
+      } catch (_) {
+        if (context.mounted) {
+          popupError(
+            context,
+            S.current.cantOpenContactError("Whatsapp"),
+          );
+        }
+      }
     }
   }
 
-  void sendEmail(String email) async {
-    final url =
-        'mailto:$email?subject=${Uri.encodeFull("")}&body=${Uri.encodeFull("")}';
-    if (await canLaunchUrlString(url)) {
-      await launchUrlString(url);
-    } else {
-      /// TODO
+  void sendEmail(BuildContext context, String email) async {
+    final uri = Uri.parse(
+      'mailto:$email?subject=${Uri.encodeFull("")}&body=${Uri.encodeFull("")}',
+    );
+    try {
+      await launchUrl(uri);
+    } catch (_) {
+      if (context.mounted) {
+        popupError(
+          context,
+          S.current.cantOpenContactError(S.current.Mailaddress),
+        );
+      }
     }
   }
 
-  void openLink(String url) async {
-    if (await canLaunchUrlString(url)) {
+  void openSkype(BuildContext context, String skypeId) async {
+    final uri = Uri.parse('skype:$skypeId?call');
+    try {
+      await launchUrl(uri);
+    } catch (_) {
+      if (context.mounted) {
+        popupError(
+          context,
+          S.current.cantOpenContactError("Skype"),
+        );
+      }
+    }
+  }
+
+  void openLink(BuildContext context, String url) async {
+    try {
       await launchUrlString(url);
-    } else {
-      /// TODO
+    } catch (_) {
+      if (context.mounted) {
+        popupError(
+          context,
+          S.current.cantOpenContactError(S.current.linkTitle),
+        );
+      }
     }
   }
 }
