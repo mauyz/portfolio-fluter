@@ -17,20 +17,20 @@ final menu = {
   ),
   Menu(
     index: 2,
-    icon: Icons.computer,
-    title: S.current.techTitle,
+    icon: Icons.work_history,
+    title: S.current.parcourTitle,
     key: GlobalKey(),
   ),
   Menu(
     index: 3,
-    icon: Icons.info_outline,
-    title: S.current.experienceTitle,
+    icon: Icons.ac_unit,
+    title: S.current.skillTitle,
     key: GlobalKey(),
   ),
   Menu(
     index: 4,
-    icon: Icons.contact_mail,
-    title: S.current.contactTitle,
+    icon: Icons.computer,
+    title: S.current.projectTitle,
     key: GlobalKey(),
   ),
 };
