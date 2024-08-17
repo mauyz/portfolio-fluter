@@ -22,9 +22,14 @@ class AboutSection extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final infos = ref.read(dataRepositoryProvider).getInfos();
     return SectionCard(
+      decorated: true,
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          SizedBox(
+            height: ResponsiveWidget.isMobile(context) ? 20.0 : 30.0,
+          ),
           Padding(
             padding: const EdgeInsets.only(
               bottom: 20.0,
@@ -59,12 +64,12 @@ class AboutSection extends ConsumerWidget {
                   ),
                 ),
                 //if (!ResponsiveWidget.isMobile(context))
-                  const Expanded(
-                    child: SizedBox(
-                      height: 200,
-                      child: AboutImageWidget(),
-                    ),
+                const Expanded(
+                  child: SizedBox(
+                    height: 200,
+                    child: AboutImageWidget(),
                   ),
+                ),
               ],
             ),
             Padding(
@@ -78,7 +83,10 @@ class AboutSection extends ConsumerWidget {
               child: ContactsWidget(
                 contacts: infos.contacts,
               ),
-            )
+            ),
+            const SizedBox(
+              height: 30.0,
+            ),
           ] else
             Flex(
               direction: Axis.horizontal,
@@ -118,6 +126,9 @@ class AboutSection extends ConsumerWidget {
                         ),
                         ContactsWidget(
                           contacts: infos.contacts,
+                        ),
+                        const SizedBox(
+                          height: 50.0,
                         ),
                       ],
                     ),
