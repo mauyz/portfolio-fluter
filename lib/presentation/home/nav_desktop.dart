@@ -31,6 +31,7 @@ class NavDesktop extends ConsumerWidget {
               );
             },
           ),
+          const Spacer(),
           const ThemeSwitcher(),
         ],
       ),
