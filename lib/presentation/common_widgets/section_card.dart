@@ -18,8 +18,8 @@ class SectionCard extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
           colors: [
             Theme.of(context).colorScheme.inversePrimary,
             Theme.of(context).colorScheme.onInverseSurface,

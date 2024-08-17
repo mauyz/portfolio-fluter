@@ -4,8 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
 import 'package:portfolio/presentation/about/about_section.dart';
 import 'package:portfolio/presentation/common_widgets/responsive_widget.dart';
-import 'package:portfolio/presentation/contact/contact_section.dart';
-import 'package:portfolio/presentation/experience/experience_section.dart';
+import 'package:portfolio/presentation/project/project_section.dart';
+import 'package:portfolio/presentation/career/career_section.dart';
 import 'package:portfolio/presentation/footer/footer_page.dart';
 import 'package:portfolio/presentation/home/home_section.dart';
 import 'package:portfolio/presentation/home/nav_desktop.dart';
@@ -50,9 +50,9 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
-              "assets/images/bvb4.jpg",
+              "assets/images/bvb4_rotated.jpg",
             ),
-            fit: BoxFit.cover,
+            fit: BoxFit.fill,
             opacity: 0.1,
           ),
         ),
@@ -78,10 +78,10 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
                             1 => AboutSection(
                                 menu: menu.elementAt(e.index),
                               ),
-                            2 => SkillSection(
+                            2 => CareerSection(
                                 menu: menu.elementAt(e.index),
                               ),
-                            3 => ExperienceSection(
+                            3 => SkillSection(
                                 menu: menu.elementAt(e.index),
                               ),
                             _ => ContactSection(
