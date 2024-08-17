@@ -8,9 +8,11 @@ class ThemeSwitcher extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final themeMode = ref.read(appThemeModeProvider);
-    return Switch(
-      value: themeMode == ThemeMode.dark,
-      onChanged: (_) =>
+    return IconButton(
+      icon: Icon(
+        themeMode == ThemeMode.light ? Icons.dark_mode : Icons.light_mode,
+      ),
+      onPressed: () =>
           ref.read(appThemeModeProvider.notifier).toggleThemeMode(),
     );
   }
