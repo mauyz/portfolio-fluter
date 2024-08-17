@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:portfolio/domain/entities/contact.dart';
 import 'package:portfolio/generated/l10n.dart';
-import 'package:portfolio/presentation/popup/snack_bar.dart';
+import 'package:portfolio/presentation/popup/popup_error.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
