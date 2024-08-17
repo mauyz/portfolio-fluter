@@ -15,11 +15,14 @@ class IntroduceWidget extends StatelessWidget {
             style: Theme.of(context).textTheme.headlineSmall,
           ),
           TextSpan(
-            text: " $name,",
+            text: " $name",
             style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                   color: Theme.of(context).colorScheme.error,
                 ),
-          )
+          ),TextSpan(
+            text: ",",
+            style: Theme.of(context).textTheme.headlineSmall,
+          ),
         ],
       ),
     );
