@@ -66,37 +66,32 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
                 controller: scrollController,
                 child: SingleChildScrollView(
                   controller: scrollController,
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: isMobile ? 8.0 : 20.0,
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        ...menu.map(
-                          (e) {
-                            return switch (e.index) {
-                              0 => HomeSection(
-                                  menu: menu.elementAt(e.index),
-                                ),
-                              1 => AboutSection(
-                                  menu: menu.elementAt(e.index),
-                                ),
-                              2 => SkillSection(
-                                  menu: menu.elementAt(e.index),
-                                ),
-                              3 => ExperienceSection(
-                                  menu: menu.elementAt(e.index),
-                                ),
-                              _ => ContactSection(
-                                  menu: menu.elementAt(e.index),
-                                ),
-                            };
-                          },
-                        ),
-                        const FooterPage(),
-                      ],
-                    ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      ...menu.map(
+                        (e) {
+                          return switch (e.index) {
+                            0 => HomeSection(
+                                menu: menu.elementAt(e.index),
+                              ),
+                            1 => AboutSection(
+                                menu: menu.elementAt(e.index),
+                              ),
+                            2 => SkillSection(
+                                menu: menu.elementAt(e.index),
+                              ),
+                            3 => ExperienceSection(
+                                menu: menu.elementAt(e.index),
+                              ),
+                            _ => ContactSection(
+                                menu: menu.elementAt(e.index),
+                              ),
+                          };
+                        },
+                      ),
+                      const FooterPage(),
+                    ],
                   ),
                 ),
               ),
