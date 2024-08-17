@@ -50,10 +50,10 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Développeur mobile`
+  /// `Développeur mobile medior`
   String get devMobileTitle {
     return Intl.message(
-      'Développeur mobile',
+      'Développeur mobile medior',
       name: 'devMobileTitle',
       desc: '',
       args: [],
@@ -210,10 +210,10 @@ class S {
     );
   }
 
-  /// `Développeur autodidacte et diplômé de l'École Nationale d'Informatique de Fianarantsoa, avec une solide expérience dans la conception et la mise en production d'applications mobiles.\n\nAu cours des trois dernières années, j'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques.\n\nCollaborons et construisons des belles choses !`
+  /// `Développeur autodidacte et diplômé de l'École Nationale d'Informatique de Fianarantsoa, avec une solide expérience dans la conception, le développement et la mise en production d'applications mobiles.\n\nAu cours des trois dernières années, j'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques.\n\nCollaborons et construisons des belles choses !`
   String get bioContent {
     return Intl.message(
-      'Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa, avec une solide expérience dans la conception et la mise en production d\'applications mobiles.\n\nAu cours des trois dernières années, j\'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j\'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques.\n\nCollaborons et construisons des belles choses !',
+      'Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa, avec une solide expérience dans la conception, le développement et la mise en production d\'applications mobiles.\n\nAu cours des trois dernières années, j\'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j\'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques.\n\nCollaborons et construisons des belles choses !',
       name: 'bioContent',
       desc: '',
       args: [],
@@ -275,6 +275,76 @@ class S {
     return Intl.message(
       'Je suis',
       name: 'iam',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Parcours`
+  String get parcourTitle {
+    return Intl.message(
+      'Parcours',
+      name: 'parcourTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Compétences`
+  String get skillTitle {
+    return Intl.message(
+      'Compétences',
+      name: 'skillTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Projets`
+  String get projectTitle {
+    return Intl.message(
+      'Projets',
+      name: 'projectTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Fermer`
+  String get closeTitle {
+    return Intl.message(
+      'Fermer',
+      name: 'closeTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Impossible d'ouvrir {contactType}`
+  String cantOpenContactError(Object contactType) {
+    return Intl.message(
+      'Impossible d\'ouvrir $contactType',
+      name: 'cantOpenContactError',
+      desc: '',
+      args: [contactType],
+    );
+  }
+
+  /// `l'adresse mail`
+  String get Mailaddress {
+    return Intl.message(
+      'l\'adresse mail',
+      name: 'Mailaddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `le lien`
+  String get linkTitle {
+    return Intl.message(
+      'le lien',
+      name: 'linkTitle',
       desc: '',
       args: [],
     );

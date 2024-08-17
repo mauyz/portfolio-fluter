@@ -1,7 +1,7 @@
 {
   "@@author": "Mauyz",
   "@@locale": "fr",
-  "devMobileTitle": "Développeur mobile",
+  "devMobileTitle": "Développeur mobile medior",
   "masterDegree": "Master professionnel",
   "licenseDegree": "Licence professionnelle",
   "consultantDeveloperFlutter": "Consultant développeur flutter",
@@ -17,11 +17,18 @@
   "contactTitle": "Contact",
   "modeDark": "Mode dark",
   "whoIam": "Qui suis-je ?",
-  "bioContent": "Développeur autodidacte et diplômé de l'École Nationale d'Informatique de Fianarantsoa, avec une solide expérience dans la conception et la mise en production d'applications mobiles.\n\nAu cours des trois dernières années, j'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques.\n\nCollaborons et construisons des belles choses !",
+  "bioContent": "Développeur autodidacte et diplômé de l'École Nationale d'Informatique de Fianarantsoa, avec une solide expérience dans la conception, le développement et la mise en production d'applications mobiles.\n\nAu cours des trois dernières années, j'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques.\n\nCollaborons et construisons des belles choses !",
   "introContent": "Je m'appelle",
   "softwareIng": "Ingénieur développeur",
   "passionnateTech": "Passionné des technologies",
   "home": "Accueil",
   "welcomeTitle": "Bienvenu dans mon portfolio",
-  "iam": "Je suis"
+  "iam": "Je suis",
+  "parcourTitle": "Parcours",
+  "skillTitle": "Compétences",
+  "projectTitle": "Projets",
+  "closeTitle": "Fermer",
+  "cantOpenContactError": "Impossible d'ouvrir {contactType}",
+  "Mailaddress": "l'adresse mail",
+  "linkTitle": "le lien"
 }
