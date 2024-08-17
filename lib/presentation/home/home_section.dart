@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
 import 'package:portfolio/domain/entities/menu.dart';
 import 'package:portfolio/presentation/home/avatar_widget.dart';
-import 'package:portfolio/presentation/about/job_title_widget.dart';
+import 'package:portfolio/presentation/home/animated_job_title.dart';
 import 'package:portfolio/presentation/common_widgets/responsive_widget.dart';
 import 'package:portfolio/presentation/home/hello_world_widget.dart';
 import 'package:portfolio/presentation/home/introduce_widget.dart';
@@ -27,46 +27,70 @@ class HomeSection extends ConsumerWidget {
       height: deviceHeight,
       child: Stack(
         children: [
-          Center(
+          Align(
+            alignment: ResponsiveWidget.isMobile(context)
+                ? Alignment.topCenter
+                : Alignment.center,
             child: SingleChildScrollView(
               child: Wrap(
+                alignment: WrapAlignment.center,
                 children: [
-                  if (ResponsiveWidget.isMobile(context)) ...[
-                    Center(
-                      child: AvatarWidget(
-                        image: infos.photo,
+                  if (ResponsiveWidget.isMobile(context))
+                    Padding(
+                      padding: const EdgeInsets.only(
+                        top: 20.0,
+                        bottom: 50.0,
                       ),
-                    )
-                  ],
-                  Row(
-                    mainAxisAlignment: ResponsiveWidget.isMobile(context)
-                        ? MainAxisAlignment.start
-                        : MainAxisAlignment.spaceBetween,
-                    children: [
-                      Column(
-                        mainAxisSize: MainAxisSize.min,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const HelloWorldWidget(),
-                          const SizedBox(
-                            height: 50.0,
-                          ),
-                          IntroduceWidget(
-                            name: "${infos.firstName} ${infos.name}",
-                          ),
-                          const SizedBox(
-                            height: 20.0,
-                          ),
-                          JobTitleWidget(titles: infos.titles),
-                        ],
+                      child: SizedBox(
+                        height: 400,
+                        child: AvatarWidget(
+                          image: infos.photo,
+                        ),
                       ),
-                      if (!ResponsiveWidget.isMobile(context))
-                        Flexible(
-                          child: AvatarWidget(
-                            image: infos.photo,
+                    ),
+                  Padding(
+                    padding: EdgeInsets.all(
+                      ResponsiveWidget.isMobile(context) ? 20.0 : 50.0,
+                    ),
+                    child: Row(
+                      mainAxisAlignment: ResponsiveWidget.isMobile(context)
+                          ? MainAxisAlignment.start
+                          : MainAxisAlignment.spaceBetween,
+                      children: [
+                        Expanded(
+                          flex: 3,
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const HelloWorldWidget(),
+                              const SizedBox(
+                                height: 50.0,
+                              ),
+                              IntroduceWidget(
+                                name: "${infos.firstName} ${infos.name}",
+                              ),
+                              const SizedBox(
+                                height: 20.0,
+                              ),
+                              AnimatedJobTitle(
+                                titles: infos.titles,
+                              ),
+                            ],
                           ),
                         ),
-                    ],
+                        if (!ResponsiveWidget.isMobile(context)) ...[
+                          const Spacer(),
+                          Expanded(
+                            flex: 2,
+                            child: AvatarWidget(
+                              image: infos.photo,
+                            ),
+                          ),
+                          const Spacer(),
+                        ]
+                      ],
+                    ),
                   ),
                   const SizedBox(
                     height: 50.0,
