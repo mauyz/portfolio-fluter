@@ -7,8 +7,8 @@ import 'package:unicons/unicons.dart';
 final phone = Contact(
   icon: Icons.call,
   values: [
-    "261 34 90 637 88 ",
-    "261 32 92 037 67",
+    "+261 34 90 637 88 ",
+    "+261 32 92 037 67",
   ],
   type: ContactType.phone,
 );
@@ -27,6 +27,14 @@ final linkedIn = Contact(
     "https://linkedin.com/in/moise-tsiorinambinina",
   ],
   type: ContactType.link,
+);
+
+final skype = Contact(
+  icon: UniconsLine.skype,
+  values: [
+    "live:tsiorymauyz",
+  ],
+  type: ContactType.skype,
 );
 
 final github = Contact(
@@ -51,6 +59,6 @@ final infos = Infos(
     phone,
     mail,
     linkedIn,
-    github,
+    skype,
   },
 );
