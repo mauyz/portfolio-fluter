@@ -359,6 +359,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Formation approfondie en programmation avancée, couvrant les environnements web, mobile et desktop\nDéveloppement des compétences en programmation pour les réseaux informatiques\nAdministration avancée et sécurité des systèmes et des réseaux`
+  String get masterDesc {
+    return Intl.message(
+      'Formation approfondie en programmation avancée, couvrant les environnements web, mobile et desktop\nDéveloppement des compétences en programmation pour les réseaux informatiques\nAdministration avancée et sécurité des systèmes et des réseaux',
+      name: 'masterDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Introduction à l'algorithmique et à la programmation en C, Python, et Java\nBases de l'administration des systèmes et des réseaux\nIntroduction aux bases de données relationnelles`
+  String get licenceDesc {
+    return Intl.message(
+      'Introduction à l\'algorithmique et à la programmation en C, Python, et Java\nBases de l\'administration des systèmes et des réseaux\nIntroduction aux bases de données relationnelles',
+      name: 'licenceDesc',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

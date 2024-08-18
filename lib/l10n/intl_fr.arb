@@ -31,5 +31,7 @@
   "cantOpenContactError": "Impossible d'ouvrir {contactType}",
   "Mailaddress": "l'adresse mail",
   "linkTitle": "le lien",
-  "academicTitle": "Académique"
+  "academicTitle": "Académique",
+  "masterDesc": "Formation approfondie en programmation avancée, couvrant les environnements web, mobile et desktop\nDéveloppement des compétences en programmation pour les réseaux informatiques\nAdministration avancée et sécurité des systèmes et des réseaux",
+  "licenceDesc": "Introduction à l'algorithmique et à la programmation en C, Python, et Java\nBases de l'administration des systèmes et des réseaux\nIntroduction aux bases de données relationnelles"
 }

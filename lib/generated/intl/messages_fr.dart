@@ -46,11 +46,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "iam": MessageLookupByLibrary.simpleMessage("Je suis"),
         "internship": MessageLookupByLibrary.simpleMessage("Stage"),
         "introContent": MessageLookupByLibrary.simpleMessage("Je m\'appelle"),
+        "licenceDesc": MessageLookupByLibrary.simpleMessage(
+            "Introduction à l\'algorithmique et à la programmation en C, Python, et Java\nBases de l\'administration des systèmes et des réseaux\nIntroduction aux bases de données relationnelles"),
         "licenseDegree":
             MessageLookupByLibrary.simpleMessage("Licence professionnelle"),
         "linkTitle": MessageLookupByLibrary.simpleMessage("le lien"),
         "masterDegree":
             MessageLookupByLibrary.simpleMessage("Master professionnel"),
+        "masterDesc": MessageLookupByLibrary.simpleMessage(
+            "Formation approfondie en programmation avancée, couvrant les environnements web, mobile et desktop\nDéveloppement des compétences en programmation pour les réseaux informatiques\nAdministration avancée et sécurité des systèmes et des réseaux"),
         "modeDark": MessageLookupByLibrary.simpleMessage("Mode dark"),
         "parcourTitle": MessageLookupByLibrary.simpleMessage("Parcours"),
         "passionnateTech":
