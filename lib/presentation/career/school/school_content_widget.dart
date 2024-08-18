@@ -7,6 +7,7 @@ class SchoolContentWidget extends StatelessWidget {
   final Formation formation;
   final bool isIndexPair;
   final bool isLast;
+
   const SchoolContentWidget({
     super.key,
     required this.formation,
@@ -65,10 +66,11 @@ class SchoolContentWidget extends StatelessWidget {
                   return Padding(
                     padding: const EdgeInsets.only(bottom: 5.0),
                     child: Row(
+                      mainAxisSize: MainAxisSize.min,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text("- "),
-                        Expanded(
+                        Flexible(
                           child: Text(e),
                         ),
                       ],
