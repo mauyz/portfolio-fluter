@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class CareerCategoryTitle extends StatelessWidget {
   final String title;
+
   const CareerCategoryTitle({
     super.key,
     required this.title,
@@ -14,7 +15,9 @@ class CareerCategoryTitle extends StatelessWidget {
       children: [
         const Padding(
           padding: EdgeInsets.all(5.0),
-          child: Icon(Icons.play_arrow,),
+          child: Icon(
+            Icons.play_arrow,
+          ),
         ),
         Text(
           title,
