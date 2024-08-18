@@ -12,10 +12,10 @@ class HelloWorldWidget extends StatelessWidget {
         TextSpan(
           text: char,
           style: TextStyle.lerp(
-            Theme.of(context).textTheme.displayMedium?.copyWith(
+            Theme.of(context).textTheme.displaySmall?.copyWith(
                   color: Theme.of(context).colorScheme.onSecondaryContainer,
                 ),
-            Theme.of(context).textTheme.displayMedium?.copyWith(
+            Theme.of(context).textTheme.displaySmall?.copyWith(
                   color: Theme.of(context).colorScheme.error,
                 ),
             children.length / text.length,
