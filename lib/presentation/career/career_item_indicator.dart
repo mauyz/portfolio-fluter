@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class CareerKeyIndicator extends StatelessWidget {
   final IconData icon;
+
   const CareerKeyIndicator({
     super.key,
     required this.icon,
@@ -20,9 +21,7 @@ class CareerKeyIndicator extends StatelessWidget {
       ),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Icon(
-          icon
-        ),
+        child: Icon(icon),
       ),
     );
   }
