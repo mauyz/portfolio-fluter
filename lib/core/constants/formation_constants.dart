@@ -7,11 +7,13 @@ final formations = {
     date: "2015 - 2017",
     school: "Ecole Nationale d'Informatique (ENI)",
     address: "Fianarantsoa",
+    desc: S.current.masterDesc,
   ),
   Formation(
     degree: S.current.licenseDegree,
     date: "2012 - 2015",
     school: "Ecole Nationale d'Informatique (ENI)",
     address: "Fianarantsoa",
+    desc: S.current.licenceDesc,
   )
 };
