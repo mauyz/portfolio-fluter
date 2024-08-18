@@ -1,24 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/domain/entities/formation.dart';
-import 'package:portfolio/presentation/career/left_clipper.dart';
-import 'package:portfolio/presentation/career/right_clipper.dart';
+
+import '../right_clipper.dart';
 
 class SchoolContentWidget extends StatelessWidget {
   final Formation formation;
-  final bool isIndexPair;
   final bool isLast;
 
   const SchoolContentWidget({
     super.key,
     required this.formation,
-    required this.isIndexPair,
     required this.isLast,
   });
 
   @override
   Widget build(BuildContext context) {
     return ClipPath(
-      clipper: isIndexPair ? LeftClipper() : RightClipper(),
+      clipper: RightClipper(),
       child: Container(
         padding: const EdgeInsets.only(
           left: 20.0,
@@ -31,9 +29,7 @@ class SchoolContentWidget extends StatelessWidget {
         ),
         color: Theme.of(context).colorScheme.inversePrimary,
         child: Padding(
-          padding: isIndexPair
-              ? const EdgeInsets.only(right: 30.0)
-              : const EdgeInsets.only(left: 30.0),
+          padding: const EdgeInsets.only(left: 30.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
@@ -61,23 +57,24 @@ class SchoolContentWidget extends StatelessWidget {
                       ),
                 ),
               ),
-              ...formation.desc.split("\n").map(
-                (e) {
-                  return Padding(
-                    padding: const EdgeInsets.only(bottom: 5.0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        const Text("- "),
-                        Flexible(
-                          child: Text(e),
-                        ),
-                      ],
-                    ),
-                  );
-                },
-              ),
+              if (formation.desc.isNotEmpty)
+                ...formation.desc.split("\n").map(
+                  (e) {
+                    return Padding(
+                      padding: const EdgeInsets.only(bottom: 5.0),
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          const Text("- "),
+                          Flexible(
+                            child: Text(e),
+                          ),
+                        ],
+                      ),
+                    );
+                  },
+                ),
             ],
           ),
         ),
