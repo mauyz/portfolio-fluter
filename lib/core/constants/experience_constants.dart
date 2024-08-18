@@ -8,7 +8,7 @@ final experiences = {
     enterprise: "JL Consulting",
     type: S.current.freelance,
     location: "Antananarivo, Madagascar",
-    description: "description",
+    description: S.current.jlConsultingDesc,
     stack: {
       "Dart",
       "Java",
@@ -25,7 +25,7 @@ final experiences = {
     enterprise: "Neoshore Madagascar",
     type: "CDI",
     location: "Antananarivo, Madagascar",
-    description: "description",
+    description: S.current.neoshoreDesc,
     stack: {
       "Dart",
       "Java",
@@ -42,12 +42,30 @@ final experiences = {
     },
   ),
   Experience(
+    job: S.current.androidDeveloper,
+    date: "2020 - 2022",
+    type: "Freelance",
+    location: "Antananarivo, Madagascar",
+    description: S.current.freelanceDesc,
+    stack: {
+      "Java",
+      "Kotlin",
+      "SQLite",
+      "Firebase",
+      "Google Calendar",
+      "OpenStreetMap",
+      "MySql",
+      "Web socket",
+      "REST API",
+    },
+  ),
+  Experience(
     job: S.current.systemAdministrator,
     enterprise: "ONN & OLEP",
     date: "2017 - 2020",
     type: "CDI",
     location: "Antananarivo, Madagascar",
-    description: "description",
+    description: S.current.onnOlepDesc,
     stack: {
       "GLPI",
       "Active Directory",
@@ -64,7 +82,7 @@ final experiences = {
     date: "2016 - 2017",
     type: S.current.internship,
     location: "Antananarivo, Madagascar",
-    description: "description",
+    description: S.current.emayaDesc,
     stack: {
       "Java",
       "Kotlin",
