@@ -21,7 +21,7 @@ class WelcomeWidget extends ConsumerWidget {
           padding: const EdgeInsets.symmetric(horizontal: 8.0),
           child: Text(
             S.current.welcomeTitle,
-            style: Theme.of(context).textTheme.headlineMedium,
+            style: Theme.of(context).textTheme.titleMedium,
           ),
         ),
         Padding(
