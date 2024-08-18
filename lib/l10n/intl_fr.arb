@@ -32,6 +32,13 @@
   "Mailaddress": "l'adresse mail",
   "linkTitle": "le lien",
   "academicTitle": "Académique",
-  "masterDesc": "Formation approfondie en programmation avancée, couvrant les environnements web, mobile et desktop\nDéveloppement des compétences en programmation pour les réseaux informatiques\nAdministration avancée et sécurité des systèmes et des réseaux",
-  "licenceDesc": "Introduction à l'algorithmique et à la programmation en C, Python, et Java\nBases de l'administration des systèmes et des réseaux\nIntroduction aux bases de données relationnelles"
+  "masterDesc": "Formation approfondie en programmation web, mobile et desktop\nDéveloppement des compétences en programmation réseau\nAdministration avancée, sécurisation des systèmes et réseaux informatiques",
+  "licenceDesc": "Formation sur les bases de l'algorithme et de la programmation\nFormation sur l'administration des systèmes et réseaux informatiques\nIntroduction à la base de données relationnelles",
+  "professionalTitle": "Professionnel",
+  "jlConsultingDesc": "Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nMise en production Play Store",
+  "neoshoreDesc": "Concevoir avec l’équipe les nouvelles fonctionnalités de la plateforme\nImplémenter les modifications en respectant les exigences techniques\nSuivre les journaux des applications\nMaintenir une expérience utilisateur de haute qualité\nAméliorer les performances et corriger les bugs\nGérer le contenu et la publication des mises à jour sur Play Store et App Store",
+  "freelanceDesc": "Conception et développement d’une application de gestion d’un clinique\nDéveloppement d’une application de rencontre pour la communauté comorienne et mahoraise",
+  "onnOlepDesc": "Administration et configuration des serveurs Linux et Windows\nAutomatisation des tâches récurrentes à l’aide de scripts Bash, Shell et PHP\nGestion d’un parc informatique contenant 120 postes de travail",
+  "emayaDesc": "Développement d’une application pour la recherche des offres d’emploi",
+  "bacDegree": "BAC Série C"
 }

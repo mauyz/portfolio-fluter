@@ -29,6 +29,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "academicTitle": MessageLookupByLibrary.simpleMessage("Académique"),
         "androidDeveloper": MessageLookupByLibrary.simpleMessage(
             "Développeur d\'application Android"),
+        "bacDegree": MessageLookupByLibrary.simpleMessage("BAC Série C"),
         "bioContent": MessageLookupByLibrary.simpleMessage(
             "Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa, avec une solide expérience dans la conception, le développement et la mise en production d\'applications mobiles.\n\nAu cours des trois dernières années, j\'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j\'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques.\n\nCollaborons et construisons des belles choses !"),
         "cantOpenContactError": m0,
@@ -38,27 +39,39 @@ class MessageLookup extends MessageLookupByLibrary {
         "contactTitle": MessageLookupByLibrary.simpleMessage("Contact"),
         "devMobileTitle":
             MessageLookupByLibrary.simpleMessage("Développeur mobile medior"),
+        "emayaDesc": MessageLookupByLibrary.simpleMessage(
+            "Développement d’une application pour la recherche des offres d’emploi"),
         "experienceTitle": MessageLookupByLibrary.simpleMessage("Expériences"),
         "flutterDeveloper":
             MessageLookupByLibrary.simpleMessage("Développeur flutter"),
         "freelance": MessageLookupByLibrary.simpleMessage("Freelance"),
+        "freelanceDesc": MessageLookupByLibrary.simpleMessage(
+            "Conception et développement d’une application de gestion d’un clinique\nDéveloppement d’une application de rencontre pour la communauté comorienne et mahoraise"),
         "home": MessageLookupByLibrary.simpleMessage("Accueil"),
         "iam": MessageLookupByLibrary.simpleMessage("Je suis"),
         "internship": MessageLookupByLibrary.simpleMessage("Stage"),
         "introContent": MessageLookupByLibrary.simpleMessage("Je m\'appelle"),
+        "jlConsultingDesc": MessageLookupByLibrary.simpleMessage(
+            "Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nMise en production Play Store"),
         "licenceDesc": MessageLookupByLibrary.simpleMessage(
-            "Introduction à l\'algorithmique et à la programmation en C, Python, et Java\nBases de l\'administration des systèmes et des réseaux\nIntroduction aux bases de données relationnelles"),
+            "Formation sur les bases de l\'algorithme et de la programmation\nFormation sur l\'administration des systèmes et réseaux informatiques\nIntroduction à la base de données relationnelles"),
         "licenseDegree":
             MessageLookupByLibrary.simpleMessage("Licence professionnelle"),
         "linkTitle": MessageLookupByLibrary.simpleMessage("le lien"),
         "masterDegree":
             MessageLookupByLibrary.simpleMessage("Master professionnel"),
         "masterDesc": MessageLookupByLibrary.simpleMessage(
-            "Formation approfondie en programmation avancée, couvrant les environnements web, mobile et desktop\nDéveloppement des compétences en programmation pour les réseaux informatiques\nAdministration avancée et sécurité des systèmes et des réseaux"),
+            "Formation approfondie en programmation web, mobile et desktop\nDéveloppement des compétences en programmation réseau\nAdministration avancée, sécurisation des systèmes et réseaux informatiques"),
         "modeDark": MessageLookupByLibrary.simpleMessage("Mode dark"),
+        "neoshoreDesc": MessageLookupByLibrary.simpleMessage(
+            "Concevoir avec l’équipe les nouvelles fonctionnalités de la plateforme\nImplémenter les modifications en respectant les exigences techniques\nSuivre les journaux des applications\nMaintenir une expérience utilisateur de haute qualité\nAméliorer les performances et corriger les bugs\nGérer le contenu et la publication des mises à jour sur Play Store et App Store"),
+        "onnOlepDesc": MessageLookupByLibrary.simpleMessage(
+            "Administration et configuration des serveurs Linux et Windows\nAutomatisation des tâches récurrentes à l’aide de scripts Bash, Shell et PHP\nGestion d’un parc informatique contenant 120 postes de travail"),
         "parcourTitle": MessageLookupByLibrary.simpleMessage("Parcours"),
         "passionnateTech":
             MessageLookupByLibrary.simpleMessage("Passionné des technologies"),
+        "professionalTitle":
+            MessageLookupByLibrary.simpleMessage("Professionnel"),
         "projectTitle": MessageLookupByLibrary.simpleMessage("Projets"),
         "sinceMai2024": MessageLookupByLibrary.simpleMessage("Depuis Mai 2024"),
         "skillTitle": MessageLookupByLibrary.simpleMessage("Compétences"),

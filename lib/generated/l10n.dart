@@ -360,21 +360,91 @@ class S {
     );
   }
 
-  /// `Formation approfondie en programmation avancée, couvrant les environnements web, mobile et desktop\nDéveloppement des compétences en programmation pour les réseaux informatiques\nAdministration avancée et sécurité des systèmes et des réseaux`
+  /// `Formation approfondie en programmation web, mobile et desktop\nDéveloppement des compétences en programmation réseau\nAdministration avancée, sécurisation des systèmes et réseaux informatiques`
   String get masterDesc {
     return Intl.message(
-      'Formation approfondie en programmation avancée, couvrant les environnements web, mobile et desktop\nDéveloppement des compétences en programmation pour les réseaux informatiques\nAdministration avancée et sécurité des systèmes et des réseaux',
+      'Formation approfondie en programmation web, mobile et desktop\nDéveloppement des compétences en programmation réseau\nAdministration avancée, sécurisation des systèmes et réseaux informatiques',
       name: 'masterDesc',
       desc: '',
       args: [],
     );
   }
 
-  /// `Introduction à l'algorithmique et à la programmation en C, Python, et Java\nBases de l'administration des systèmes et des réseaux\nIntroduction aux bases de données relationnelles`
+  /// `Formation sur les bases de l'algorithme et de la programmation\nFormation sur l'administration des systèmes et réseaux informatiques\nIntroduction à la base de données relationnelles`
   String get licenceDesc {
     return Intl.message(
-      'Introduction à l\'algorithmique et à la programmation en C, Python, et Java\nBases de l\'administration des systèmes et des réseaux\nIntroduction aux bases de données relationnelles',
+      'Formation sur les bases de l\'algorithme et de la programmation\nFormation sur l\'administration des systèmes et réseaux informatiques\nIntroduction à la base de données relationnelles',
       name: 'licenceDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Professionnel`
+  String get professionalTitle {
+    return Intl.message(
+      'Professionnel',
+      name: 'professionalTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nMise en production Play Store`
+  String get jlConsultingDesc {
+    return Intl.message(
+      'Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nMise en production Play Store',
+      name: 'jlConsultingDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Concevoir avec l’équipe les nouvelles fonctionnalités de la plateforme\nImplémenter les modifications en respectant les exigences techniques\nSuivre les journaux des applications\nMaintenir une expérience utilisateur de haute qualité\nAméliorer les performances et corriger les bugs\nGérer le contenu et la publication des mises à jour sur Play Store et App Store`
+  String get neoshoreDesc {
+    return Intl.message(
+      'Concevoir avec l’équipe les nouvelles fonctionnalités de la plateforme\nImplémenter les modifications en respectant les exigences techniques\nSuivre les journaux des applications\nMaintenir une expérience utilisateur de haute qualité\nAméliorer les performances et corriger les bugs\nGérer le contenu et la publication des mises à jour sur Play Store et App Store',
+      name: 'neoshoreDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Conception et développement d’une application de gestion d’un clinique\nDéveloppement d’une application de rencontre pour la communauté comorienne et mahoraise`
+  String get freelanceDesc {
+    return Intl.message(
+      'Conception et développement d’une application de gestion d’un clinique\nDéveloppement d’une application de rencontre pour la communauté comorienne et mahoraise',
+      name: 'freelanceDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Administration et configuration des serveurs Linux et Windows\nAutomatisation des tâches récurrentes à l’aide de scripts Bash, Shell et PHP\nGestion d’un parc informatique contenant 120 postes de travail`
+  String get onnOlepDesc {
+    return Intl.message(
+      'Administration et configuration des serveurs Linux et Windows\nAutomatisation des tâches récurrentes à l’aide de scripts Bash, Shell et PHP\nGestion d’un parc informatique contenant 120 postes de travail',
+      name: 'onnOlepDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Développement d’une application pour la recherche des offres d’emploi`
+  String get emayaDesc {
+    return Intl.message(
+      'Développement d’une application pour la recherche des offres d’emploi',
+      name: 'emayaDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `BAC Série C`
+  String get bacDegree {
+    return Intl.message(
+      'BAC Série C',
+      name: 'bacDegree',
       desc: '',
       args: [],
     );
