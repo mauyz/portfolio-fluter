@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/domain/entities/formation.dart';
-import 'package:portfolio/presentation/career/school/school_content_widget.dart';
 import 'package:portfolio/presentation/career/career_item_indicator.dart';
+import 'package:portfolio/presentation/career/school/school_content_widget.dart';
 
 class SchoolItemMobile extends StatelessWidget {
   final Formation formation;
   final bool isLast;
+
   const SchoolItemMobile({
     super.key,
     required this.formation,
@@ -16,6 +17,7 @@ class SchoolItemMobile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.stretch,
+      mainAxisSize: MainAxisSize.min,
       children: [
         Stack(
           alignment: Alignment.topCenter,
