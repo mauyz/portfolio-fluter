@@ -6,7 +6,6 @@ import 'package:portfolio/presentation/common_widgets/theme_switcher.dart';
 import 'package:portfolio/presentation/home/navigation_item.dart';
 
 class NavDesktop extends ConsumerWidget {
-
   const NavDesktop({
     super.key,
   });
@@ -16,10 +15,26 @@ class NavDesktop extends ConsumerWidget {
     final dataRepository = ref.read(dataRepositoryProvider);
     return Container(
       color: Theme.of(context).colorScheme.onPrimary,
-      padding: const EdgeInsets.all(20.0),
+      padding: const EdgeInsets.symmetric(
+        vertical: 10.0,
+        horizontal: 20.0,
+      ),
       child: Row(
         children: [
-          const LogoWidget(),
+          InkWell(
+            onTap: () {
+              final homeMenuContext =
+                  dataRepository.getMenu().elementAt(0).key.currentContext;
+              if (homeMenuContext != null) {
+                Scrollable.ensureVisible(
+                  homeMenuContext,
+                  duration: const Duration(milliseconds: 400),
+                  curve: Curves.easeOut,
+                );
+              }
+            },
+            child: const LogoWidget(),
+          ),
           const Spacer(),
           ...dataRepository.getMenu().map(
             (e) {
