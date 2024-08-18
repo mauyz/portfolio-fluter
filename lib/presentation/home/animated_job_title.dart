@@ -24,7 +24,7 @@ class AnimatedJobTitle extends StatelessWidget {
               (e) {
                 return TyperAnimatedText(
                   e,
-                  textStyle: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                  textStyle: Theme.of(context).textTheme.titleMedium?.copyWith(
                         color: Theme.of(context).colorScheme.error,
                       ),
                   speed: const Duration(
