@@ -8,26 +8,11 @@ class LogoWidget extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final themeMode = ref.read(appThemeModeProvider);
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        Text(
-          "<",
-          style: Theme.of(context).textTheme.displaySmall,
-        ),
-        Image.asset(
-          themeMode == ThemeMode.light
-              ? 'assets/images/logo-black.png'
-              : 'assets/images/logo-white.png',
-          height: 50,
-        ),
-        Text(
-          "/>",
-          style: Theme.of(context).textTheme.displaySmall,
-        ),
-      ],
+    return Image.asset(
+      themeMode == ThemeMode.light
+          ? 'assets/images/logo-black.png'
+          : 'assets/images/logo-white.png',
+      height: 48.0,
     );
   }
 }
