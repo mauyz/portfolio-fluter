@@ -6,6 +6,7 @@ import 'package:portfolio/presentation/common_widgets/section_title_widget.dart'
 
 class CareerSection extends StatelessWidget {
   final Menu menu;
+
   CareerSection({
     required this.menu,
   }) : super(key: menu.key);
@@ -19,7 +20,7 @@ class CareerSection extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.only(
-              bottom: 30.0,
+              bottom: 20.0,
             ),
             child: SectionTitleWidget(menu: menu),
           ),
