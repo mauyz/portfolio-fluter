@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/domain/entities/menu.dart';
+import 'package:portfolio/presentation/career/professional/experience_career_list.dart';
 import 'package:portfolio/presentation/career/school/school_career_list.dart';
 import 'package:portfolio/presentation/common_widgets/section_card.dart';
 import 'package:portfolio/presentation/common_widgets/section_title_widget.dart';
@@ -24,7 +25,17 @@ class CareerSection extends StatelessWidget {
             ),
             child: SectionTitleWidget(menu: menu),
           ),
-          const SchoolCareerList(),
+          const SizedBox(
+            width: double.infinity,
+            child: Wrap(
+              alignment: WrapAlignment.spaceBetween,
+              runSpacing: 40.0,
+              children: [
+                ExperienceCareerList(),
+                SchoolCareerList(),
+              ],
+            ),
+          ),
         ],
       ),
     );
