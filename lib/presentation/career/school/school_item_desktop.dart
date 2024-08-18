@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/domain/entities/formation.dart';
-import 'package:portfolio/presentation/career/school/school_content_widget.dart';
 import 'package:portfolio/presentation/career/career_item_indicator.dart';
+import 'package:portfolio/presentation/career/school/school_content_widget.dart';
 
 class SchoolItemDesktop extends StatelessWidget {
   final Formation formation;
   final bool isIndexPair;
   final bool isLast;
+
   const SchoolItemDesktop({
     super.key,
     required this.formation,
@@ -16,8 +17,10 @@ class SchoolItemDesktop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final listWidget = [
-      const Spacer(),
+    final itemContentWidgets = [
+      const Expanded(
+        child: SizedBox.shrink(),
+      ),
       Stack(
         alignment: Alignment.topCenter,
         children: [
@@ -34,10 +37,9 @@ class SchoolItemDesktop extends StatelessWidget {
       ),
       Expanded(
         child: Row(
+          mainAxisAlignment:
+              isIndexPair ? MainAxisAlignment.end : MainAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
-          mainAxisAlignment: isIndexPair
-              ? MainAxisAlignment.end
-              : MainAxisAlignment.start,
           children: [
             Flexible(
               child: Padding(
@@ -54,9 +56,10 @@ class SchoolItemDesktop extends StatelessWidget {
       ),
     ];
     return Row(
-      mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: isIndexPair ? listWidget.reversed.toList() : listWidget,
+      children: isIndexPair
+          ? itemContentWidgets.reversed.toList()
+          : itemContentWidgets,
     );
   }
 }
