@@ -46,7 +46,6 @@ class SchoolItemDesktop extends StatelessWidget {
                 padding: const EdgeInsets.only(top: 20.0),
                 child: SchoolContentWidget(
                   formation: formation,
-                  isIndexPair: isIndexPair,
                   isLast: isLast,
                 ),
               ),

@@ -40,7 +40,6 @@ class SchoolItemMobile extends StatelessWidget {
             ),
             child: SchoolContentWidget(
               formation: formation,
-              isIndexPair: false,
               isLast: isLast,
             ),
           ),
