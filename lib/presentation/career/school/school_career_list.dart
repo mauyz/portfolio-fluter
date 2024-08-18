@@ -29,7 +29,6 @@ class SchoolCareerList extends ConsumerWidget {
                     return IntrinsicHeight(
                       child: SchoolItemWidget(
                         formation: e.$2,
-                        isIndexPair: (e.$1 % 2) == 0,
                         isLast: e.$1 == (listFormation.length - 1),
                       ),
                     );
