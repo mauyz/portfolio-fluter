@@ -15,5 +15,11 @@ final formations = {
     school: "Ecole Nationale d'Informatique (ENI)",
     address: "Fianarantsoa",
     desc: S.current.licenceDesc,
-  )
+  ),Formation(
+    degree: S.current.bacDegree,
+    date: "2012",
+    school: "Lycée Fo Masin'i Jesoa",
+    address: "Fianarantsoa",
+    desc: '',
+  ),
 };
