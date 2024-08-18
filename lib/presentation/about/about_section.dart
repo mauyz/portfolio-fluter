@@ -51,7 +51,8 @@ class AboutSection extends ConsumerWidget {
                       Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: IntroWidget(
-                          name: '${infos.firstName} ${infos.name}',
+                          firstName: infos.firstName,
+                          name: infos.name,
                         ),
                       ),
                       Padding(
@@ -109,7 +110,8 @@ class AboutSection extends ConsumerWidget {
                           height: 20,
                         ),
                         IntroWidget(
-                          name: '${infos.firstName} ${infos.name}.',
+                          firstName: infos.firstName,
+                          name: infos.name,
                         ),
                         const SizedBox(
                           height: 15.0,
