@@ -16,10 +16,10 @@ class SectionTitleWidget extends StatelessWidget {
         TextSpan(
           text: char,
           style: TextStyle.lerp(
-            Theme.of(context).textTheme.displayMedium?.copyWith(
+            Theme.of(context).textTheme.displaySmall?.copyWith(
                   color: Theme.of(context).colorScheme.onSecondaryContainer,
                 ),
-            Theme.of(context).textTheme.displayMedium?.copyWith(
+            Theme.of(context).textTheme.displaySmall?.copyWith(
                   color: Theme.of(context).colorScheme.error,
                 ),
             children.length / menu.title.length,
@@ -30,16 +30,14 @@ class SectionTitleWidget extends StatelessWidget {
     return Row(
       children: [
         Padding(
-          padding: const EdgeInsets.symmetric(
-            vertical: 8.0,
-          ),
+          padding: const EdgeInsets.all(5.0),
           child: Icon(
             menu.icon,
-            size: 36.0,
+            color: Theme.of(context).colorScheme.onSecondaryContainer,
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(left: 20.0),
+          padding: const EdgeInsets.only(left: 10.0),
           child: RichText(
             text: TextSpan(
               children: children,
