@@ -15,7 +15,7 @@ class CareerKeyIndicator extends StatelessWidget {
         color: Theme.of(context).colorScheme.onSecondary,
         shape: BoxShape.circle,
         border: Border.all(
-          color: Theme.of(context).colorScheme.onPrimaryContainer,
+          color: Theme.of(context).colorScheme.inversePrimary,
           width: 3.0,
         ),
       ),
