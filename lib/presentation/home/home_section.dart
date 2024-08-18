@@ -21,7 +21,7 @@ class HomeSection extends ConsumerWidget {
     final deviceWidth = MediaQuery.sizeOf(context).width;
     final deviceHeight = ResponsiveWidget.isMobile(context)
         ? (MediaQuery.sizeOf(context).height - 60)
-        : (MediaQuery.sizeOf(context).height - 100);
+        : (MediaQuery.sizeOf(context).height - 80);
     return SizedBox(
       width: deviceWidth,
       height: deviceHeight,
@@ -65,13 +65,14 @@ class HomeSection extends ConsumerWidget {
                             children: [
                               const HelloWorldWidget(),
                               const SizedBox(
-                                height: 50.0,
+                                height: 15.0,
                               ),
                               IntroduceWidget(
-                                name: "${infos.firstName} ${infos.name}",
+                                firstName: infos.firstName,
+                                name: infos.name,
                               ),
                               const SizedBox(
-                                height: 20.0,
+                                height: 30.0,
                               ),
                               AnimatedJobTitle(
                                 titles: infos.titles,
