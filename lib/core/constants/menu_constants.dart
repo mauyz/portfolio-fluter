@@ -11,7 +11,7 @@ final menu = {
   ),
   Menu(
     index: 1,
-    icon: Icons.info_outline,
+    icon: Icons.info,
     title: S.current.aboutTitle,
     key: GlobalKey(),
   ),
