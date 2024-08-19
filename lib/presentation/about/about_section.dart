@@ -5,6 +5,7 @@ import 'package:portfolio/domain/entities/menu.dart';
 import 'package:portfolio/presentation/about/about_image_widget.dart';
 import 'package:portfolio/presentation/about/bio_widget.dart';
 import 'package:portfolio/presentation/about/contacts_widget.dart';
+import 'package:portfolio/presentation/about/download_cv_button.dart';
 import 'package:portfolio/presentation/about/job_titles_widget.dart';
 import 'package:portfolio/presentation/common_widgets/section_card.dart';
 import 'package:portfolio/presentation/common_widgets/section_title_widget.dart';
@@ -99,8 +100,8 @@ class AboutSection extends ConsumerWidget {
                     padding: const EdgeInsets.only(
                       left: 12.0,
                     ),
-                    child: ListView(
-                      shrinkWrap: true,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const SizedBox(
                           height: 10,
@@ -126,9 +127,7 @@ class AboutSection extends ConsumerWidget {
                         const SizedBox(
                           height: 20.0,
                         ),
-                        ContactsWidget(
-                          contacts: infos.contacts,
-                        ),
+                        const DownloadCvButton(),
                         const SizedBox(
                           height: 50.0,
                         ),
