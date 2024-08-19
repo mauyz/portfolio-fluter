@@ -17,7 +17,7 @@ class ContactWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return IconButton.outlined(
+    return IconButton(
       iconSize: 24.0,
       color: Theme.of(context).colorScheme.error,
       icon: Icon(
