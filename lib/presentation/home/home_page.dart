@@ -39,57 +39,46 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
     return Scaffold(
       appBar: isMobile ? AppBar() : null,
       drawer: isMobile ? const NavMobile() : null,
-      body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(
-              "assets/images/bvb4_rotated.jpg",
-            ),
-            fit: BoxFit.fill,
-            opacity: 0.1,
-          ),
-        ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            if (!isMobile) const NavDesktop(),
-            Expanded(
-              child: Scrollbar(
-                thumbVisibility: true,
+      body: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          if (!isMobile) const NavDesktop(),
+          Expanded(
+            child: Scrollbar(
+              thumbVisibility: true,
+              controller: scrollController,
+              child: SingleChildScrollView(
                 controller: scrollController,
-                child: SingleChildScrollView(
-                  controller: scrollController,
-                  child: Column(
-                    children: [
-                      ...menu.map(
-                        (e) {
-                          return switch (e.index) {
-                            0 => HomeSection(
-                                menu: menu.elementAt(e.index),
-                              ),
-                            1 => AboutSection(
-                                menu: menu.elementAt(e.index),
-                              ),
-                            2 => CareerSection(
-                                menu: menu.elementAt(e.index),
-                              ),
-                            3 => SkillSection(
-                                menu: menu.elementAt(e.index),
-                              ),
-                            _ => ContactSection(
-                                menu: menu.elementAt(e.index),
-                              ),
-                          };
-                        },
-                      ),
-                      const FooterPage(),
-                    ],
-                  ),
+                child: Column(
+                  children: [
+                    ...menu.map(
+                      (e) {
+                        return switch (e.index) {
+                          0 => HomeSection(
+                              menu: menu.elementAt(e.index),
+                            ),
+                          1 => AboutSection(
+                              menu: menu.elementAt(e.index),
+                            ),
+                          2 => CareerSection(
+                              menu: menu.elementAt(e.index),
+                            ),
+                          3 => SkillSection(
+                              menu: menu.elementAt(e.index),
+                            ),
+                          _ => ContactSection(
+                              menu: menu.elementAt(e.index),
+                            ),
+                        };
+                      },
+                    ),
+                    const FooterPage(),
+                  ],
                 ),
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
