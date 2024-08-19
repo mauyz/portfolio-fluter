@@ -39,6 +39,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "contactTitle": MessageLookupByLibrary.simpleMessage("Contact"),
         "devMobileTitle":
             MessageLookupByLibrary.simpleMessage("Développeur mobile medior"),
+        "downloadCV":
+            MessageLookupByLibrary.simpleMessage("Télécharger mon CV"),
         "emayaDesc": MessageLookupByLibrary.simpleMessage(
             "Développement d’une application pour la recherche des offres d’emploi"),
         "experienceTitle": MessageLookupByLibrary.simpleMessage("Expériences"),
