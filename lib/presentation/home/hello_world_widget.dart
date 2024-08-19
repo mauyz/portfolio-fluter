@@ -5,32 +5,12 @@ class HelloWorldWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const text = "Hello world ";
-    final children = <TextSpan>[];
-    for (final char in text.characters) {
-      children.add(
-        TextSpan(
-          text: char,
-          style: TextStyle.lerp(
-            Theme.of(context).textTheme.displaySmall?.copyWith(
-                  color: Theme.of(context).colorScheme.onSecondaryContainer,
-                ),
-            Theme.of(context).textTheme.displaySmall?.copyWith(
-                  color: Theme.of(context).colorScheme.error,
-                ),
-            children.length / text.length,
-          ),
-        ),
-      );
-    }
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        RichText(
-          text: TextSpan(
-            children: children,
-          ),
-          textAlign: TextAlign.start,
+        Text(
+          "Hello world ",
+          style: Theme.of(context).textTheme.displaySmall,
         ),
         Image.asset(
           "assets/images/hi.gif",
