@@ -449,6 +449,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Télécharger mon CV`
+  String get downloadCV {
+    return Intl.message(
+      'Télécharger mon CV',
+      name: 'downloadCV',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
