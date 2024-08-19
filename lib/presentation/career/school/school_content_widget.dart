@@ -25,7 +25,7 @@ class SchoolContentWidget extends StatelessWidget {
           top: 10.0,
         ),
         margin: EdgeInsets.only(
-          bottom: isLast ? 0.0 : 50.0,
+          bottom: isLast ? 0.0 : 30.0,
         ),
         color: Theme.of(context).colorScheme.inversePrimary,
         child: Padding(
