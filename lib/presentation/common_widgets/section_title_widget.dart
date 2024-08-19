@@ -36,11 +36,13 @@ class SectionTitleWidget extends StatelessWidget {
             color: Theme.of(context).colorScheme.onSecondaryContainer,
           ),
         ),
-        Padding(
-          padding: const EdgeInsets.only(left: 10.0),
-          child: RichText(
-            text: TextSpan(
-              children: children,
+        Flexible(
+          child: Padding(
+            padding: const EdgeInsets.only(left: 10.0),
+            child: RichText(
+              text: TextSpan(
+                children: children,
+              ),
             ),
           ),
         ),

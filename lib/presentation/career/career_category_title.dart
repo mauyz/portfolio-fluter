@@ -19,9 +19,11 @@ class CareerCategoryTitle extends StatelessWidget {
             Icons.play_arrow,
           ),
         ),
-        Text(
-          title,
-          style: Theme.of(context).textTheme.headlineSmall,
+        Flexible(
+          child: Text(
+            title,
+            style: Theme.of(context).textTheme.headlineSmall,
+          ),
         ),
       ],
     );

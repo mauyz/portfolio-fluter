@@ -106,18 +106,15 @@ class HomeSection extends ConsumerWidget {
               ),
             ),
             const Spacer(),
-            Padding(
-              padding: EdgeInsets.symmetric(
-                horizontal: ResponsiveWidget.isMobile(context) ? 20.0 : 50.0,
-              ),
-              child: const Row(
-                children: [
-                  Flexible(
-                    child: ContactLimiter(),
-                  ),
-                  WelcomeWidget(),
-                ],
-              ),
+            const Row(
+              children: [
+                Flexible(
+                  child: ContactLimiter(),
+                ),
+                Flexible(
+                  child: WelcomeWidget(),
+                ),
+              ],
             ),
           ],
         ),

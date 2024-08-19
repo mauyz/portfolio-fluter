@@ -8,9 +8,11 @@ class HelloWorldWidget extends StatelessWidget {
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Text(
-          "Hello world ",
-          style: Theme.of(context).textTheme.displaySmall,
+        Flexible(
+          child: Text(
+            "Hello world ",
+            style: Theme.of(context).textTheme.displaySmall,
+          ),
         ),
         Image.asset(
           "assets/images/hi.gif",
