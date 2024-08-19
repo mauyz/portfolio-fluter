@@ -1,17 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:portfolio/app/app_theme_mode.dart';
 
-class LogoWidget extends ConsumerWidget {
+class LogoWidget extends StatelessWidget {
   const LogoWidget({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final themeMode = ref.read(appThemeModeProvider);
+  Widget build(BuildContext context) {
     return Image.asset(
-      themeMode == ThemeMode.light
-          ? 'assets/images/logo-black.png'
-          : 'assets/images/logo-white.png',
+      'assets/images/logo.png',
+      color: Theme.of(context).colorScheme.error,
       height: 48.0,
     );
   }
