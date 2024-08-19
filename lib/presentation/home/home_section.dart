@@ -19,19 +19,20 @@ class HomeSection extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final infos = ref.read(dataRepositoryProvider).getInfos();
     final deviceWidth = MediaQuery.sizeOf(context).width;
-    final deviceHeight = ResponsiveWidget.isMobile(context)
-        ? (MediaQuery.sizeOf(context).height - 60)
-        : (MediaQuery.sizeOf(context).height - 80);
-    return SizedBox(
-      width: deviceWidth,
-      height: deviceHeight,
-      child: Stack(
-        children: [
-          Align(
-            alignment: ResponsiveWidget.isMobile(context)
-                ? Alignment.topCenter
-                : Alignment.center,
-            child: SingleChildScrollView(
+    final deviceHeight = MediaQuery.sizeOf(context).height - 80;
+    return ConstrainedBox(
+      constraints: BoxConstraints(
+        minWidth: deviceWidth,
+        minHeight: deviceHeight,
+      ),
+      child: IntrinsicHeight(
+        child: Column(
+          children: [
+            const Spacer(),
+            Align(
+              alignment: ResponsiveWidget.isMobile(context)
+                  ? Alignment.topCenter
+                  : Alignment.center,
               child: Wrap(
                 alignment: WrapAlignment.center,
                 children: [
@@ -93,18 +94,13 @@ class HomeSection extends ConsumerWidget {
                       ],
                     ),
                   ),
-                  const SizedBox(
-                    height: 50.0,
-                  ),
                 ],
               ),
             ),
-          ),
-          const Align(
-            alignment: Alignment.bottomLeft,
-            child: WelcomeWidget(),
-          )
-        ],
+            const Spacer(),
+            const WelcomeWidget(),
+          ],
+        ),
       ),
     );
   }
