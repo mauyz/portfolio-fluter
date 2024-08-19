@@ -15,40 +15,33 @@ class WelcomeWidget extends ConsumerWidget {
       children: [
         Flexible(
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            padding: const EdgeInsets.only(right: 10.0),
             child: Text(
               S.current.welcomeTitle,
-              style: Theme.of(context).textTheme.titleMedium,
+              style: Theme.of(context).textTheme.titleLarge,
             ),
           ),
         ),
-        Flexible(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(
-              horizontal: 8.0,
-            ),
-            child: IconButton.filledTonal(
-              iconSize: 48.0,
-              color: Theme.of(context).colorScheme.error,
-              onPressed: () {
-                final menuAboutContext = ref
-                    .read(dataRepositoryProvider)
-                    .getMenu()
-                    .elementAt(1)
-                    .key
-                    .currentContext;
-                if (menuAboutContext != null) {
-                  Scrollable.ensureVisible(
-                    menuAboutContext,
-                    duration: const Duration(milliseconds: 400),
-                    curve: Curves.easeOut,
-                  );
-                }
-              },
-              icon: const Icon(
-                UniconsLine.angle_double_down,
-              ),
-            ),
+        IconButton.filledTonal(
+          iconSize: 48.0,
+          color: Theme.of(context).colorScheme.error,
+          onPressed: () {
+            final menuAboutContext = ref
+                .read(dataRepositoryProvider)
+                .getMenu()
+                .elementAt(1)
+                .key
+                .currentContext;
+            if (menuAboutContext != null) {
+              Scrollable.ensureVisible(
+                menuAboutContext,
+                duration: const Duration(milliseconds: 400),
+                curve: Curves.easeOut,
+              );
+            }
+          },
+          icon: const Icon(
+            UniconsLine.angle_double_down,
           ),
         ),
       ],
