@@ -20,8 +20,8 @@ class AppThemeMode extends _$AppThemeMode {
 
   void toggleThemeMode() {
     final sharedPreferences = ref.read(sharedPreferencesProvider).value;
-    final darkMode = sharedPreferences?.getBool("darkMode") ?? false;
-    sharedPreferences?.setBool("darkMode", !darkMode);
-    state = darkMode == true ? ThemeMode.dark : ThemeMode.light;
+    final darkMode = !(sharedPreferences?.getBool("darkMode") ?? false);
+    sharedPreferences?.setBool("darkMode", darkMode);
+    state = darkMode ? ThemeMode.dark : ThemeMode.light;
   }
 }
