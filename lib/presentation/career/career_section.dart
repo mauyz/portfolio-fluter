@@ -36,6 +36,9 @@ class CareerSection extends StatelessWidget {
               ],
             ),
           ),
+          const SizedBox(
+            height: 40,
+          ),
         ],
       ),
     );
