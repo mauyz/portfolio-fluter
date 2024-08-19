@@ -8,7 +8,7 @@ class ContactLimiter extends StatelessWidget {
     return ColoredBox(
       color: Theme.of(context).colorScheme.onPrimaryContainer,
       child: const SizedBox(
-        width: 200,
+        width: 100,
         height: 1,
       ),
     );
