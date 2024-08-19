@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
 import 'package:portfolio/presentation/about/about_section.dart';
+import 'package:portfolio/presentation/about/contacts_widget.dart';
 import 'package:portfolio/presentation/common_widgets/responsive_widget.dart';
 import 'package:portfolio/presentation/project/project_section.dart';
 import 'package:portfolio/presentation/career/career_section.dart';
@@ -79,6 +80,18 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
             ),
           ),
         ],
+      ),
+      bottomNavigationBar: IntrinsicHeight(
+        child: Container(
+          alignment: Alignment.center,
+          color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+          padding: const EdgeInsets.symmetric(
+            vertical: 5.0,
+          ),
+          child: ContactsWidget(
+            contacts: ref.read(dataRepositoryProvider).getInfos().contacts,
+          ),
+        ),
       ),
     );
   }
