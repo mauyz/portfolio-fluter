@@ -6,11 +6,11 @@ part of 'data_repository_impl.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$dataRepositoryHash() => r'8a5c1db4fa81c3c700cd532db0075433f0856135';
+String _$dataRepositoryHash() => r'94fa9d77cc49c0d21f6ebcac2a77cfce1d7a76d2';
 
 /// See also [dataRepository].
 @ProviderFor(dataRepository)
-final dataRepositoryProvider = AutoDisposeProvider<DataRepository>.internal(
+final dataRepositoryProvider = Provider<DataRepository>.internal(
   dataRepository,
   name: r'dataRepositoryProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
@@ -20,6 +20,6 @@ final dataRepositoryProvider = AutoDisposeProvider<DataRepository>.internal(
   allTransitiveDependencies: null,
 );
 
-typedef DataRepositoryRef = AutoDisposeProviderRef<DataRepository>;
+typedef DataRepositoryRef = ProviderRef<DataRepository>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
