@@ -12,8 +12,9 @@ class ThemeSwitcher extends ConsumerWidget {
       icon: Icon(
         themeMode == ThemeMode.light ? Icons.dark_mode : Icons.light_mode,
       ),
-      onPressed: () =>
-          ref.read(appThemeModeProvider.notifier).toggleThemeMode(),
+      onPressed: () {
+        ref.read(appThemeModeProvider.notifier).toggleThemeMode();
+      },
     );
   }
 }
