@@ -10,7 +10,7 @@ import 'package:portfolio/presentation/footer/footer_page.dart';
 import 'package:portfolio/presentation/home/home_section.dart';
 import 'package:portfolio/presentation/home/nav_desktop.dart';
 import 'package:portfolio/presentation/home/nav_mobile.dart';
-import 'package:portfolio/presentation/home/provider/page_scroll_controller.dart';
+import 'package:portfolio/presentation/home/provider/scroll_controller_offset.dart';
 import 'package:portfolio/presentation/home/provider/selected_menu.dart';
 import 'package:portfolio/presentation/skill/skill_section.dart';
 
@@ -23,20 +23,13 @@ class HomePage extends ConsumerStatefulWidget {
 }
 
 class _HomeDesktopState extends ConsumerState<HomePage> {
-  ScrollController? scrollController;
+  late ScrollController scrollController;
   @override
   void initState() {
     super.initState();
-    scrollController = ref.read(getScrollControllerProvider);
-    scrollController?.addListener(_onScroll);
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      final selectedMenu = ref.read(selectedMenuProvider);
-      if (selectedMenu.index != 0) {
-        Scrollable.ensureVisible(
-          selectedMenu.key.currentContext!,
-        );
-      }
-    });
+    final scrollOffset = ref.read(scrollControllerOffsetProvider);
+    scrollController = ScrollController(initialScrollOffset: scrollOffset);
+    scrollController.addListener(_onScroll);
   }
 
   @override
@@ -67,7 +60,6 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
                 child: SingleChildScrollView(
                   controller: scrollController,
                   child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
                       ...menu.map(
                         (e) {
@@ -104,7 +96,7 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
 
   @override
   void dispose() {
-    scrollController?.removeListener(_onScroll);
+    scrollController.dispose();
     super.dispose();
   }
 
@@ -123,6 +115,11 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
           break;
         }
       }
+    }
+    if (scrollController.hasClients) {
+      ref
+          .read(scrollControllerOffsetProvider.notifier)
+          .update(scrollController.offset);
     }
   }
 }
