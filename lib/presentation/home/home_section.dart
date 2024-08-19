@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
 import 'package:portfolio/domain/entities/menu.dart';
+import 'package:portfolio/presentation/about/contact_limiter.dart';
+import 'package:portfolio/presentation/about/contacts_widget.dart';
 import 'package:portfolio/presentation/home/avatar_widget.dart';
 import 'package:portfolio/presentation/home/animated_job_title.dart';
 import 'package:portfolio/presentation/common_widgets/responsive_widget.dart';
@@ -78,6 +80,12 @@ class HomeSection extends ConsumerWidget {
                               AnimatedJobTitle(
                                 titles: infos.titles,
                               ),
+                              const SizedBox(
+                                height: 40.0,
+                              ),
+                              ContactsWidget(
+                                contacts: infos.contacts,
+                              ),
                             ],
                           ),
                         ),
@@ -98,7 +106,19 @@ class HomeSection extends ConsumerWidget {
               ),
             ),
             const Spacer(),
-            const WelcomeWidget(),
+            Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: ResponsiveWidget.isMobile(context) ? 20.0 : 50.0,
+              ),
+              child: const Row(
+                children: [
+                  Flexible(
+                    child: ContactLimiter(),
+                  ),
+                  WelcomeWidget(),
+                ],
+              ),
+            ),
           ],
         ),
       ),
