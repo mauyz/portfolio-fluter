@@ -16,7 +16,7 @@ class ContactsWidget extends StatelessWidget {
       children: contacts.map(
         (e) {
           return Padding(
-            padding: const EdgeInsets.only(right:12.0),
+            padding: const EdgeInsets.only(right:8.0),
             child: ContactWidget(contact: e),
           );
         },

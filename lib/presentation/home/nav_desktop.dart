@@ -14,7 +14,7 @@ class NavDesktop extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final dataRepository = ref.read(dataRepositoryProvider);
     return Container(
-      color: Theme.of(context).colorScheme.onPrimary,
+      color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
       padding: const EdgeInsets.symmetric(
         vertical: 10.0,
         horizontal: 20.0,

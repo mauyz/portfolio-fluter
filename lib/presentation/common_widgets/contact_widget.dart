@@ -17,14 +17,12 @@ class ContactWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return IconButton.filledTonal(
-      iconSize: 36.0,
+    return IconButton.outlined(
+      iconSize: 24.0,
       color: Theme.of(context).colorScheme.error,
       icon: Icon(
         contact.icon,
       ),
-      splashColor: Theme.of(context).colorScheme.error,
-      splashRadius: 12.0,
       onPressed: () {
         switch (contact.type) {
           case ContactType.phone:
