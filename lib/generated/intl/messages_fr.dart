@@ -37,6 +37,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "consultantDeveloperFlutter": MessageLookupByLibrary.simpleMessage(
             "Consultant développeur flutter"),
         "contactTitle": MessageLookupByLibrary.simpleMessage("Contact"),
+        "database": MessageLookupByLibrary.simpleMessage("Base des données"),
         "devMobileTitle":
             MessageLookupByLibrary.simpleMessage("Développeur mobile medior"),
         "downloadCV":
@@ -46,6 +47,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "experienceTitle": MessageLookupByLibrary.simpleMessage("Expériences"),
         "flutterDeveloper":
             MessageLookupByLibrary.simpleMessage("Développeur flutter"),
+        "framework": MessageLookupByLibrary.simpleMessage("Framework"),
         "freelance": MessageLookupByLibrary.simpleMessage("Freelance"),
         "freelanceDesc": MessageLookupByLibrary.simpleMessage(
             "Conception et développement d’une application de gestion d’un clinique\nDéveloppement d’une application de rencontre pour la communauté comorienne et mahoraise"),
@@ -55,6 +57,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "introContent": MessageLookupByLibrary.simpleMessage("Je m\'appelle"),
         "jlConsultingDesc": MessageLookupByLibrary.simpleMessage(
             "Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nMise en production Play Store"),
+        "language":
+            MessageLookupByLibrary.simpleMessage("Langages de programmations"),
         "licenceDesc": MessageLookupByLibrary.simpleMessage(
             "Formation sur les bases de l\'algorithme et de la programmation\nFormation sur l\'administration des systèmes et réseaux informatiques\nIntroduction à la base de données relationnelles"),
         "licenseDegree":
@@ -82,6 +86,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "systemAdministrator": MessageLookupByLibrary.simpleMessage(
             "Administrateur systèmes et réseaux"),
         "techTitle": MessageLookupByLibrary.simpleMessage("Technologies"),
+        "toolsApi": MessageLookupByLibrary.simpleMessage("Outils et API"),
         "welcomeTitle":
             MessageLookupByLibrary.simpleMessage("Bienvenu dans mon portfolio"),
         "whoIam": MessageLookupByLibrary.simpleMessage("Qui suis-je ?")

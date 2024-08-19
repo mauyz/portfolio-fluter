@@ -41,5 +41,9 @@
   "onnOlepDesc": "Administration et configuration des serveurs Linux et Windows\nAutomatisation des tâches récurrentes à l’aide de scripts Bash, Shell et PHP\nGestion d’un parc informatique contenant 120 postes de travail",
   "emayaDesc": "Développement d’une application pour la recherche des offres d’emploi",
   "bacDegree": "BAC Série C",
-  "downloadCV": "Télécharger mon CV"
+  "downloadCV": "Télécharger mon CV",
+  "language": "Langages de programmations",
+  "framework": "Framework",
+  "database": "Base des données",
+  "toolsApi": "Outils et API"
 }

@@ -459,6 +459,46 @@ class S {
       args: [],
     );
   }
+
+  /// `Langages de programmations`
+  String get language {
+    return Intl.message(
+      'Langages de programmations',
+      name: 'language',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Framework`
+  String get framework {
+    return Intl.message(
+      'Framework',
+      name: 'framework',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Base des données`
+  String get database {
+    return Intl.message(
+      'Base des données',
+      name: 'database',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Outils et API`
+  String get toolsApi {
+    return Intl.message(
+      'Outils et API',
+      name: 'toolsApi',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
