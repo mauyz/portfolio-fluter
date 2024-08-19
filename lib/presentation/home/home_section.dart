@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
 import 'package:portfolio/domain/entities/menu.dart';
-import 'package:portfolio/presentation/about/contact_limiter.dart';
-import 'package:portfolio/presentation/about/contacts_widget.dart';
 import 'package:portfolio/presentation/home/avatar_widget.dart';
 import 'package:portfolio/presentation/home/animated_job_title.dart';
 import 'package:portfolio/presentation/common_widgets/responsive_widget.dart';
@@ -61,31 +59,29 @@ class HomeSection extends ConsumerWidget {
                           : MainAxisAlignment.spaceBetween,
                       children: [
                         Expanded(
-                          flex: 3,
+                          flex: ResponsiveWidget.isMobile(context) ? 1 : 4,
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               const HelloWorldWidget(),
                               const SizedBox(
-                                height: 15.0,
+                                height: 30.0,
                               ),
                               IntroduceWidget(
                                 firstName: infos.firstName,
                                 name: infos.name,
                               ),
                               const SizedBox(
-                                height: 30.0,
+                                height: 20.0,
                               ),
                               AnimatedJobTitle(
                                 titles: infos.titles,
                               ),
                               const SizedBox(
-                                height: 40.0,
+                                height: 30.0,
                               ),
-                              ContactsWidget(
-                                contacts: infos.contacts,
-                              ),
+                              const WelcomeWidget(),
                             ],
                           ),
                         ),
@@ -106,16 +102,6 @@ class HomeSection extends ConsumerWidget {
               ),
             ),
             const Spacer(),
-            const Row(
-              children: [
-                Flexible(
-                  child: ContactLimiter(),
-                ),
-                Flexible(
-                  child: WelcomeWidget(),
-                ),
-              ],
-            ),
           ],
         ),
       ),
