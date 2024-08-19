@@ -8,7 +8,7 @@ part 'selected_menu.g.dart';
 class SelectedMenu extends _$SelectedMenu {
   @override
   Menu build() {
-    return ref.read(dataRepositoryProvider).getMenu().first;
+    return ref.read(dataRepositoryProvider).getMenu().elementAt(0);
   }
 
   void update(Menu value) {

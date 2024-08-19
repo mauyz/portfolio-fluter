@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/app/shared_preference_provider.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 part 'app_theme_mode.g.dart';
-
-final sharedPreferencesProvider =
-    FutureProvider<SharedPreferences>((ref) async {
-  return SharedPreferences.getInstance();
-});
 
 @riverpod
 class AppThemeMode extends _$AppThemeMode {
