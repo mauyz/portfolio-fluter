@@ -71,40 +71,42 @@ class FooterPage extends ConsumerWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: contact.values.map(
                         (e) {
-                          return Padding(
-                            padding: const EdgeInsets.only(right: 0.0),
-                            child: Card(
-                              child: InkWell(
-                                borderRadius: const BorderRadius.all(
-                                  Radius.circular(12.0),
-                                ),
-                                onTap: () {
-                                  openContact(context, contact);
-                                },
-                                child: Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    vertical: 20.0,
-                                    horizontal: 10.0,
+                          return Flexible(
+                            child: Padding(
+                              padding: const EdgeInsets.only(right: 0.0),
+                              child: Card(
+                                child: InkWell(
+                                  borderRadius: const BorderRadius.all(
+                                    Radius.circular(12.0),
                                   ),
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      Icon(
-                                        contact.icon,
-                                        size: 48,
-                                        color:
-                                            Theme.of(context).colorScheme.error,
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: SelectableText(
-                                          e,
-                                          style: Theme.of(context)
-                                              .textTheme
-                                              .titleSmall,
+                                  onTap: () {
+                                    openContact(context, contact);
+                                  },
+                                  child: Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                      vertical: 20.0,
+                                      horizontal: 10.0,
+                                    ),
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        Icon(
+                                          contact.icon,
+                                          size: 48,
+                                          color:
+                                              Theme.of(context).colorScheme.error,
                                         ),
-                                      )
-                                    ],
+                                        Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: SelectableText(
+                                            e,
+                                            style: Theme.of(context)
+                                                .textTheme
+                                                .titleSmall,
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ),
@@ -166,11 +168,15 @@ class FooterPage extends ConsumerWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Text(
-                  "Designed and developed with 💜",
-                  style: Theme.of(context).textTheme.titleSmall,
+                Flexible(
+                  child: Text(
+                    "Designed and developed with 💜",
+                    style: Theme.of(context).textTheme.titleSmall,
+                  ),
                 ),
-                const CopyrightWidget(),
+                const Flexible(
+                  child: CopyrightWidget(),
+                ),
               ],
             ),
           ),
