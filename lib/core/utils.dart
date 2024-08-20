@@ -1,10 +1,27 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
+import 'package:portfolio/domain/entities/contact.dart';
 import 'package:portfolio/generated/l10n.dart';
 import 'package:portfolio/presentation/popup/popup_error.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
+
+void openContact(BuildContext context, Contact contact) {
+  switch (contact.type) {
+    case ContactType.phone:
+      openWhatsApp(context, contact.values.first);
+      break;
+    case ContactType.mail:
+      sendEmail(context, contact.values.first);
+      break;
+    case ContactType.skype:
+      openSkype(context, contact.values.first);
+      break;
+    case ContactType.link:
+      openLink(context, contact.values.first);
+      break;
+  }
+}
 
 void openLink(BuildContext context, String url) async {
   try {
@@ -67,6 +84,20 @@ void openWhatsApp(BuildContext context, String phoneNumber) async {
           S.current.cantOpenContactError("Whatsapp"),
         );
       }
+    }
+  }
+}
+
+void openSkype(BuildContext context, String skypeId) async {
+  final uri = Uri.parse('skype:$skypeId?call');
+  try {
+    await launchUrl(uri);
+  } catch (_) {
+    if (context.mounted) {
+      popupError(
+        context,
+        S.current.cantOpenContactError("Skype"),
+      );
     }
   }
 }
