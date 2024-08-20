@@ -1,21 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/domain/entities/experience.dart';
+import 'package:portfolio/presentation/career/left_clipper.dart';
 import 'package:portfolio/presentation/career/right_clipper.dart';
 
 class ExperienceContentWidget extends StatelessWidget {
   final Experience experience;
-  final bool isLast;
+  final bool isPairIndex;
+  final bool isLastIndex;
 
   const ExperienceContentWidget({
     super.key,
     required this.experience,
-    required this.isLast,
+    required this.isPairIndex,
+    required this.isLastIndex,
   });
 
   @override
   Widget build(BuildContext context) {
     return ClipPath(
-      clipper: RightClipper(),
+      clipper: isPairIndex ? LeftClipper() : RightClipper(),
       child: Container(
         padding: const EdgeInsets.only(
           left: 20.0,
@@ -24,7 +27,7 @@ class ExperienceContentWidget extends StatelessWidget {
           top: 10.0,
         ),
         margin: EdgeInsets.only(
-          bottom: isLast ? 0.0 : 30.0,
+          bottom: isLastIndex ? 0.0 : 30.0,
         ),
         color: Theme.of(context).colorScheme.inversePrimary,
         child: Padding(

@@ -3,8 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
 import 'package:portfolio/generated/l10n.dart';
 import 'package:portfolio/presentation/career/career_category_title.dart';
-import 'package:portfolio/presentation/career/career_item_widget.dart';
-import 'package:portfolio/presentation/career/professional/experience_content_widget.dart';
+import 'package:portfolio/presentation/career/professional/experience_item_widget.dart';
+import 'package:portfolio/presentation/common_widgets/responsive_widget.dart';
 
 class ExperienceCareerList extends ConsumerWidget {
   const ExperienceCareerList({super.key});
@@ -19,7 +19,7 @@ class ExperienceCareerList extends ConsumerWidget {
           title: S.current.professionalTitle,
         ),
         const SizedBox(
-          height: 10.0,
+          height: 5.0,
         ),
         LayoutBuilder(
           builder: (_, __) {
@@ -28,11 +28,18 @@ class ExperienceCareerList extends ConsumerWidget {
                 children: listExperience.indexed.map(
                   (e) {
                     return IntrinsicHeight(
-                      child: CareerItemWidget(
-                        icon: Icons.work,
-                        content: ExperienceContentWidget(
+                      child: ResponsiveWidget(
+                        mobile: ExperienceItemWidget(
                           experience: e.$2,
-                          isLast: e.$1 == (listExperience.length - 1),
+                          isDesktop: false,
+                          isPairIndex: false,
+                          isLastIndex: e.$1 == (listExperience.length - 1),
+                        ),
+                        desktop: ExperienceItemWidget(
+                          experience: e.$2,
+                          isDesktop: true,
+                          isPairIndex: (e.$1 % 2) == 0,
+                          isLastIndex: e.$1 == (listExperience.length - 1),
                         ),
                       ),
                     );
