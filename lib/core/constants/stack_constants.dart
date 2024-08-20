@@ -9,7 +9,7 @@ final skills = {
       Skill(
         name: "Java",
         icon: "Java",
-        note: 80,
+        note: 60,
       ),
       Skill(
         name: "Dart",
@@ -19,7 +19,7 @@ final skills = {
       Skill(
         name: "Kotlin",
         icon: "Kotlin",
-        note: 60,
+        note: 50,
       ),
     },
   ),
@@ -78,7 +78,7 @@ final skills = {
       ),
       Skill(
         name: "MongoDB",
-        icon: "Jetpack",
+        icon: "MongoDB",
         note: 60,
       ),
     },
