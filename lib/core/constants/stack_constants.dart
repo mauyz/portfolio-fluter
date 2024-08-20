@@ -7,14 +7,14 @@ final skills = {
     category: S.current.language,
     list: {
       Skill(
-        name: "Java",
-        icon: "Java",
-        note: 60,
-      ),
-      Skill(
         name: "Dart",
         icon: "Dart",
         note: 80,
+      ),
+      Skill(
+        name: "Java",
+        icon: "Java",
+        note: 60,
       ),
       Skill(
         name: "Kotlin",
