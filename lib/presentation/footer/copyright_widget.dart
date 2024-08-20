@@ -6,7 +6,7 @@ class CopyrightWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      "© ${DateTime.now().year} Moïse Tsiorinambinina",
+      "© ${DateTime.now().year} Moïse T.",
       style: Theme.of(context).textTheme.labelMedium,
       textAlign: TextAlign.end,
     );
