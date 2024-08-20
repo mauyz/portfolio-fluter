@@ -190,10 +190,10 @@ class S {
     );
   }
 
-  /// `Mode dark`
+  /// `Mode sombre`
   String get modeDark {
     return Intl.message(
-      'Mode dark',
+      'Mode sombre',
       name: 'modeDark',
       desc: '',
       args: [],
@@ -210,10 +210,10 @@ class S {
     );
   }
 
-  /// `Développeur autodidacte et diplômé de l'École Nationale d'Informatique de Fianarantsoa, avec une solide expérience dans la conception, le développement et la mise en production d'applications mobiles.\n\nAu cours des trois dernières années, j'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques.\n\nCollaborons et construisons des belles choses !`
+  /// `Développeur autodidacte et diplômé de l'École Nationale d'Informatique de Fianarantsoa, avec une solide expérience dans la conception, le développement et la mise en production d'applications mobiles.\n\nAu cours des trois dernières années, j'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques`
   String get bioContent {
     return Intl.message(
-      'Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa, avec une solide expérience dans la conception, le développement et la mise en production d\'applications mobiles.\n\nAu cours des trois dernières années, j\'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j\'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques.\n\nCollaborons et construisons des belles choses !',
+      'Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa, avec une solide expérience dans la conception, le développement et la mise en production d\'applications mobiles.\n\nAu cours des trois dernières années, j\'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j\'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques',
       name: 'bioContent',
       desc: '',
       args: [],
@@ -545,6 +545,16 @@ class S {
     return Intl.message(
       'Ce site web où j\'expose mes parcours, mes compétences ainsi que mes projets personnels et professionnels',
       name: 'portfolioDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mode clair`
+  String get lightMode {
+    return Intl.message(
+      'Mode clair',
+      name: 'lightMode',
       desc: '',
       args: [],
     );

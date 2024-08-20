@@ -31,7 +31,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Développeur d\'application Android"),
         "bacDegree": MessageLookupByLibrary.simpleMessage("BAC Série C"),
         "bioContent": MessageLookupByLibrary.simpleMessage(
-            "Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa, avec une solide expérience dans la conception, le développement et la mise en production d\'applications mobiles.\n\nAu cours des trois dernières années, j\'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j\'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques.\n\nCollaborons et construisons des belles choses !"),
+            "Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa, avec une solide expérience dans la conception, le développement et la mise en production d\'applications mobiles.\n\nAu cours des trois dernières années, j\'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j\'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques"),
         "cantOpenContactError": m0,
         "closeTitle": MessageLookupByLibrary.simpleMessage("Fermer"),
         "constitutionDesc": MessageLookupByLibrary.simpleMessage(
@@ -67,12 +67,13 @@ class MessageLookup extends MessageLookupByLibrary {
             "Formation sur les bases de l\'algorithme et de la programmation\nFormation sur l\'administration des systèmes et réseaux informatiques\nIntroduction à la base de données relationnelles"),
         "licenseDegree":
             MessageLookupByLibrary.simpleMessage("Licence professionnelle"),
+        "lightMode": MessageLookupByLibrary.simpleMessage("Mode clair"),
         "linkTitle": MessageLookupByLibrary.simpleMessage("le lien"),
         "masterDegree":
             MessageLookupByLibrary.simpleMessage("Master professionnel"),
         "masterDesc": MessageLookupByLibrary.simpleMessage(
             "Formation approfondie en programmation web, mobile et desktop\nDéveloppement des compétences en programmation réseau\nAdministration avancée, sécurisation des systèmes et réseaux informatiques"),
-        "modeDark": MessageLookupByLibrary.simpleMessage("Mode dark"),
+        "modeDark": MessageLookupByLibrary.simpleMessage("Mode sombre"),
         "neoshoreDesc": MessageLookupByLibrary.simpleMessage(
             "Concevoir avec l’équipe les nouvelles fonctionnalités de la plateforme\nImplémenter les modifications en respectant les exigences techniques\nSuivre les journaux des applications\nMaintenir une expérience utilisateur de haute qualité\nAméliorer les performances et corriger les bugs\nGérer le contenu et la publication des mises à jour sur Play Store et App Store"),
         "onnOlepDesc": MessageLookupByLibrary.simpleMessage(
