@@ -25,16 +25,16 @@ class CareerSection extends StatelessWidget {
             ),
             child: SectionTitleWidget(menu: menu),
           ),
-          const SizedBox(
-            width: double.infinity,
-            child: Wrap(
-              alignment: WrapAlignment.spaceBetween,
-              runSpacing: 40.0,
-              children: [
-                ExperienceCareerList(),
-                SchoolCareerList(),
-              ],
-            ),
+          const Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              ExperienceCareerList(),
+              SizedBox(
+                height: 40,
+              ),
+              SchoolCareerList(),
+            ],
           ),
           const SizedBox(
             height: 40,
