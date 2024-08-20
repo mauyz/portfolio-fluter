@@ -3,24 +3,27 @@ import 'package:portfolio/domain/entities/formation.dart';
 import 'package:portfolio/presentation/career/career_item_indicator.dart';
 import 'package:portfolio/presentation/career/school/school_content_widget.dart';
 
-class SchoolItemDesktop extends StatelessWidget {
+class SchoolItemWidget extends StatelessWidget {
   final Formation formation;
-  final bool isIndexPair;
-  final bool isLast;
+  final bool isDesktop;
+  final bool isPairIndex;
+  final bool isLastIndex;
 
-  const SchoolItemDesktop({
+  const SchoolItemWidget({
     super.key,
     required this.formation,
-    required this.isIndexPair,
-    required this.isLast,
+    required this.isDesktop,
+    required this.isPairIndex,
+    required this.isLastIndex,
   });
 
   @override
   Widget build(BuildContext context) {
     final itemContentWidgets = [
-      const Expanded(
-        child: SizedBox.shrink(),
-      ),
+      if (isDesktop)
+        const Expanded(
+          child: SizedBox.shrink(),
+        ),
       Stack(
         alignment: Alignment.topCenter,
         children: [
@@ -36,27 +39,21 @@ class SchoolItemDesktop extends StatelessWidget {
         ],
       ),
       Expanded(
-        child: Row(
-          mainAxisAlignment:
-              isIndexPair ? MainAxisAlignment.end : MainAxisAlignment.start,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Flexible(
-              child: Padding(
-                padding: const EdgeInsets.only(top: 20.0),
-                child: SchoolContentWidget(
-                  formation: formation,
-                  isLast: isLast,
-                ),
-              ),
-            ),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.only(
+            top: 20.0,
+          ),
+          child: SchoolContentWidget(
+            formation: formation,
+            isLastIndex: isLastIndex,
+            isPairIndex: isPairIndex,
+          ),
         ),
       ),
     ];
     return Row(
       crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: isIndexPair
+      children: isPairIndex
           ? itemContentWidgets.reversed.toList()
           : itemContentWidgets,
     );
