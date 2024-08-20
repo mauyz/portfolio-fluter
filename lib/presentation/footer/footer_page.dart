@@ -79,14 +79,7 @@ class FooterPage extends ConsumerWidget {
                                   Radius.circular(12.0),
                                 ),
                                 onTap: () {
-                                  if (contact.type == ContactType.phone) {
-                                    openWhatsApp(
-                                      context,
-                                      contact.values.first,
-                                    );
-                                  } else {
-                                    sendEmail(context, e);
-                                  }
+                                  openContact(context, contact);
                                 },
                                 child: Padding(
                                   padding: const EdgeInsets.symmetric(
