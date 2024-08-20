@@ -86,8 +86,8 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
           alignment: Alignment.centerRight,
           color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
           padding: const EdgeInsets.symmetric(
-            vertical: 5.0,
-            horizontal: 8.0,
+            vertical: 2.0,
+            horizontal: 5.0,
           ),
           child: ContactsWidget(
             contacts: ref.read(dataRepositoryProvider).getInfos().contacts,
