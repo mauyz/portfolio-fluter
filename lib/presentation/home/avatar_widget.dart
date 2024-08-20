@@ -9,6 +9,7 @@ class AvatarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    precacheImage(AssetImage(image), context);
     return Container(
       decoration: BoxDecoration(
         color: Colors.white,
