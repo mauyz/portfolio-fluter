@@ -14,7 +14,7 @@ class ContactSection extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final dataRepos = ref.read(dataRepositoryProvider);
+    final projects = ref.read(dataRepositoryProvider).getProjects();
     final gridAxisCount = calculateGridAxisCount(context);
     return SectionCard(
       decorated: false,
@@ -29,17 +29,32 @@ class ContactSection extends ConsumerWidget {
             ),
             child: SectionTitleWidget(menu: menu),
           ),
-          GridView.count(
-            shrinkWrap: true,
-            crossAxisCount: gridAxisCount,
-            crossAxisSpacing: 20.0,
-            mainAxisSpacing: 20.0,
-            children: dataRepos.getProjects().map(
-              (e) {
-                return ProjectCard(project: e);
-              },
-            ).toList(),
-          ),
+          gridAxisCount == 1
+              ? ListView.builder(
+                  physics: const NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
+                  itemCount: projects.length,
+                  itemBuilder: (context, index) {
+                    return ProjectCard(
+                      project: projects.elementAt(index),
+                    );
+                  },
+                )
+              : GridView.builder(
+                  physics: const NeverScrollableScrollPhysics(),
+                  shrinkWrap: true,
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: gridAxisCount,
+                    crossAxisSpacing: 20.0,
+                    mainAxisSpacing: 20.0,
+                  ),
+                  itemCount: projects.length,
+                  itemBuilder: (context, index) {
+                    return ProjectCard(
+                      project: projects.elementAt(index),
+                    );
+                  },
+                ),
           const SizedBox(
             height: 50,
           ),
@@ -50,10 +65,9 @@ class ContactSection extends ConsumerWidget {
 
   int calculateGridAxisCount(BuildContext context) {
     final deviceWidth = MediaQuery.sizeOf(context).width;
-    if(deviceWidth >= 1920) {
+    if (deviceWidth >= 1920) {
       return 3;
-    }
-    else if(deviceWidth >= 1440 && deviceWidth < 1920){
+    } else if (deviceWidth >= 1440 && deviceWidth < 1920) {
       return 2;
     }
     return 1;

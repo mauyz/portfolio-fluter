@@ -12,8 +12,15 @@ class ProjectCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    precacheImage(
+      AssetImage("assets/images/${project.preview}.png"),
+      context,
+    );
     return Card(
       elevation: 1,
+      margin: const EdgeInsets.only(
+        bottom: 20.0,
+      ),
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.all(
           Radius.circular(20.0),
@@ -42,7 +49,7 @@ class ProjectCard extends StatelessWidget {
             const SizedBox(
               height: 20.0,
             ),
-            Expanded(
+            Flexible(
               child: Align(
                 alignment: Alignment.center,
                 child: ClipRRect(
@@ -51,7 +58,7 @@ class ProjectCard extends StatelessWidget {
                   ),
                   child: Image.asset(
                     "assets/images/${project.preview}.png",
-                    fit: BoxFit.fill,
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),
@@ -67,8 +74,7 @@ class ProjectCard extends StatelessWidget {
                 (e) {
                   return FilledButton.tonal(
                     onPressed: null,
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
+                    child: Wrap(
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(right: 8.0),
@@ -78,10 +84,8 @@ class ProjectCard extends StatelessWidget {
                             height: 24.0,
                           ),
                         ),
-                        Flexible(
-                          child: Text(
-                            e.name,
-                          ),
+                        Text(
+                          e.name,
                         )
                       ],
                     ),
@@ -92,34 +96,34 @@ class ProjectCard extends StatelessWidget {
             const SizedBox(
               height: 30.0,
             ),
-            Wrap(
-              crossAxisAlignment: WrapCrossAlignment.center,
-              spacing: 8.0,
-              runSpacing: 8.0,
-              children: project.links.isEmpty
-                  ? []
-                  : [
-                      Text(
-                        S.current.viewMore,
-                        style: Theme.of(context).textTheme.bodyLarge,
-                      ),
-                      ...project.links.map(
-                        (e) {
-                          return IconButton.filledTonal(
-                            onPressed: () {
-                              openLink(context, e.value);
-                            },
-                            icon: Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 8.0),
-                              child: Text(e.name),
-                            ),
-                            tooltip: e.value,
-                          );
+            if (project.links.isNotEmpty)
+              Wrap(
+                crossAxisAlignment: WrapCrossAlignment.center,
+                spacing: 8.0,
+                runSpacing: 8.0,
+                children: [
+                  Text(
+                    S.current.viewMore,
+                    style: Theme.of(context).textTheme.bodyLarge,
+                  ),
+                  ...project.links.map(
+                    (e) {
+                      return IconButton.filledTonal(
+                        onPressed: () {
+                          openLink(context, e.value);
                         },
-                      )
-                    ],
-            )
+                        icon: Padding(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 8.0,
+                          ),
+                          child: Text(e.name),
+                        ),
+                        tooltip: e.value,
+                      );
+                    },
+                  )
+                ],
+              )
           ],
         ),
       ),
