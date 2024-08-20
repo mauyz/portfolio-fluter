@@ -84,7 +84,7 @@ final projects = {
       ProjectLink(
         name: "Play store",
         value:
-            " https://play.google.com/store/apps/details?id=eu.feelin.feelinApp",
+            "https://play.google.com/store/apps/details?id=eu.feelin.feelinApp",
       ),
     },
     stacks: {
