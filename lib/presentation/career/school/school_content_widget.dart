@@ -32,7 +32,9 @@ class SchoolContentWidget extends StatelessWidget {
         ),
         color: Theme.of(context).colorScheme.inversePrimary,
         child: Padding(
-          padding: const EdgeInsets.only(left: 30.0),
+          padding: isPairIndex
+              ? const EdgeInsets.only(right: 40.0)
+              : const EdgeInsets.only(left: 40.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
