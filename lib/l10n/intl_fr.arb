@@ -45,5 +45,10 @@
   "language": "Langages de programmations",
   "framework": "Framework",
   "database": "Base des données",
-  "toolsApi": "Outils et API"
+  "toolsApi": "Outils et API",
+  "quadientDesc": "Application mobile pour collecter les informations sur des entreprises",
+  "constitutionDesc": "Application mobile d'explorateur et recherche des contenus de la constitution de Madagascar",
+  "feelinDesc": "Plateforme d'analyse des vidéos en basant sur les expressions faciales et une suite des questions",
+  "viewMore": "Voir sur :",
+  "portfolioDesc": "Ce site web où j'expose mes parcours, mes compétences ainsi que mes projets personnels et professionnels"
 }

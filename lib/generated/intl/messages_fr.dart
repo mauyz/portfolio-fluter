@@ -34,6 +34,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa, avec une solide expérience dans la conception, le développement et la mise en production d\'applications mobiles.\n\nAu cours des trois dernières années, j\'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j\'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques.\n\nCollaborons et construisons des belles choses !"),
         "cantOpenContactError": m0,
         "closeTitle": MessageLookupByLibrary.simpleMessage("Fermer"),
+        "constitutionDesc": MessageLookupByLibrary.simpleMessage(
+            "Application mobile d\'explorateur et recherche des contenus de la constitution de Madagascar"),
         "consultantDeveloperFlutter": MessageLookupByLibrary.simpleMessage(
             "Consultant développeur flutter"),
         "contactTitle": MessageLookupByLibrary.simpleMessage("Contact"),
@@ -45,6 +47,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "emayaDesc": MessageLookupByLibrary.simpleMessage(
             "Développement d’une application pour la recherche des offres d’emploi"),
         "experienceTitle": MessageLookupByLibrary.simpleMessage("Expériences"),
+        "feelinDesc": MessageLookupByLibrary.simpleMessage(
+            "Plateforme d\'analyse des vidéos en basant sur les expressions faciales et une suite des questions"),
         "flutterDeveloper":
             MessageLookupByLibrary.simpleMessage("Développeur flutter"),
         "framework": MessageLookupByLibrary.simpleMessage("Framework"),
@@ -76,9 +80,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "parcourTitle": MessageLookupByLibrary.simpleMessage("Parcours"),
         "passionnateTech":
             MessageLookupByLibrary.simpleMessage("Passionné des technologies"),
+        "portfolioDesc": MessageLookupByLibrary.simpleMessage(
+            "Ce site web où j\'expose mes parcours, mes compétences ainsi que mes projets personnels et professionnels"),
         "professionalTitle":
             MessageLookupByLibrary.simpleMessage("Professionnel"),
         "projectTitle": MessageLookupByLibrary.simpleMessage("Projets"),
+        "quadientDesc": MessageLookupByLibrary.simpleMessage(
+            "Application mobile pour collecter les informations sur des entreprises"),
         "sinceMai2024": MessageLookupByLibrary.simpleMessage("Depuis Mai 2024"),
         "skillTitle": MessageLookupByLibrary.simpleMessage("Compétences"),
         "softwareIng":
@@ -87,6 +95,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Administrateur systèmes et réseaux"),
         "techTitle": MessageLookupByLibrary.simpleMessage("Technologies"),
         "toolsApi": MessageLookupByLibrary.simpleMessage("Outils et API"),
+        "viewMore": MessageLookupByLibrary.simpleMessage("Voir sur :"),
         "welcomeTitle":
             MessageLookupByLibrary.simpleMessage("Bienvenu dans mon portfolio"),
         "whoIam": MessageLookupByLibrary.simpleMessage("Qui suis-je ?")

@@ -499,6 +499,56 @@ class S {
       args: [],
     );
   }
+
+  /// `Application mobile pour collecter les informations sur des entreprises`
+  String get quadientDesc {
+    return Intl.message(
+      'Application mobile pour collecter les informations sur des entreprises',
+      name: 'quadientDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Application mobile d'explorateur et recherche des contenus de la constitution de Madagascar`
+  String get constitutionDesc {
+    return Intl.message(
+      'Application mobile d\'explorateur et recherche des contenus de la constitution de Madagascar',
+      name: 'constitutionDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Plateforme d'analyse des vidéos en basant sur les expressions faciales et une suite des questions`
+  String get feelinDesc {
+    return Intl.message(
+      'Plateforme d\'analyse des vidéos en basant sur les expressions faciales et une suite des questions',
+      name: 'feelinDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Voir sur :`
+  String get viewMore {
+    return Intl.message(
+      'Voir sur :',
+      name: 'viewMore',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ce site web où j'expose mes parcours, mes compétences ainsi que mes projets personnels et professionnels`
+  String get portfolioDesc {
+    return Intl.message(
+      'Ce site web où j\'expose mes parcours, mes compétences ainsi que mes projets personnels et professionnels',
+      name: 'portfolioDesc',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
