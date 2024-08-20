@@ -4,11 +4,14 @@ import 'package:portfolio/app/app_theme_mode.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
 import 'package:portfolio/generated/l10n.dart';
 import 'package:portfolio/presentation/common_widgets/logo_widget.dart';
-import 'package:portfolio/presentation/common_widgets/theme_switcher.dart';
 import 'package:portfolio/presentation/home/navigation_item.dart';
 
 class NavMobile extends ConsumerWidget {
-  const NavMobile({super.key});
+  final Function() navigateToContact;
+  const NavMobile({
+    super.key,
+    required this.navigateToContact,
+  });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -42,9 +45,31 @@ class NavMobile extends ConsumerWidget {
                     ),
                   ),
                   title: Text(
-                    S.current.modeDark,
+                    S.current.contactTitle,
                   ),
-                  trailing: const ThemeSwitcher(),
+                  leading: const Icon(Icons.mail),
+                  onTap: () {
+                    navigateToContact.call();
+                    Navigator.of(context).pop();
+                  },
+                ),
+                ListTile(
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.horizontal(
+                      right: Radius.circular(
+                        100.0,
+                      ),
+                    ),
+                  ),
+                  title: Text(
+                    Theme.of(context).brightness == Brightness.light
+                        ? S.current.modeDark : S.current.lightMode
+                  ),
+                  leading: Icon(
+                    Theme.of(context).brightness == Brightness.light
+                        ? Icons.dark_mode
+                        : Icons.light_mode,
+                  ),
                   onTap: () =>
                       ref.read(appThemeModeProvider.notifier).toggleThemeMode(),
                 ),

@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
+import 'package:portfolio/generated/l10n.dart';
 import 'package:portfolio/presentation/common_widgets/logo_widget.dart';
 import 'package:portfolio/presentation/common_widgets/theme_switcher.dart';
 import 'package:portfolio/presentation/home/navigation_item.dart';
 
 class NavDesktop extends ConsumerWidget {
+  final Function() navigateToContact;
   const NavDesktop({
     super.key,
+    required this.navigateToContact,
   });
 
   @override
@@ -47,6 +50,16 @@ class NavDesktop extends ConsumerWidget {
             },
           ),
           const Spacer(),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            child: TextButton(
+              onPressed: navigateToContact,
+              child: Text(
+                S.current.contactTitle,
+                style: Theme.of(context).textTheme.titleMedium,
+              ),
+            ),
+          ),
           const ThemeSwitcher(),
         ],
       ),

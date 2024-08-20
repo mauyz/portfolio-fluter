@@ -39,11 +39,18 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
     final isMobile = ResponsiveWidget.isMobile(context);
     return Scaffold(
       appBar: isMobile ? AppBar() : null,
-      drawer: isMobile ? const NavMobile() : null,
+      drawer: isMobile
+          ? NavMobile(
+              navigateToContact: _navigateToContacts,
+            )
+          : null,
       body: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          if (!isMobile) const NavDesktop(),
+          if (!isMobile)
+            NavDesktop(
+              navigateToContact: _navigateToContacts,
+            ),
           Expanded(
             child: Scrollbar(
               thumbVisibility: true,
@@ -123,6 +130,18 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
       ref
           .read(scrollControllerOffsetProvider.notifier)
           .update(scrollController.offset);
+    }
+  }
+
+  void _navigateToContacts() {
+    if (scrollController.hasClients) {
+      scrollController.animateTo(
+        scrollController.position.maxScrollExtent,
+        duration: const Duration(
+          milliseconds: 500,
+        ),
+        curve: Curves.easeOut,
+      );
     }
   }
 }
