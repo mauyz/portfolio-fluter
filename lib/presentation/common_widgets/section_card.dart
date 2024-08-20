@@ -16,7 +16,7 @@ class SectionCard extends StatelessWidget {
       padding: const EdgeInsets.symmetric(
         horizontal: 20.0,
       ),
-      decoration: decorated
+      /*decoration: false
           ? BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.centerLeft,
@@ -27,7 +27,7 @@ class SectionCard extends StatelessWidget {
                 ],
               ),
             )
-          : null,
+          : null,*/
       child: child,
     );
   }
