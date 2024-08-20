@@ -21,9 +21,13 @@ class FooterPage extends ConsumerWidget {
           const SizedBox(
             height: 50,
           ),
-          Text(
-            "Collaborons et construisons des belles choses !",
-            style: Theme.of(context).textTheme.titleLarge,
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10.0,),
+            child: Text(
+              "Collaborons et construisons des belles choses !",
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.titleLarge,
+            ),
           ),
           const SizedBox(
             height: 30,
