@@ -4,7 +4,6 @@ import 'package:portfolio/data/repos/data_repository_impl.dart';
 import 'package:portfolio/domain/entities/menu.dart';
 import 'package:portfolio/presentation/about/about_image_widget.dart';
 import 'package:portfolio/presentation/about/bio_widget.dart';
-import 'package:portfolio/presentation/about/contacts_widget.dart';
 import 'package:portfolio/presentation/about/download_cv_button.dart';
 import 'package:portfolio/presentation/about/job_titles_widget.dart';
 import 'package:portfolio/presentation/common_widgets/section_card.dart';
@@ -80,11 +79,9 @@ class AboutSection extends ConsumerWidget {
               ),
               child: BioWidget(text: infos.bio),
             ),
-            Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: ContactsWidget(
-                contacts: infos.contacts,
-              ),
+            const Padding(
+              padding: EdgeInsets.all(10.0),
+              child: DownloadCvButton(),
             ),
             const SizedBox(
               height: 30.0,
