@@ -53,6 +53,10 @@ final projects = {
         value:
             "https://play.google.com/store/apps/details?id=com.eightgroup.mauyz.constitution",
       ),
+      ProjectLink(
+        name: "Web",
+        value: "https://madagascar-constitution.vercel.app",
+      ),
     },
     stacks: {
       Skill(
