@@ -35,7 +35,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "cantOpenContactError": m0,
         "closeTitle": MessageLookupByLibrary.simpleMessage("Fermer"),
         "constitutionDesc": MessageLookupByLibrary.simpleMessage(
-            "Application mobile d\'explorateur et recherche des contenus de la constitution de Madagascar"),
+            "Application web et mobile qui permet d\'explorer le contenu de la constitution de Madagascar"),
         "consultantDeveloperFlutter": MessageLookupByLibrary.simpleMessage(
             "Consultant développeur flutter"),
         "contactTitle": MessageLookupByLibrary.simpleMessage("Contact"),

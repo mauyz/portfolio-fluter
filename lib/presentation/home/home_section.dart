@@ -44,11 +44,8 @@ class HomeSection extends ConsumerWidget {
                         left: 20.0,
                         right: 20.0,
                       ),
-                      child: SizedBox(
-                        height: 400,
-                        child: AvatarWidget(
-                          image: infos.photo,
-                        ),
+                      child: AvatarWidget(
+                        image: infos.photo,
                       ),
                     ),
                   Padding(

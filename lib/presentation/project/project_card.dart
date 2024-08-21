@@ -97,31 +97,43 @@ class ProjectCard extends StatelessWidget {
               height: 30.0,
             ),
             if (project.links.isNotEmpty)
-              Wrap(
-                crossAxisAlignment: WrapCrossAlignment.center,
-                spacing: 8.0,
-                runSpacing: 8.0,
+              Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
                 children: [
-                  Text(
-                    S.current.viewMore,
-                    style: Theme.of(context).textTheme.bodyLarge,
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 8.0,),
+                    child: Text(
+                      S.current.viewMore,
+                      style: Theme.of(context).textTheme.bodyLarge,
+                    ),
                   ),
-                  ...project.links.map(
-                    (e) {
-                      return IconButton.filledTonal(
-                        onPressed: () {
-                          openLink(context, e.value);
-                        },
-                        icon: Padding(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 8.0,
-                          ),
-                          child: Text(e.name),
-                        ),
-                        tooltip: e.value,
-                      );
-                    },
-                  )
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 8.0),
+                      child: Wrap(
+                        crossAxisAlignment: WrapCrossAlignment.center,
+                        spacing: 8.0,
+                        runSpacing: 8.0,
+                        children: project.links.map(
+                          (e) {
+                            return IconButton.filledTonal(
+                              onPressed: () {
+                                openLink(context, e.value);
+                              },
+                              icon: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 8.0,
+                                ),
+                                child: Text(e.name),
+                              ),
+                              tooltip: e.value,
+                            );
+                          },
+                        ).toList(),
+                      ),
+                    ),
+                  ),
                 ],
               )
           ],
