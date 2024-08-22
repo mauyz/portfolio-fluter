@@ -609,6 +609,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Tout au long de mon parcours, j'ai acquis et affiné un ensemble de compétences en développement informatique, couvrant divers langages, frameworks, et outils.\n\nCes compétences me permettent de concevoir et de mettre en œuvre des solutions techniques adaptées aux besoins spécifiques de chaque projet.`
+  String get skilIntro {
+    return Intl.message(
+      'Tout au long de mon parcours, j\'ai acquis et affiné un ensemble de compétences en développement informatique, couvrant divers langages, frameworks, et outils.\n\nCes compétences me permettent de concevoir et de mettre en œuvre des solutions techniques adaptées aux besoins spécifiques de chaque projet.',
+      name: 'skilIntro',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

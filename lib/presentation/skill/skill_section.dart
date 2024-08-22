@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
 import 'package:portfolio/domain/entities/menu.dart';
+import 'package:portfolio/generated/l10n.dart';
 import 'package:portfolio/presentation/common_widgets/section_card.dart';
 import 'package:portfolio/presentation/common_widgets/section_title_widget.dart';
 import 'package:portfolio/presentation/skill/skill_base_list.dart';
@@ -27,6 +28,13 @@ class SkillSection extends ConsumerWidget {
               bottom: 30.0,
             ),
             child: SectionTitleWidget(menu: menu),
+          ),
+          Text(
+            S.of(context).skilIntro,
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          const SizedBox(
+            height: 30.0,
           ),
           Wrap(
             spacing: 40.0,
