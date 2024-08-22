@@ -33,6 +33,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "bioContent": MessageLookupByLibrary.simpleMessage(
             "Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa, avec une solide expérience dans la conception, le développement et la mise en production d\'applications mobiles.\n\nAu cours des trois dernières années, j\'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j\'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques"),
         "cantOpenContactError": m0,
+        "careerProIntro": MessageLookupByLibrary.simpleMessage(
+            "Mon parcours professionnel en informatique est marqué par plusieurs expériences enrichissantes, tant au travers d\'emplois que de stages.\nCelles-ci m\'ont permis de développer des compétences solides dans ce domaine en constante évolution.\n\nVoici quelques-unes des expériences professionnelles que j\'ai acquises au cours de ces dernières années :"),
+        "careerScholIntro": MessageLookupByLibrary.simpleMessage(
+            "Mon parcours académique en informatique a été marqué par des formations rigoureuses, notamment à l\'Ecole Nationale d\'Informatique(ENI) de Fianarantsoa.\nAvant cela, j\'ai obtenu un baccalauréat scientifique, qui a posé les bases de mon intérêt pour les sciences et les technologies."),
         "closeTitle": MessageLookupByLibrary.simpleMessage("Fermer"),
         "constitutionDesc": MessageLookupByLibrary.simpleMessage(
             "Application web et mobile qui permet d\'explorer le contenu de la constitution de Madagascar"),

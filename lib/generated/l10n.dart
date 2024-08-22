@@ -559,6 +559,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Mon parcours professionnel en informatique est marqué par plusieurs expériences enrichissantes, tant au travers d'emplois que de stages.\nCelles-ci m'ont permis de développer des compétences solides dans ce domaine en constante évolution.\n\nVoici quelques-unes des expériences professionnelles que j'ai acquises au cours de ces dernières années :`
+  String get careerProIntro {
+    return Intl.message(
+      'Mon parcours professionnel en informatique est marqué par plusieurs expériences enrichissantes, tant au travers d\'emplois que de stages.\nCelles-ci m\'ont permis de développer des compétences solides dans ce domaine en constante évolution.\n\nVoici quelques-unes des expériences professionnelles que j\'ai acquises au cours de ces dernières années :',
+      name: 'careerProIntro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mon parcours académique en informatique a été marqué par des formations rigoureuses, notamment à l'Ecole Nationale d'Informatique(ENI) de Fianarantsoa.\nAvant cela, j'ai obtenu un baccalauréat scientifique, qui a posé les bases de mon intérêt pour les sciences et les technologies.`
+  String get careerScholIntro {
+    return Intl.message(
+      'Mon parcours académique en informatique a été marqué par des formations rigoureuses, notamment à l\'Ecole Nationale d\'Informatique(ENI) de Fianarantsoa.\nAvant cela, j\'ai obtenu un baccalauréat scientifique, qui a posé les bases de mon intérêt pour les sciences et les technologies.',
+      name: 'careerScholIntro',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
