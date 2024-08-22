@@ -21,6 +21,13 @@ class SchoolCareerList extends ConsumerWidget {
         const SizedBox(
           height: 10.0,
         ),
+        Text(
+          S.current.careerScholIntro,
+          style: Theme.of(context).textTheme.bodyMedium,
+        ),
+        const SizedBox(
+          height: 20.0,
+        ),
         LayoutBuilder(
           builder: (_, __) {
             return IntrinsicWidth(
