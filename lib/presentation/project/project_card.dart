@@ -50,16 +50,13 @@ class ProjectCard extends StatelessWidget {
               height: 20.0,
             ),
             Flexible(
-              child: Align(
-                alignment: Alignment.center,
-                child: ClipRRect(
-                  borderRadius: const BorderRadius.all(
-                    Radius.circular(20.0),
-                  ),
-                  child: Image.asset(
-                    "assets/images/${project.preview}.png",
-                    fit: BoxFit.cover,
-                  ),
+              child: ClipRRect(
+                borderRadius: const BorderRadius.all(
+                  Radius.circular(20.0),
+                ),
+                child: Image.asset(
+                  "assets/images/${project.preview}.png",
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
@@ -75,13 +72,14 @@ class ProjectCard extends StatelessWidget {
                   return FilledButton.tonal(
                     onPressed: null,
                     child: Wrap(
+                      crossAxisAlignment: WrapCrossAlignment.center,
                       children: [
                         Padding(
                           padding: const EdgeInsets.only(right: 8.0),
                           child: Image.asset(
                             "assets/images/${e.icon}.png",
-                            width: 24.0,
-                            height: 24.0,
+                            width: 16.0,
+                            height: 16.0,
                           ),
                         ),
                         Text(
@@ -98,15 +96,12 @@ class ProjectCard extends StatelessWidget {
             ),
             if (project.links.isNotEmpty)
               Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 8.0,),
-                    child: Text(
-                      S.current.viewMore,
-                      style: Theme.of(context).textTheme.bodyLarge,
-                    ),
+                  Text(
+                    S.current.viewMore,
+                    style: Theme.of(context).textTheme.bodyLarge,
                   ),
                   Expanded(
                     child: Padding(
@@ -117,17 +112,18 @@ class ProjectCard extends StatelessWidget {
                         runSpacing: 8.0,
                         children: project.links.map(
                           (e) {
-                            return IconButton.filledTonal(
-                              onPressed: () {
-                                openLink(context, e.value);
-                              },
-                              icon: Padding(
-                                padding: const EdgeInsets.symmetric(
-                                  horizontal: 8.0,
+                            return Tooltip(
+                              message: e.value,
+                              child: FilledButton.tonalIcon(
+                                onPressed: () {
+                                  openLink(context, e.value);
+                                },
+                                icon: Icon(
+                                  e.icon,
+                                  size: 16,
                                 ),
-                                child: Text(e.name),
+                                label: Text(e.name),
                               ),
-                              tooltip: e.value,
                             );
                           },
                         ).toList(),
