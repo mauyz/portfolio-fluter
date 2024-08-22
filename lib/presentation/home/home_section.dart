@@ -57,7 +57,7 @@ class HomeSection extends ConsumerWidget {
                           ? MainAxisAlignment.start
                           : MainAxisAlignment.spaceBetween,
                       children: [
-                        Expanded(
+                        Flexible(
                           flex: ResponsiveWidget.isMobile(context) ? 1 : 4,
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
@@ -85,8 +85,7 @@ class HomeSection extends ConsumerWidget {
                           ),
                         ),
                         if (!ResponsiveWidget.isMobile(context)) ...[
-                          const Spacer(),
-                          Expanded(
+                          Flexible(
                             flex: 2,
                             child: AvatarWidget(
                               image: infos.photo,
