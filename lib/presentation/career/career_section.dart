@@ -31,7 +31,7 @@ class CareerSection extends StatelessWidget {
             children: [
               ExperienceCareerList(),
               SizedBox(
-                height: 40,
+                height: 50,
               ),
               SchoolCareerList(),
             ],
