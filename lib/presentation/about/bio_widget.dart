@@ -30,7 +30,7 @@ class BioWidget extends StatelessWidget {
         "Kotlin",
         "Flutter",
         "Android SDK",
-        "JetPack Compose",
+        "Jetpack Compose",
         "Spring Boot",
       ]) {
         int index = remainingText.indexOf(word);
@@ -44,7 +44,7 @@ class BioWidget extends StatelessWidget {
         spans.add(
           TextSpan(
             text: remainingText,
-            style: Theme.of(context).textTheme.titleMedium,
+            style: Theme.of(context).textTheme.bodyLarge,
           ),
         );
         break;
@@ -57,7 +57,7 @@ class BioWidget extends StatelessWidget {
               0,
               earliestIndex,
             ),
-            style: Theme.of(context).textTheme.titleMedium,
+            style: Theme.of(context).textTheme.bodyLarge,
           ),
         );
       }
@@ -65,7 +65,7 @@ class BioWidget extends StatelessWidget {
       spans.add(
         TextSpan(
           text: matchedWord,
-          style: Theme.of(context).textTheme.titleMedium?.copyWith(
+          style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                 color: Theme.of(context).colorScheme.error,
               ),
         ),

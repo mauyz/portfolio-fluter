@@ -17,17 +17,17 @@ class IntroWidget extends StatelessWidget {
         children: [
           TextSpan(
             text: S.current.introContent,
-            style: Theme.of(context).textTheme.titleMedium,
+            style: Theme.of(context).textTheme.bodyLarge,
           ),
           TextSpan(
             text: " $firstName",
-            style: Theme.of(context).textTheme.titleMedium?.copyWith(
+            style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                   color: Theme.of(context).colorScheme.error,
                 ),
           ),
           TextSpan(
             text: " $name.",
-            style: Theme.of(context).textTheme.titleMedium,
+            style: Theme.of(context).textTheme.bodyLarge,
           ),
         ],
       ),
