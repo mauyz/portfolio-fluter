@@ -93,6 +93,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Ce site web où j\'expose mes parcours, mes compétences ainsi que mes projets personnels et professionnels"),
         "professionalTitle":
             MessageLookupByLibrary.simpleMessage("Professionnel"),
+        "projectIntro": MessageLookupByLibrary.simpleMessage(
+            "Je suis heureux de vous présenter une sélection de mes projets de développement récents.\nChacun de ces projets a été réalisé avec diverses technologies et compétences, visant à résoudre une variété de problématiques.\n\nJe vous invite à les explorer pour découvrir les différentes facettes de mon expertise en développement."),
         "projectTitle": MessageLookupByLibrary.simpleMessage("Projets"),
         "quadientDesc": MessageLookupByLibrary.simpleMessage(
             "Application mobile pour collecter les informations sur des entreprises"),
