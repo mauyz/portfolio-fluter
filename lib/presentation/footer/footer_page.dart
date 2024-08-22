@@ -4,6 +4,7 @@ import 'package:portfolio/core/constants/info_constants.dart';
 import 'package:portfolio/core/utils.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
 import 'package:portfolio/domain/entities/contact.dart';
+import 'package:portfolio/generated/l10n.dart';
 import 'package:portfolio/presentation/footer/copyright_widget.dart';
 import 'package:unicons/unicons.dart';
 
@@ -22,16 +23,29 @@ class FooterPage extends ConsumerWidget {
             height: 50,
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10.0,),
+            padding: const EdgeInsets.symmetric(
+              horizontal: 10.0,
+            ),
             child: Text(
-              "Collaborons et construisons des belles choses !",
+              S.of(context).footerIntro.toUpperCase(),
               textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.titleLarge,
+              style: Theme.of(context).textTheme.titleMedium,
             ),
           ),
           const SizedBox(
             height: 30,
           ),
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 10.0,
+            ),
+            child: Text(
+              S.of(context).contactMe,
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.titleSmall,
+            ),
+          ),
+
           Padding(
             padding: const EdgeInsets.all(20.0),
             child: Wrap(
@@ -97,8 +111,9 @@ class FooterPage extends ConsumerWidget {
                                         Icon(
                                           contact.icon,
                                           size: 48,
-                                          color:
-                                              Theme.of(context).colorScheme.error,
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .error,
                                         ),
                                         Padding(
                                           padding: const EdgeInsets.all(8.0),

@@ -53,5 +53,7 @@
   "portfolioDesc": "Ce site web où j'expose mes parcours, mes compétences ainsi que mes projets personnels et professionnels",
   "lightMode": "Mode clair",
   "careerProIntro": "Mon parcours professionnel en informatique est marqué par plusieurs expériences enrichissantes, tant au travers d'emplois que de stages.\nCelles-ci m'ont permis de développer des compétences solides dans ce domaine en constante évolution.\n\nVoici quelques-unes des expériences professionnelles que j'ai acquises au cours de ces dernières années :",
-  "careerScholIntro": "Mon parcours académique en informatique a été marqué par des formations rigoureuses, notamment à l'Ecole Nationale d'Informatique(ENI) de Fianarantsoa.\nAvant cela, j'ai obtenu un baccalauréat scientifique, qui a posé les bases de mon intérêt pour les sciences et les technologies."
+  "careerScholIntro": "Mon parcours académique en informatique a été marqué par des formations rigoureuses, notamment à l'Ecole Nationale d'Informatique(ENI) de Fianarantsoa.\nAvant cela, j'ai obtenu un baccalauréat scientifique, qui a posé les bases de mon intérêt pour les sciences et les technologies.",
+  "footerIntro": "Collaborons et construisons des belles choses !",
+  "contactMe": "Si vous voulez qu'on travaille ensemble, n'hésitez pas à me contacter."
 }

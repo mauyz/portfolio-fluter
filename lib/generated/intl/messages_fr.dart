@@ -42,6 +42,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Application web et mobile qui permet d\'explorer le contenu de la constitution de Madagascar"),
         "consultantDeveloperFlutter": MessageLookupByLibrary.simpleMessage(
             "Consultant développeur flutter"),
+        "contactMe": MessageLookupByLibrary.simpleMessage(
+            "Si vous voulez qu\'on travaille ensemble, n\'hésitez pas à me contacter."),
         "contactTitle": MessageLookupByLibrary.simpleMessage("Contact"),
         "database": MessageLookupByLibrary.simpleMessage("Base des données"),
         "devMobileTitle":
@@ -55,6 +57,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Plateforme d\'analyse des vidéos en basant sur les expressions faciales et une suite des questions"),
         "flutterDeveloper":
             MessageLookupByLibrary.simpleMessage("Développeur flutter"),
+        "footerIntro": MessageLookupByLibrary.simpleMessage(
+            "Collaborons et construisons des belles choses !"),
         "framework": MessageLookupByLibrary.simpleMessage("Framework"),
         "freelance": MessageLookupByLibrary.simpleMessage("Freelance"),
         "freelanceDesc": MessageLookupByLibrary.simpleMessage(

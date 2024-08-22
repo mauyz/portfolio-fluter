@@ -579,6 +579,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Collaborons et construisons des belles choses !`
+  String get footerIntro {
+    return Intl.message(
+      'Collaborons et construisons des belles choses !',
+      name: 'footerIntro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Si vous voulez qu'on travaille ensemble, n'hésitez pas à me contacter.`
+  String get contactMe {
+    return Intl.message(
+      'Si vous voulez qu\'on travaille ensemble, n\'hésitez pas à me contacter.',
+      name: 'contactMe',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
