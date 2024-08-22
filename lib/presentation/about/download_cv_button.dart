@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/core/utils.dart';
+import 'package:portfolio/data/repos/data_repository_impl.dart';
 import 'package:portfolio/generated/l10n.dart';
 
-class DownloadCvButton extends StatelessWidget {
+class DownloadCvButton extends ConsumerWidget {
   const DownloadCvButton({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     return FilledButton(
       onPressed: () {
         openLink(
           context,
-          "https://drive.google.com/file/d/1j5aKPyWQJNT2_7a-JtnJrDBdHzZ1Gh4M/view?usp=sharing",
+          ref.read(dataRepositoryProvider).getInfos().cvLink,
         );
       },
       child: Text(
