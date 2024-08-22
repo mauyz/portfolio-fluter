@@ -103,7 +103,9 @@ class ExperienceContentWidget extends StatelessWidget {
                 height: 5.0,
               ),
               if (experience.stack.isNotEmpty)
-                Wrap(
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
                       "Technologies : ",
