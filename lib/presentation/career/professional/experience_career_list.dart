@@ -19,7 +19,14 @@ class ExperienceCareerList extends ConsumerWidget {
           title: S.current.professionalTitle,
         ),
         const SizedBox(
-          height: 5.0,
+          height: 10.0,
+        ),
+        Text(
+          S.current.careerProIntro,
+          style: Theme.of(context).textTheme.bodyMedium,
+        ),
+        const SizedBox(
+          height: 20.0,
         ),
         LayoutBuilder(
           builder: (_, __) {
