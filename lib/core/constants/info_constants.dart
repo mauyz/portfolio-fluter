@@ -54,6 +54,8 @@ final infos = Infos(
     S.current.devMobileTitle,
     S.current.passionnateTech
   ],
+  cvLink:
+      "https://drive.google.com/file/d/1v-DPF45xSeOzyWWJ3dKB3w3u0sdqmWxk/view?usp=sharing",
   bio: S.current.bioContent,
   contacts: {
     phone,
