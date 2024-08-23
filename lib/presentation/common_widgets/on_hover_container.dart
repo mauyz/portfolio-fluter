@@ -20,15 +20,9 @@ class _OnHoverContainerState extends State<OnHoverContainer> {
       splashColor: Colors.transparent,
       highlightColor: Colors.transparent,
       onHover: (isHovering) {
-        if (isHovering) {
-          setState(() {
-            isHover = true;
-          });
-        } else {
-          setState(() {
-            isHover = false;
-          });
-        }
+        setState(() {
+          isHover = !isHover;
+        });
       },
       onTap: () {},
       child: Container(
@@ -39,7 +33,6 @@ class _OnHoverContainerState extends State<OnHoverContainer> {
                   BoxShadow(
                     color: Theme.of(context).colorScheme.primaryContainer,
                     blurRadius: 12.0,
-                    offset: const Offset(0.0, 0.0),
                   )
                 ]
               : [],
