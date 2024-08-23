@@ -61,7 +61,7 @@ final projects = {
       ProjectLink(
         name: "Web",
         icon: Icons.public,
-        value: "https://madagascar-constitution.vercel.app",
+        value: "https://constitutionmg.vercel.app/",
       ),
     },
     stacks: {
