@@ -7,14 +7,12 @@ class SchoolItemWidget extends StatelessWidget {
   final Formation formation;
   final bool isDesktop;
   final bool isPairIndex;
-  final bool isLastIndex;
 
   const SchoolItemWidget({
     super.key,
     required this.formation,
     required this.isDesktop,
     required this.isPairIndex,
-    required this.isLastIndex,
   });
 
   @override
@@ -45,7 +43,6 @@ class SchoolItemWidget extends StatelessWidget {
           ),
           child: SchoolContentWidget(
             formation: formation,
-            isLastIndex: isLastIndex,
             isPairIndex: isPairIndex,
           ),
         ),

@@ -40,13 +40,11 @@ class SchoolCareerList extends ConsumerWidget {
                           formation: e.$2,
                           isDesktop: false,
                           isPairIndex: false,
-                          isLastIndex: e.$1 == (listFormation.length - 1),
                         ),
                         desktop: SchoolItemWidget(
                           formation: e.$2,
                           isDesktop: true,
                           isPairIndex: (e.$1 % 2) == 0,
-                          isLastIndex: e.$1 == (listFormation.length - 1),
                         ),
                       ),
                     );
