@@ -46,8 +46,9 @@ class NavMobile extends ConsumerWidget {
                   ),
                   title: Text(
                     S.current.contactTitle,
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
-                  leading: const Icon(Icons.mail),
+                  leading: const Icon(Icons.call),
                   onTap: () {
                     navigateToContact.call();
                     Navigator.of(context).pop();
@@ -62,11 +63,13 @@ class NavMobile extends ConsumerWidget {
                     ),
                   ),
                   title: Text(
-                    Theme.of(context).brightness == Brightness.light
-                        ? S.current.modeDark : S.current.lightMode
+                    ref.read(appThemeModeProvider) == ThemeMode.light
+                        ? S.current.modeDark
+                        : S.current.lightMode,
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
                   leading: Icon(
-                    Theme.of(context).brightness == Brightness.light
+                    ref.read(appThemeModeProvider) == ThemeMode.light
                         ? Icons.dark_mode
                         : Icons.light_mode,
                   ),
