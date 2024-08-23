@@ -1,7 +1,9 @@
+import 'package:flutter/material.dart';
 import 'package:portfolio/domain/entities/project.dart';
 import 'package:portfolio/domain/entities/project_link.dart';
 import 'package:portfolio/domain/entities/skill.dart';
 import 'package:portfolio/generated/l10n.dart';
+import 'package:unicons/unicons.dart';
 
 final projects = {
   Project(
@@ -11,10 +13,12 @@ final projects = {
     links: {
       ProjectLink(
         name: "Play store",
+        icon: UniconsLine.google_play,
         value: "https://play.google.com/store/apps/details?id=com.quadient.app",
       ),
       ProjectLink(
         name: "Apple store",
+        icon: UniconsLine.apple,
         value: "https://apps.apple.com/pl/app/quadient-scan/id6504674418",
       ),
     },
@@ -50,11 +54,13 @@ final projects = {
     links: {
       ProjectLink(
         name: "Play store",
+        icon: UniconsLine.google_play,
         value:
             "https://play.google.com/store/apps/details?id=com.eightgroup.mauyz.constitution",
       ),
       ProjectLink(
         name: "Web",
+        icon: Icons.public,
         value: "https://madagascar-constitution.vercel.app",
       ),
     },
@@ -87,6 +93,7 @@ final projects = {
     links: {
       ProjectLink(
         name: "Play store",
+        icon: UniconsLine.google_play,
         value:
             "https://play.google.com/store/apps/details?id=eu.feelin.feelinApp",
       ),

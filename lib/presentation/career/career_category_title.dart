@@ -14,7 +14,11 @@ class CareerCategoryTitle extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         const Padding(
-          padding: EdgeInsets.all(5.0),
+          padding: EdgeInsets.only(
+            top: 5.0,
+            right: 5.0,
+            bottom: 5.0,
+          ),
           child: Icon(
             Icons.play_arrow,
           ),

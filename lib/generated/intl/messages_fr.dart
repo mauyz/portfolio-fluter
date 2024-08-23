@@ -31,13 +31,19 @@ class MessageLookup extends MessageLookupByLibrary {
             "Développeur d\'application Android"),
         "bacDegree": MessageLookupByLibrary.simpleMessage("BAC Série C"),
         "bioContent": MessageLookupByLibrary.simpleMessage(
-            "Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa, avec une solide expérience dans la conception, le développement et la mise en production d\'applications mobiles.\n\nAu cours des trois dernières années, j\'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j\'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques"),
+            "Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa.\nJe possède une solide expérience dans la conception, le développement et la mise en production d\'applications.\n\nAu cours des quatre dernières années, j\'ai développé une expertise notable dans les langages Dart, Java et Kotlin.\nJ\'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l\'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l\'exploration de nouvelles technologies.\n\nActuellement, je me forme de manière autonome sur le framework Jetpack Compose, qui est en vogue pour les applications cross-plateforme.\nParallèlement, je suis une formation sur Spring Boot pour enrichir mes compétences en backend et rester à la pointe des évolutions technologiques."),
         "cantOpenContactError": m0,
+        "careerProIntro": MessageLookupByLibrary.simpleMessage(
+            "Mon parcours professionnel en informatique est marqué par plusieurs expériences enrichissantes, tant au travers d\'emplois que de stages.\nCelles-ci m\'ont permis de développer des compétences solides dans ce domaine en constante évolution.\n\nVoici quelques-unes des expériences professionnelles que j\'ai acquises au cours de ces dernières années :"),
+        "careerScholIntro": MessageLookupByLibrary.simpleMessage(
+            "Mon parcours académique en informatique a été marqué par des formations rigoureuses, notamment à l\'Ecole Nationale d\'Informatique(ENI) de Fianarantsoa.\nAvant cela, j\'ai obtenu un baccalauréat scientifique, qui a posé les bases de mon intérêt pour les sciences et les technologies."),
         "closeTitle": MessageLookupByLibrary.simpleMessage("Fermer"),
         "constitutionDesc": MessageLookupByLibrary.simpleMessage(
             "Application web et mobile qui permet d\'explorer le contenu de la constitution de Madagascar"),
         "consultantDeveloperFlutter": MessageLookupByLibrary.simpleMessage(
             "Consultant développeur flutter"),
+        "contactMe": MessageLookupByLibrary.simpleMessage(
+            "Si vous voulez qu\'on travaille ensemble, n\'hésitez pas à me contacter."),
         "contactTitle": MessageLookupByLibrary.simpleMessage("Contact"),
         "database": MessageLookupByLibrary.simpleMessage("Base des données"),
         "devMobileTitle":
@@ -51,6 +57,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "Plateforme d\'analyse des vidéos en basant sur les expressions faciales et une suite des questions"),
         "flutterDeveloper":
             MessageLookupByLibrary.simpleMessage("Développeur flutter"),
+        "footerIntro": MessageLookupByLibrary.simpleMessage(
+            "Collaborons et construisons des belles choses !"),
         "framework": MessageLookupByLibrary.simpleMessage("Framework"),
         "freelance": MessageLookupByLibrary.simpleMessage("Freelance"),
         "freelanceDesc": MessageLookupByLibrary.simpleMessage(
@@ -85,10 +93,14 @@ class MessageLookup extends MessageLookupByLibrary {
             "Ce site web où j\'expose mes parcours, mes compétences ainsi que mes projets personnels et professionnels"),
         "professionalTitle":
             MessageLookupByLibrary.simpleMessage("Professionnel"),
+        "projectIntro": MessageLookupByLibrary.simpleMessage(
+            "Je suis heureux de vous présenter une sélection de mes projets de développement récents.\nChacun de ces projets a été réalisé avec diverses technologies et compétences, visant à résoudre une variété de problématiques.\n\nJe vous invite à les explorer pour découvrir les différentes facettes de mon expertise en développement."),
         "projectTitle": MessageLookupByLibrary.simpleMessage("Projets"),
         "quadientDesc": MessageLookupByLibrary.simpleMessage(
             "Application mobile pour collecter les informations sur des entreprises"),
         "sinceMai2024": MessageLookupByLibrary.simpleMessage("Depuis Mai 2024"),
+        "skilIntro": MessageLookupByLibrary.simpleMessage(
+            "Tout au long de mon parcours, j\'ai acquis et affiné un ensemble de compétences en développement informatique, couvrant divers langages, frameworks, et outils.\n\nCes compétences me permettent de concevoir et de mettre en œuvre des solutions techniques adaptées aux besoins spécifiques de chaque projet."),
         "skillTitle": MessageLookupByLibrary.simpleMessage("Compétences"),
         "softwareIng":
             MessageLookupByLibrary.simpleMessage("Ingénieur développeur"),

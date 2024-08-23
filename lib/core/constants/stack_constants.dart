@@ -37,7 +37,7 @@ final skills = {
         note: 80,
       ),
       Skill(
-        name: "JetPack Compose",
+        name: "Jetpack Compose",
         icon: "Jetpack",
         note: 60,
       ),

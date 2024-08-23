@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
 import 'package:portfolio/domain/entities/menu.dart';
+import 'package:portfolio/presentation/home/animated_welcome.dart';
 import 'package:portfolio/presentation/home/avatar_widget.dart';
 import 'package:portfolio/presentation/home/animated_job_title.dart';
 import 'package:portfolio/presentation/common_widgets/responsive_widget.dart';
 import 'package:portfolio/presentation/home/hello_world_widget.dart';
 import 'package:portfolio/presentation/home/introduce_widget.dart';
-import 'package:portfolio/presentation/home/welcome_widget.dart';
 
 class HomeSection extends ConsumerWidget {
   final Menu menu;
@@ -27,6 +27,7 @@ class HomeSection extends ConsumerWidget {
       ),
       child: IntrinsicHeight(
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             const Spacer(),
             Align(
@@ -57,7 +58,7 @@ class HomeSection extends ConsumerWidget {
                           ? MainAxisAlignment.start
                           : MainAxisAlignment.spaceBetween,
                       children: [
-                        Expanded(
+                        Flexible(
                           flex: ResponsiveWidget.isMobile(context) ? 1 : 4,
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
@@ -80,13 +81,12 @@ class HomeSection extends ConsumerWidget {
                               const SizedBox(
                                 height: 30.0,
                               ),
-                              const WelcomeWidget(),
+                              const AnimatedWelcome(),
                             ],
                           ),
                         ),
                         if (!ResponsiveWidget.isMobile(context)) ...[
-                          const Spacer(),
-                          Expanded(
+                          Flexible(
                             flex: 2,
                             child: AvatarWidget(
                               image: infos.photo,

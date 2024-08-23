@@ -7,14 +7,12 @@ class ExperienceItemWidget extends StatelessWidget {
   final Experience experience;
   final bool isDesktop;
   final bool isPairIndex;
-  final bool isLastIndex;
 
   const ExperienceItemWidget({
     super.key,
     required this.experience,
     required this.isDesktop,
     required this.isPairIndex,
-    required this.isLastIndex,
   });
 
   @override
@@ -41,11 +39,10 @@ class ExperienceItemWidget extends StatelessWidget {
       Expanded(
         child: Padding(
           padding: const EdgeInsets.only(
-            top: 20.0,
+            top: 18.0,
           ),
           child: ExperienceContentWidget(
             experience: experience,
-            isLastIndex: isLastIndex,
             isPairIndex: isPairIndex,
           ),
         ),

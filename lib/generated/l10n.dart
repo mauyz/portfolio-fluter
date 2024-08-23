@@ -210,10 +210,10 @@ class S {
     );
   }
 
-  /// `Développeur autodidacte et diplômé de l'École Nationale d'Informatique de Fianarantsoa, avec une solide expérience dans la conception, le développement et la mise en production d'applications mobiles.\n\nAu cours des trois dernières années, j'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques`
+  /// `Développeur autodidacte et diplômé de l'École Nationale d'Informatique de Fianarantsoa.\nJe possède une solide expérience dans la conception, le développement et la mise en production d'applications.\n\nAu cours des quatre dernières années, j'ai développé une expertise notable dans les langages Dart, Java et Kotlin.\nJ'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l'exploration de nouvelles technologies.\n\nActuellement, je me forme de manière autonome sur le framework Jetpack Compose, qui est en vogue pour les applications cross-plateforme.\nParallèlement, je suis une formation sur Spring Boot pour enrichir mes compétences en backend et rester à la pointe des évolutions technologiques.`
   String get bioContent {
     return Intl.message(
-      'Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa, avec une solide expérience dans la conception, le développement et la mise en production d\'applications mobiles.\n\nAu cours des trois dernières années, j\'ai acquis une expertise significative dans les langages Dart, Java, et Kotlin, ainsi que dans les frameworks Flutter et Android SDK.\n\nPassionné par la programmation, j\'aime explorer et apprendre de nouvelles technologies. \nActuellement, je me forme de manière autonome sur le framework JetPack Compose et Spring Boot pour enrichir mes compétences et rester à la pointe des évolutions technologiques',
+      'Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa.\nJe possède une solide expérience dans la conception, le développement et la mise en production d\'applications.\n\nAu cours des quatre dernières années, j\'ai développé une expertise notable dans les langages Dart, Java et Kotlin.\nJ\'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l\'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l\'exploration de nouvelles technologies.\n\nActuellement, je me forme de manière autonome sur le framework Jetpack Compose, qui est en vogue pour les applications cross-plateforme.\nParallèlement, je suis une formation sur Spring Boot pour enrichir mes compétences en backend et rester à la pointe des évolutions technologiques.',
       name: 'bioContent',
       desc: '',
       args: [],
@@ -555,6 +555,66 @@ class S {
     return Intl.message(
       'Mode clair',
       name: 'lightMode',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mon parcours professionnel en informatique est marqué par plusieurs expériences enrichissantes, tant au travers d'emplois que de stages.\nCelles-ci m'ont permis de développer des compétences solides dans ce domaine en constante évolution.\n\nVoici quelques-unes des expériences professionnelles que j'ai acquises au cours de ces dernières années :`
+  String get careerProIntro {
+    return Intl.message(
+      'Mon parcours professionnel en informatique est marqué par plusieurs expériences enrichissantes, tant au travers d\'emplois que de stages.\nCelles-ci m\'ont permis de développer des compétences solides dans ce domaine en constante évolution.\n\nVoici quelques-unes des expériences professionnelles que j\'ai acquises au cours de ces dernières années :',
+      name: 'careerProIntro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mon parcours académique en informatique a été marqué par des formations rigoureuses, notamment à l'Ecole Nationale d'Informatique(ENI) de Fianarantsoa.\nAvant cela, j'ai obtenu un baccalauréat scientifique, qui a posé les bases de mon intérêt pour les sciences et les technologies.`
+  String get careerScholIntro {
+    return Intl.message(
+      'Mon parcours académique en informatique a été marqué par des formations rigoureuses, notamment à l\'Ecole Nationale d\'Informatique(ENI) de Fianarantsoa.\nAvant cela, j\'ai obtenu un baccalauréat scientifique, qui a posé les bases de mon intérêt pour les sciences et les technologies.',
+      name: 'careerScholIntro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Collaborons et construisons des belles choses !`
+  String get footerIntro {
+    return Intl.message(
+      'Collaborons et construisons des belles choses !',
+      name: 'footerIntro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Si vous voulez qu'on travaille ensemble, n'hésitez pas à me contacter.`
+  String get contactMe {
+    return Intl.message(
+      'Si vous voulez qu\'on travaille ensemble, n\'hésitez pas à me contacter.',
+      name: 'contactMe',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Je suis heureux de vous présenter une sélection de mes projets de développement récents.\nChacun de ces projets a été réalisé avec diverses technologies et compétences, visant à résoudre une variété de problématiques.\n\nJe vous invite à les explorer pour découvrir les différentes facettes de mon expertise en développement.`
+  String get projectIntro {
+    return Intl.message(
+      'Je suis heureux de vous présenter une sélection de mes projets de développement récents.\nChacun de ces projets a été réalisé avec diverses technologies et compétences, visant à résoudre une variété de problématiques.\n\nJe vous invite à les explorer pour découvrir les différentes facettes de mon expertise en développement.',
+      name: 'projectIntro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tout au long de mon parcours, j'ai acquis et affiné un ensemble de compétences en développement informatique, couvrant divers langages, frameworks, et outils.\n\nCes compétences me permettent de concevoir et de mettre en œuvre des solutions techniques adaptées aux besoins spécifiques de chaque projet.`
+  String get skilIntro {
+    return Intl.message(
+      'Tout au long de mon parcours, j\'ai acquis et affiné un ensemble de compétences en développement informatique, couvrant divers langages, frameworks, et outils.\n\nCes compétences me permettent de concevoir et de mettre en œuvre des solutions techniques adaptées aux besoins spécifiques de chaque projet.',
+      name: 'skilIntro',
       desc: '',
       args: [],
     );
