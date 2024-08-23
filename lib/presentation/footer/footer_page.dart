@@ -5,6 +5,8 @@ import 'package:portfolio/core/utils.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
 import 'package:portfolio/domain/entities/contact.dart';
 import 'package:portfolio/generated/l10n.dart';
+import 'package:portfolio/presentation/common_widgets/animator.dart';
+import 'package:portfolio/presentation/common_widgets/on_hover_container.dart';
 import 'package:portfolio/presentation/footer/copyright_widget.dart';
 import 'package:unicons/unicons.dart';
 
@@ -52,28 +54,32 @@ class FooterPage extends ConsumerWidget {
               spacing: 20.0,
               runSpacing: 20.0,
               children: [
-                Card(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 20.0,
-                      horizontal: 10.0,
-                    ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Icon(
-                          Icons.location_on,
-                          size: 48,
-                          color: Theme.of(context).colorScheme.error,
+                WidgetAnimator(
+                  child: OnHoverContainer(
+                    child: Card(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                          vertical: 20.0,
+                          horizontal: 10.0,
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            "Antananarivo, Madagascar",
-                            style: Theme.of(context).textTheme.titleSmall,
-                          ),
-                        )
-                      ],
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Icon(
+                              Icons.location_on,
+                              size: 48,
+                              color: Theme.of(context).colorScheme.error,
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                "Antananarivo, Madagascar",
+                                style: Theme.of(context).textTheme.titleSmall,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
                     ),
                   ),
                 ),
@@ -92,39 +98,43 @@ class FooterPage extends ConsumerWidget {
                           return Flexible(
                             child: Padding(
                               padding: const EdgeInsets.only(right: 0.0),
-                              child: Card(
-                                child: InkWell(
-                                  borderRadius: const BorderRadius.all(
-                                    Radius.circular(12.0),
-                                  ),
-                                  onTap: () {
-                                    openContact(context, contact);
-                                  },
-                                  child: Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                      vertical: 20.0,
-                                      horizontal: 10.0,
-                                    ),
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      children: [
-                                        Icon(
-                                          contact.icon,
-                                          size: 48,
-                                          color: Theme.of(context)
-                                              .colorScheme
-                                              .error,
+                              child: WidgetAnimator(
+                                child: OnHoverContainer(
+                                  child: Card(
+                                    child: InkWell(
+                                      borderRadius: const BorderRadius.all(
+                                        Radius.circular(12.0),
+                                      ),
+                                      onTap: () {
+                                        openContact(context, contact);
+                                      },
+                                      child: Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                          vertical: 20.0,
+                                          horizontal: 10.0,
                                         ),
-                                        Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: SelectableText(
-                                            e,
-                                            style: Theme.of(context)
-                                                .textTheme
-                                                .titleSmall,
-                                          ),
-                                        )
-                                      ],
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.min,
+                                          children: [
+                                            Icon(
+                                              contact.icon,
+                                              size: 48,
+                                              color: Theme.of(context)
+                                                  .colorScheme
+                                                  .error,
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: SelectableText(
+                                                e,
+                                                style: Theme.of(context)
+                                                    .textTheme
+                                                    .titleSmall,
+                                              ),
+                                            )
+                                          ],
+                                        ),
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -136,38 +146,42 @@ class FooterPage extends ConsumerWidget {
                     );
                   },
                 ),
-                Card(
-                  child: InkWell(
-                    borderRadius: const BorderRadius.all(
-                      Radius.circular(12.0),
-                    ),
-                    onTap: () {
-                      openLink(context, github.values.first);
-                    },
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                        vertical: 20.0,
-                        horizontal: 10.0,
-                      ),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Icon(
-                            UniconsLine.github,
-                            size: 48,
-                            color: Theme.of(context).colorScheme.error,
+                WidgetAnimator(
+                  child: OnHoverContainer(
+                    child: Card(
+                      child: InkWell(
+                        borderRadius: const BorderRadius.all(
+                          Radius.circular(12.0),
+                        ),
+                        onTap: () {
+                          openLink(context, github.values.first);
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                            vertical: 20.0,
+                            horizontal: 10.0,
                           ),
-                          Padding(
-                            padding: const EdgeInsets.symmetric(
-                              vertical: 8.0,
-                              horizontal: 40,
-                            ),
-                            child: Text(
-                              "GitHub",
-                              style: Theme.of(context).textTheme.titleSmall,
-                            ),
-                          )
-                        ],
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(
+                                UniconsLine.github,
+                                size: 48,
+                                color: Theme.of(context).colorScheme.error,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.symmetric(
+                                  vertical: 8.0,
+                                  horizontal: 40,
+                                ),
+                                child: Text(
+                                  "GitHub",
+                                  style: Theme.of(context).textTheme.titleSmall,
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
                       ),
                     ),
                   ),
