@@ -7,7 +7,7 @@ import 'package:portfolio/presentation/home/contacts_widget.dart';
 import 'package:portfolio/presentation/common_widgets/responsive_widget.dart';
 import 'package:portfolio/presentation/project/project_section.dart';
 import 'package:portfolio/presentation/career/career_section.dart';
-import 'package:portfolio/presentation/footer/footer_page.dart';
+import 'package:portfolio/presentation/footer/footer_section.dart';
 import 'package:portfolio/presentation/home/home_section.dart';
 import 'package:portfolio/presentation/home/nav_desktop.dart';
 import 'package:portfolio/presentation/home/nav_mobile.dart';
@@ -80,7 +80,10 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
                         };
                       },
                     ),
-                    const FooterPage(),
+                    const SizedBox(
+                      height: 50,
+                    ),
+                    const FooterSection(),
                   ],
                 ),
               ),
