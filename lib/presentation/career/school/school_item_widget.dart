@@ -39,7 +39,7 @@ class SchoolItemWidget extends StatelessWidget {
       Expanded(
         child: Padding(
           padding: const EdgeInsets.only(
-            top: 20.0,
+            top: 18.0,
           ),
           child: SchoolContentWidget(
             formation: formation,
