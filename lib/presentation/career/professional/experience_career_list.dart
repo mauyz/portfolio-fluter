@@ -40,13 +40,11 @@ class ExperienceCareerList extends ConsumerWidget {
                           experience: e.$2,
                           isDesktop: false,
                           isPairIndex: false,
-                          isLastIndex: e.$1 == (listExperience.length - 1),
                         ),
                         desktop: ExperienceItemWidget(
                           experience: e.$2,
                           isDesktop: true,
                           isPairIndex: (e.$1 % 2) == 0,
-                          isLastIndex: e.$1 == (listExperience.length - 1),
                         ),
                       ),
                     );
