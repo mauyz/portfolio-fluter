@@ -98,16 +98,19 @@ class ProjectCard extends StatelessWidget {
               ),
               if (project.links.isNotEmpty)
                 Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Text(
-                      S.current.viewMore,
-                      style: Theme.of(context).textTheme.bodyLarge,
+                    Padding(
+                      padding: const EdgeInsets.only(top: 4.0),
+                      child: Text(
+                        S.current.viewMore,
+                        style: Theme.of(context).textTheme.bodyLarge,
+                      ),
                     ),
                     Expanded(
                       child: Padding(
-                        padding: const EdgeInsets.only(left: 8.0),
+                        padding: const EdgeInsets.only(left: 10.0),
                         child: Wrap(
                           crossAxisAlignment: WrapCrossAlignment.center,
                           spacing: 8.0,

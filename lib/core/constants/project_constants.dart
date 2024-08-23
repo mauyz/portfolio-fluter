@@ -17,7 +17,7 @@ final projects = {
         value: "https://play.google.com/store/apps/details?id=com.quadient.app",
       ),
       ProjectLink(
-        name: "Apple store",
+        name: "App store",
         icon: UniconsLine.apple,
         value: "https://apps.apple.com/pl/app/quadient-scan/id6504674418",
       ),
