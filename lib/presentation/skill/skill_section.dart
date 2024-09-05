@@ -30,7 +30,7 @@ class SkillSection extends ConsumerWidget {
             child: SectionTitleWidget(menu: menu),
           ),
           Text(
-            S.of(context).skilIntro,
+            S.of(context).skillIntro,
             style: Theme.of(context).textTheme.bodyMedium,
           ),
           const SizedBox(
