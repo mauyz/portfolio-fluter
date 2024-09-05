@@ -2,7 +2,7 @@
 
 is a responsive and multi-platform application (version english soon) written in [Flutter](https://docs.flutter.dev/). 
 
-I use some kindly packages like : 
+I use some helpful packages like : 
 
 - [flutter_riverpod](https://pub.dev/packages/flutter_riverpod)
 - [riverpod_annotation](https://pub.dev/packages/riverpod_annotation)
