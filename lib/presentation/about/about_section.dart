@@ -64,13 +64,13 @@ class AboutSection extends ConsumerWidget {
                     ],
                   ),
                 ),
-                //if (!ResponsiveWidget.isMobile(context))
-                const Expanded(
-                  child: SizedBox(
-                    height: 200,
-                    child: AboutImageWidget(),
+                if (MediaQuery.sizeOf(context).width > 650)
+                  const Expanded(
+                    child: SizedBox(
+                      height: 200,
+                      child: AboutImageWidget(),
+                    ),
                   ),
-                ),
               ],
             ),
             Padding(
