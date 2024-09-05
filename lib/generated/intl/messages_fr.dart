@@ -103,7 +103,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Explorez quelques-uns des projets sur lesquels j\'ai travaillé."),
         "projectTitle": MessageLookupByLibrary.simpleMessage("Projets"),
         "quadientDesc": MessageLookupByLibrary.simpleMessage(
-            "Application mobile pour collecter les informations sur des entreprises"),
+            "Application mobile pour collecter des informations via le scan d\'un enveloppe"),
         "sinceMai2024": MessageLookupByLibrary.simpleMessage("Depuis Mai 2024"),
         "skillIntro": MessageLookupByLibrary.simpleMessage(
             "Tout au long de mon parcours, j\'ai acquis et affiné un ensemble de compétences en développement informatique, couvrant divers langages, frameworks, et outils.\n\nCes compétences me permettent de concevoir et de mettre en œuvre des solutions techniques adaptées aux besoins spécifiques de chaque projet."),

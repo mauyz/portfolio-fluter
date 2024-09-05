@@ -134,7 +134,13 @@ final projects = {
     title: "Portfolio",
     preview: "portfolio",
     description: S.current.portfolioDesc,
-    links: {},
+    links: {
+      ProjectLink(
+        name: "GitHub",
+        icon: UniconsLine.github,
+        value: "https://github.com/mauyz/portfolio-fluter",
+      ),
+    },
     stacks: {
       Skill(
         name: "Dart",

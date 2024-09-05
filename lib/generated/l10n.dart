@@ -500,10 +500,10 @@ class S {
     );
   }
 
-  /// `Application mobile pour collecter les informations sur des entreprises`
+  /// `Application mobile pour collecter des informations via le scan d'un enveloppe`
   String get quadientDesc {
     return Intl.message(
-      'Application mobile pour collecter les informations sur des entreprises',
+      'Application mobile pour collecter des informations via le scan d\'un enveloppe',
       name: 'quadientDesc',
       desc: '',
       args: [],
