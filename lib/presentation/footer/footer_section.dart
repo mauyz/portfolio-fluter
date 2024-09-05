@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:portfolio/core/constants/info_constants.dart';
 import 'package:portfolio/core/utils.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
 import 'package:portfolio/domain/entities/contact.dart';
@@ -8,7 +7,6 @@ import 'package:portfolio/generated/l10n.dart';
 import 'package:portfolio/presentation/common_widgets/animator.dart';
 import 'package:portfolio/presentation/common_widgets/on_hover_container.dart';
 import 'package:portfolio/presentation/footer/copyright_widget.dart';
-import 'package:unicons/unicons.dart';
 
 class FooterSection extends ConsumerWidget {
   const FooterSection({super.key});
@@ -20,8 +18,8 @@ class FooterSection extends ConsumerWidget {
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
         borderRadius: const BorderRadius.only(
-          topLeft: Radius.circular(100.0),
-          topRight: Radius.circular(100.0),
+          topLeft: Radius.circular(50.0),
+          topRight: Radius.circular(50.0),
         )
       ),
       child: Align(
@@ -30,7 +28,7 @@ class FooterSection extends ConsumerWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             const SizedBox(
-              height: 100,
+              height: 50,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(
@@ -154,46 +152,6 @@ class FooterSection extends ConsumerWidget {
                       );
                     },
                   ),
-                  WidgetAnimator(
-                    child: OnHoverContainer(
-                      child: Card(
-                        child: InkWell(
-                          borderRadius: const BorderRadius.all(
-                            Radius.circular(12.0),
-                          ),
-                          onTap: () {
-                            openLink(context, github.values.first);
-                          },
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(
-                              vertical: 20.0,
-                              horizontal: 10.0,
-                            ),
-                            child: Column(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Icon(
-                                  UniconsLine.github,
-                                  size: 48,
-                                  color: Theme.of(context).colorScheme.error,
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    vertical: 8.0,
-                                    horizontal: 40,
-                                  ),
-                                  child: Text(
-                                    "GitHub",
-                                    style: Theme.of(context).textTheme.titleSmall,
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
                 ],
               ),
             ),
@@ -222,7 +180,7 @@ class FooterSection extends ConsumerWidget {
               ),
             ),
             const SizedBox(
-              height: 50,
+              height: 20,
             ),
           ],
         ),
