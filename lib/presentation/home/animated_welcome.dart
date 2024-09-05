@@ -52,7 +52,7 @@ class AnimatedWelcomeState extends ConsumerState<AnimatedWelcome>
               child: Text(
                 S.current.welcomeTitle,
                 style: Theme.of(context).textTheme.titleLarge,
-                maxLines: 1,
+                maxLines: 2,
               ),
             ),
           ),
@@ -62,8 +62,8 @@ class AnimatedWelcomeState extends ConsumerState<AnimatedWelcome>
               return Padding(
                 padding: EdgeInsets.only(top: _animation.value),
                 child: IconButton.filledTonal(
-                  iconSize: 48.0,
                   color: Theme.of(context).colorScheme.error,
+                  iconSize: 36.0,
                   onPressed: () {
                     final menuAboutContext = ref
                         .read(dataRepositoryProvider)
