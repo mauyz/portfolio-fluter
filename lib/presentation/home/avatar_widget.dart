@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/presentation/common_widgets/responsive_widget.dart';
 
 class AvatarWidget extends StatelessWidget {
   final String image;
@@ -29,9 +30,19 @@ class AvatarWidget extends StatelessWidget {
       child: ClipOval(
         child: Image.asset(
           image,
+          scale: getImageScale(context),
           fit: BoxFit.cover,
         ),
       ),
     );
+  }
+
+  double getImageScale(BuildContext context) {
+    if (ResponsiveWidget.isDesktop(context)) {
+      return 1.0;
+    } else if (ResponsiveWidget.isTablet(context)) {
+      return 1.5;
+    }
+    return 2.5;
   }
 }

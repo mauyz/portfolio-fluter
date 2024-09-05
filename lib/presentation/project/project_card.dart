@@ -71,23 +71,28 @@ class ProjectCard extends StatelessWidget {
                 spacing: 10.0,
                 children: project.stacks.map(
                   (e) {
-                    return FilledButton.tonal(
-                      onPressed: null,
-                      child: Wrap(
-                        crossAxisAlignment: WrapCrossAlignment.center,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(right: 8.0),
-                            child: Image.asset(
-                              "assets/images/${e.icon}.png",
-                              width: 16.0,
-                              height: 16.0,
-                            ),
+                    return OnHoverContainer(
+                      child: Card(
+                        color: Theme.of(context).colorScheme.onPrimary,
+                        child: Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Wrap(
+                            crossAxisAlignment: WrapCrossAlignment.center,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.only(right: 8.0),
+                                child: Image.asset(
+                                  "assets/images/${e.icon}.png",
+                                  width: 16.0,
+                                  height: 16.0,
+                                ),
+                              ),
+                              Text(
+                                e.name,
+                              )
+                            ],
                           ),
-                          Text(
-                            e.name,
-                          )
-                        ],
+                        ),
                       ),
                     );
                   },

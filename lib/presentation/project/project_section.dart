@@ -5,6 +5,7 @@ import 'package:portfolio/domain/entities/menu.dart';
 import 'package:portfolio/generated/l10n.dart';
 import 'package:portfolio/presentation/common_widgets/section_card.dart';
 import 'package:portfolio/presentation/common_widgets/section_title_widget.dart';
+import 'package:portfolio/presentation/project/github_intro.dart';
 import 'package:portfolio/presentation/project/project_card.dart';
 
 class ContactSection extends ConsumerWidget {
@@ -32,6 +33,14 @@ class ContactSection extends ConsumerWidget {
           ),
           Text(
             S.of(context).projectIntro,
+            style: Theme.of(context).textTheme.bodyMedium,
+          ),
+          const SizedBox(height: 10),
+
+          const GithubIntro(),
+          const SizedBox(height: 10),
+          Text(
+            S.of(context).projectListIntro,
             style: Theme.of(context).textTheme.bodyMedium,
           ),
           const SizedBox(
