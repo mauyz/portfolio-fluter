@@ -22,12 +22,7 @@ Includes the following sections:
 - Skill
 - Project
 
-
 🌐 Web App: https://moisedev.netlify.app/
-
-
-## 🔑 License
-- This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details
 
 ## 🧑 Author
 
