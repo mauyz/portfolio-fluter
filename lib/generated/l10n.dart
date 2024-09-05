@@ -600,10 +600,10 @@ class S {
     );
   }
 
-  /// `Je suis heureux de vous présenter une sélection de mes projets de développement récents.\nChacun de ces projets a été réalisé avec diverses technologies et compétences, visant à résoudre une variété de problématiques.\n\nJe vous invite à les explorer pour découvrir les différentes facettes de mon expertise en développement.`
+  /// `Je suis heureux de vous présenter une sélection de mes projets de développement récents.\nChacun de ces projets a été réalisé avec diverses technologies et compétences, visant à résoudre une variété de problématiques.`
   String get projectIntro {
     return Intl.message(
-      'Je suis heureux de vous présenter une sélection de mes projets de développement récents.\nChacun de ces projets a été réalisé avec diverses technologies et compétences, visant à résoudre une variété de problématiques.\n\nJe vous invite à les explorer pour découvrir les différentes facettes de mon expertise en développement.',
+      'Je suis heureux de vous présenter une sélection de mes projets de développement récents.\nChacun de ces projets a été réalisé avec diverses technologies et compétences, visant à résoudre une variété de problématiques.',
       name: 'projectIntro',
       desc: '',
       args: [],
@@ -611,10 +611,40 @@ class S {
   }
 
   /// `Tout au long de mon parcours, j'ai acquis et affiné un ensemble de compétences en développement informatique, couvrant divers langages, frameworks, et outils.\n\nCes compétences me permettent de concevoir et de mettre en œuvre des solutions techniques adaptées aux besoins spécifiques de chaque projet.`
-  String get skilIntro {
+  String get skillIntro {
     return Intl.message(
       'Tout au long de mon parcours, j\'ai acquis et affiné un ensemble de compétences en développement informatique, couvrant divers langages, frameworks, et outils.\n\nCes compétences me permettent de concevoir et de mettre en œuvre des solutions techniques adaptées aux besoins spécifiques de chaque projet.',
-      name: 'skilIntro',
+      name: 'skillIntro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Je vous invite aussi à explorer mon dépôt `
+  String get gitHubIntro {
+    return Intl.message(
+      'Je vous invite aussi à explorer mon dépôt ',
+      name: 'gitHubIntro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `, où je partage des projets et des codes open-sources.`
+  String get gitHubEndIntro {
+    return Intl.message(
+      ', où je partage des projets et des codes open-sources.',
+      name: 'gitHubEndIntro',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Explorez quelques-uns des projets sur lesquels j'ai travaillé.`
+  String get projectListIntro {
+    return Intl.message(
+      'Explorez quelques-uns des projets sur lesquels j\'ai travaillé.',
+      name: 'projectListIntro',
       desc: '',
       args: [],
     );

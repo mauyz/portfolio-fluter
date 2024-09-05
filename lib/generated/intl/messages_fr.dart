@@ -63,6 +63,10 @@ class MessageLookup extends MessageLookupByLibrary {
         "freelance": MessageLookupByLibrary.simpleMessage("Freelance"),
         "freelanceDesc": MessageLookupByLibrary.simpleMessage(
             "Conception et développement d’une application de gestion d’un clinique\nDéveloppement d’une application de rencontre pour la communauté comorienne et mahoraise"),
+        "gitHubEndIntro": MessageLookupByLibrary.simpleMessage(
+            ", où je partage des projets et des codes open-sources."),
+        "gitHubIntro": MessageLookupByLibrary.simpleMessage(
+            "Je vous invite aussi à explorer mon dépôt "),
         "home": MessageLookupByLibrary.simpleMessage("Accueil"),
         "iam": MessageLookupByLibrary.simpleMessage("Je suis"),
         "internship": MessageLookupByLibrary.simpleMessage("Stage"),
@@ -94,12 +98,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "professionalTitle":
             MessageLookupByLibrary.simpleMessage("Professionnel"),
         "projectIntro": MessageLookupByLibrary.simpleMessage(
-            "Je suis heureux de vous présenter une sélection de mes projets de développement récents.\nChacun de ces projets a été réalisé avec diverses technologies et compétences, visant à résoudre une variété de problématiques.\n\nJe vous invite à les explorer pour découvrir les différentes facettes de mon expertise en développement."),
+            "Je suis heureux de vous présenter une sélection de mes projets de développement récents.\nChacun de ces projets a été réalisé avec diverses technologies et compétences, visant à résoudre une variété de problématiques."),
+        "projectListIntro": MessageLookupByLibrary.simpleMessage(
+            "Explorez quelques-uns des projets sur lesquels j\'ai travaillé."),
         "projectTitle": MessageLookupByLibrary.simpleMessage("Projets"),
         "quadientDesc": MessageLookupByLibrary.simpleMessage(
             "Application mobile pour collecter les informations sur des entreprises"),
         "sinceMai2024": MessageLookupByLibrary.simpleMessage("Depuis Mai 2024"),
-        "skilIntro": MessageLookupByLibrary.simpleMessage(
+        "skillIntro": MessageLookupByLibrary.simpleMessage(
             "Tout au long de mon parcours, j\'ai acquis et affiné un ensemble de compétences en développement informatique, couvrant divers langages, frameworks, et outils.\n\nCes compétences me permettent de concevoir et de mettre en œuvre des solutions techniques adaptées aux besoins spécifiques de chaque projet."),
         "skillTitle": MessageLookupByLibrary.simpleMessage("Compétences"),
         "softwareIng":
