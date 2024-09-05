@@ -39,12 +39,7 @@ class HomeSection extends ConsumerWidget {
                 children: [
                   if (ResponsiveWidget.isMobile(context))
                     Padding(
-                      padding: const EdgeInsets.only(
-                        top: 20.0,
-                        bottom: 50.0,
-                        left: 20.0,
-                        right: 20.0,
-                      ),
+                      padding: const EdgeInsets.all(20.0),
                       child: AvatarWidget(
                         image: infos.photo,
                       ),
