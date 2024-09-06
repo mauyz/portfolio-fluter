@@ -1,4 +1,3 @@
-import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
@@ -15,7 +14,6 @@ import 'package:portfolio/presentation/home/provider/scroll_controller_offset.da
 import 'package:portfolio/presentation/home/provider/selected_menu.dart';
 import 'package:portfolio/presentation/skill/skill_section.dart';
 
-@RoutePage()
 class HomePage extends ConsumerStatefulWidget {
   const HomePage({super.key});
 
