@@ -7,7 +7,7 @@ part of 'scroll_controller_offset.dart';
 // **************************************************************************
 
 String _$scrollControllerOffsetHash() =>
-    r'a266a4709e9f7830afac0a56d6c30fd9c705cc91';
+    r'6b314417ef128eb79bfc179c3daad9bc5cd6648a';
 
 /// See also [ScrollControllerOffset].
 @ProviderFor(ScrollControllerOffset)
