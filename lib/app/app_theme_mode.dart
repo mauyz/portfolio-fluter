@@ -8,13 +8,12 @@ part 'app_theme_mode.g.dart';
 class AppThemeMode extends _$AppThemeMode {
   @override
   ThemeMode build() {
-    final darkMode =
-        ref.read(sharedPreferencesProvider).value?.getBool("darkMode");
+    final darkMode = ref.read(sharedPreferencesProvider)?.getBool("darkMode");
     return darkMode == true ? ThemeMode.dark : ThemeMode.light;
   }
 
   void toggleThemeMode() {
-    final sharedPreferences = ref.read(sharedPreferencesProvider).value;
+    final sharedPreferences = ref.read(sharedPreferencesProvider);
     final darkMode = !(sharedPreferences?.getBool("darkMode") ?? false);
     sharedPreferences?.setBool("darkMode", darkMode);
     state = darkMode ? ThemeMode.dark : ThemeMode.light;

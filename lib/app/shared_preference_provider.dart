@@ -3,6 +3,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 part 'shared_preference_provider.g.dart';
 @Riverpod(keepAlive: true)
-Future<SharedPreferences> sharedPreferences(SharedPreferencesRef ref) {
-  return SharedPreferences.getInstance();
+SharedPreferences? sharedPreferences(SharedPreferencesRef ref) {
+  return null;
 }
