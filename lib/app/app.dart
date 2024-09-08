@@ -2,6 +2,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:portfolio/app/app_locale.dart';
 import 'package:portfolio/app/app_theme.dart';
 import 'package:portfolio/app/app_theme_mode.dart';
 import 'package:portfolio/generated/l10n.dart';
@@ -13,6 +14,7 @@ class App extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final themeModeProvider = ref.watch(appThemeModeProvider);
+    final appLocale = ref.watch(appLocaleProvider);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       scrollBehavior: AppScrollBehavior(),
@@ -27,6 +29,7 @@ class App extends ConsumerWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: S.delegate.supportedLocales,
+      locale: appLocale,
     );
   }
 }
