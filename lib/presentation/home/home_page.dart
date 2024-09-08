@@ -23,6 +23,7 @@ class HomePage extends ConsumerStatefulWidget {
 
 class _HomeDesktopState extends ConsumerState<HomePage> {
   late ScrollController scrollController;
+  final footerKey = GlobalKey();
   @override
   void initState() {
     super.initState();
@@ -72,7 +73,7 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
                           3 => SkillSection(
                               menu: menu.elementAt(e.index),
                             ),
-                          _ => ContactSection(
+                          _ => ProjectSection(
                               menu: menu.elementAt(e.index),
                             ),
                         };
@@ -81,7 +82,7 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
                     const SizedBox(
                       height: 50,
                     ),
-                    const FooterSection(),
+                     FooterSection(key: footerKey),
                   ],
                 ),
               ),
@@ -136,11 +137,9 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
 
   void _navigateToContacts() {
     if (scrollController.hasClients) {
-      scrollController.animateTo(
-        scrollController.position.maxScrollExtent,
-        duration: const Duration(
-          milliseconds: 500,
-        ),
+      Scrollable.ensureVisible(
+        footerKey.currentContext!,
+        duration: const Duration(milliseconds: 500),
         curve: Curves.easeOut,
       );
     }
