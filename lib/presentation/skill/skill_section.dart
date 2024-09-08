@@ -39,7 +39,7 @@ class SkillSection extends ConsumerWidget {
           Wrap(
             spacing: 40.0,
             runSpacing: 20.0,
-            children: dataRepos.getSkills().map(
+            children: dataRepos.getSkills(context).map(
               (e) {
                 return SkillBaseList(skill: e);
               },
