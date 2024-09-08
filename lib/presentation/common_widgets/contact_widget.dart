@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/utils.dart';
 import 'package:portfolio/domain/entities/contact.dart';
+import 'package:unicons/unicons.dart';
 
 class ContactWidget extends StatelessWidget {
   final Contact contact;
@@ -16,7 +17,7 @@ class ContactWidget extends StatelessWidget {
       iconSize: 24.0,
       color: Theme.of(context).colorScheme.error,
       icon: Icon(
-        contact.icon,
+        contact.type == ContactType.phone ? UniconsLine.whatsapp : contact.icon,
       ),
       onPressed: () {
         openContact(context, contact);
