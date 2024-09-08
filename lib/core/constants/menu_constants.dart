@@ -8,31 +8,39 @@ Set<Menu> getMenuList(BuildContext context) {
       index: 0,
       icon: Icons.home,
       title: S.of(context).home,
-      key: GlobalKey(),
+      key: menuKeys[0],
     ),
     Menu(
       index: 1,
       icon: Icons.info,
       title: S.of(context).aboutTitle,
-      key: GlobalKey(),
+      key: menuKeys[1],
     ),
     Menu(
       index: 2,
       icon: Icons.work_history,
       title: S.of(context).parcourTitle,
-      key: GlobalKey(),
+      key: menuKeys[2],
     ),
     Menu(
       index: 3,
       icon: Icons.ac_unit,
       title: S.of(context).skillTitle,
-      key: GlobalKey(),
+      key: menuKeys[3],
     ),
     Menu(
       index: 4,
       icon: Icons.computer,
       title: S.of(context).projectTitle,
-      key: GlobalKey(),
+      key: menuKeys[4],
     ),
   };
 }
+
+final menuKeys = List.unmodifiable([
+  GlobalKey(),
+  GlobalKey(),
+  GlobalKey(),
+  GlobalKey(),
+  GlobalKey(),
+]);
