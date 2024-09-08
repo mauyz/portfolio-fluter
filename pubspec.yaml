@@ -42,6 +42,7 @@ dependencies:
   animated_text_kit: ^4.2.2
   url_launcher: ^6.3.0
   percent_indicator: ^4.2.3
+  flutter_svg: ^2.0.10+1
 
 dev_dependencies:
   flutter_test:
@@ -55,7 +56,7 @@ dev_dependencies:
   flutter_lints: ^4.0.0
   build_runner: ^2.4.12
   riverpod_generator: ^2.4.3
-  custom_lint: ^0.6.6
+  custom_lint: ^0.6.7
   riverpod_lint: ^2.3.13
 
 # For information on the generic Dart part of this file, see the
