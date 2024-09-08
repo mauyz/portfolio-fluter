@@ -1,6 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio/core/constants/info_constants.dart';
+import 'package:portfolio/core/constants/contact_constants.dart';
 import 'package:portfolio/core/utils.dart';
 import 'package:portfolio/generated/l10n.dart';
 

@@ -20,7 +20,7 @@ class AboutSection extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final infos = ref.read(dataRepositoryProvider).getInfos();
+    final infos = ref.read(dataRepositoryProvider).getInfos(context);
     return SectionCard(
       decorated: true,
       child: Column(

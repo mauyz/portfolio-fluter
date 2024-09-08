@@ -13,7 +13,7 @@ class FooterSection extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final infos = ref.read(dataRepositoryProvider).getInfos();
+    final infos = ref.read(dataRepositoryProvider).getInfos(context);
     return Container(
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
