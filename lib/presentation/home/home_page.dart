@@ -54,7 +54,7 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
       ),
       const ThemeSwitcher(),
     ];
-    final menu = ref.refresh(dataRepositoryProvider).getMenu(context);
+    final navigationMenu = ref.read(dataRepositoryProvider).getMenu(context);
     final isMobile = ResponsiveWidget.isMobile(context);
     return Scaffold(
       appBar: isMobile
@@ -67,11 +67,17 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
               ],
             )
           : null,
-      drawer: isMobile ? const NavMobile() : null,
+      drawer: isMobile
+          ? NavMobile(selectedMenuProvider: selectedMenuProvider(context))
+          : null,
       body: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          if (!isMobile) NavDesktop(rightMenu: rightMenu),
+          if (!isMobile)
+            NavDesktop(
+              rightMenu: rightMenu,
+              selectedMenuProvider: selectedMenuProvider(context),
+            ),
           Expanded(
             child: Scrollbar(
               thumbVisibility: true,
@@ -80,23 +86,23 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
                 controller: scrollController,
                 child: Column(
                   children: [
-                    ...menu.map(
+                    ...navigationMenu.map(
                       (e) {
                         return switch (e.index) {
                           0 => HomeSection(
-                              menu: menu.elementAt(e.index),
+                              menu: navigationMenu.elementAt(e.index),
                             ),
                           1 => AboutSection(
-                              menu: menu.elementAt(e.index),
+                              menu: navigationMenu.elementAt(e.index),
                             ),
                           2 => CareerSection(
-                              menu: menu.elementAt(e.index),
+                              menu: navigationMenu.elementAt(e.index),
                             ),
                           3 => SkillSection(
-                              menu: menu.elementAt(e.index),
+                              menu: navigationMenu.elementAt(e.index),
                             ),
                           _ => ProjectSection(
-                              menu: menu.elementAt(e.index),
+                              menu: navigationMenu.elementAt(e.index),
                             ),
                         };
                       },
@@ -136,8 +142,8 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
   }
 
   void _onScroll() {
-    final setMenu = ref.read(dataRepositoryProvider).getMenu(context);
-    for (final menu in setMenu) {
+    final navigationMenu = ref.read(dataRepositoryProvider).getMenu(context);
+    for (final menu in navigationMenu) {
       final keyContext = menu.key.currentContext;
       if (keyContext != null) {
         final box = keyContext.findRenderObject() as RenderBox;
