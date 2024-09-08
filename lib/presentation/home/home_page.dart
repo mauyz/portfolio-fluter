@@ -37,6 +37,23 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final rightMenu = [
+      const LanguageMenu(),
+      Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+        child: Tooltip(
+          message: S.current.contactTitle,
+          child: OutlinedButton(
+            onPressed: _navigateToContacts,
+            child: Icon(
+              Icons.call,
+              color: Theme.of(context).colorScheme.error,
+            ),
+          ),
+        ),
+      ),
+      const ThemeSwitcher(),
+    ];
     final menu = ref.refresh(dataRepositoryProvider).getMenu(context);
     final isMobile = ResponsiveWidget.isMobile(context);
     return Scaffold(
@@ -45,42 +62,16 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
               backgroundColor:
                   Theme.of(context).colorScheme.primary.withOpacity(0.1),
               actions: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 10.0),
-                  child: TextButton(
-                    onPressed: _navigateToContacts,
-                    child: Text(
-                      S.current.contactTitle,
-                      style: Theme.of(context).textTheme.titleMedium,
-                    ),
-                  ),
-                ),
-                const Padding(
-                  padding: EdgeInsets.only(
-                    left: 10.0,
-                    right: 5.0,
-                  ),
-                  child: LanguageMenu(),
-                ),
-                const Padding(
-                  padding: EdgeInsets.only(right: 8.0),
-                  child: ThemeSwitcher(),
-                ),
+                ...rightMenu,
+                const SizedBox(width: 8.0),
               ],
             )
           : null,
-      drawer: isMobile
-          ? NavMobile(
-              navigateToContact: _navigateToContacts,
-            )
-          : null,
+      drawer: isMobile ? const NavMobile() : null,
       body: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          if (!isMobile)
-            NavDesktop(
-              navigateToContact: _navigateToContacts,
-            ),
+          if (!isMobile) NavDesktop(rightMenu: rightMenu),
           Expanded(
             child: Scrollbar(
               thumbVisibility: true,

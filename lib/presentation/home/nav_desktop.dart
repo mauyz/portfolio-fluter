@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
-import 'package:portfolio/generated/l10n.dart';
 import 'package:portfolio/presentation/common_widgets/logo_widget.dart';
-import 'package:portfolio/presentation/common_widgets/theme_switcher.dart';
-import 'package:portfolio/presentation/home/language_menu.dart';
 import 'package:portfolio/presentation/home/navigation_item.dart';
 
 class NavDesktop extends ConsumerWidget {
-  final Function() navigateToContact;
+  final List<Widget> rightMenu;
   const NavDesktop({
     super.key,
-    required this.navigateToContact,
+    required this.rightMenu,
   });
 
   @override
@@ -27,8 +24,11 @@ class NavDesktop extends ConsumerWidget {
         children: [
           InkWell(
             onTap: () {
-              final homeMenuContext =
-                  dataRepository.getMenu(context).elementAt(0).key.currentContext;
+              final homeMenuContext = dataRepository
+                  .getMenu(context)
+                  .elementAt(0)
+                  .key
+                  .currentContext;
               if (homeMenuContext != null) {
                 Scrollable.ensureVisible(
                   homeMenuContext,
@@ -51,24 +51,7 @@ class NavDesktop extends ConsumerWidget {
             },
           ),
           const Spacer(),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8.0),
-            child: TextButton(
-              onPressed: navigateToContact,
-              child: Text(
-                S.current.contactTitle,
-                style: Theme.of(context).textTheme.titleMedium,
-              ),
-            ),
-          ),
-          const Padding(
-            padding: EdgeInsets.only(
-              left: 10.0,
-              right: 5.0,
-            ),
-            child: LanguageMenu(),
-          ),
-          const ThemeSwitcher(),
+          ...rightMenu,
         ],
       ),
     );

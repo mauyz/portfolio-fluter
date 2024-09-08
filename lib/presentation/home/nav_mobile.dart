@@ -5,10 +5,8 @@ import 'package:portfolio/presentation/common_widgets/logo_widget.dart';
 import 'package:portfolio/presentation/home/navigation_item.dart';
 
 class NavMobile extends ConsumerWidget {
-  final Function() navigateToContact;
   const NavMobile({
     super.key,
-    required this.navigateToContact,
   });
 
   @override
