@@ -6,10 +6,11 @@ import 'package:portfolio/presentation/home/provider/selected_menu.dart';
 
 class NavigationItem extends ConsumerWidget {
   final Menu menu;
-
+  final SelectedMenuProvider selectedMenuProvider;
   const NavigationItem({
     super.key,
     required this.menu,
+    required this.selectedMenuProvider,
   });
 
   @override
@@ -22,11 +23,11 @@ class NavigationItem extends ConsumerWidget {
           text: char,
           style: TextStyle.lerp(
             Theme.of(context).textTheme.titleMedium?.copyWith(
-              color: Theme.of(context).colorScheme.onSecondaryContainer,
-            ),
+                  color: Theme.of(context).colorScheme.onSecondaryContainer,
+                ),
             Theme.of(context).textTheme.titleMedium?.copyWith(
-              color: Theme.of(context).colorScheme.error,
-            ),
+                  color: Theme.of(context).colorScheme.error,
+                ),
             children.length / menu.title.length,
           ),
         ),
@@ -39,13 +40,14 @@ class NavigationItem extends ConsumerWidget {
     );
     final selectedMenu = ref.watch(selectedMenuProvider);
     final selected = selectedMenu.index == menu.index;
-    onTapMenu () {
+    onTapMenu() {
       Scrollable.ensureVisible(
         menu.key.currentContext!,
         duration: const Duration(milliseconds: 400),
         curve: Curves.easeOut,
       );
     }
+
     return isMobile
         ? ListTile(
             selectedTileColor: Theme.of(context).colorScheme.primaryContainer,

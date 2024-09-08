@@ -13,7 +13,7 @@ class DownloadCvButton extends ConsumerWidget {
       onPressed: () {
         openLink(
           context,
-          ref.read(dataRepositoryProvider).getInfos().cvLink,
+          ref.read(dataRepositoryProvider).getInfos(context).cvLink,
         );
       },
       child: Text(

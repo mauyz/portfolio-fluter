@@ -16,7 +16,7 @@ class ProjectSection extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final projects = ref.read(dataRepositoryProvider).getProjects();
+    final projects = ref.read(dataRepositoryProvider).getProjects(context);
     final gridAxisCount = calculateGridAxisCount(context);
     return SectionCard(
       decorated: false,

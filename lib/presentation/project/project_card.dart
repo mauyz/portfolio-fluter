@@ -39,7 +39,7 @@ class ProjectCard extends StatelessWidget {
             children: [
               Text(
                 project.title,
-                style: Theme.of(context).textTheme.displaySmall,
+                style: Theme.of(context).textTheme.headlineSmall,
               ),
               const SizedBox(
                 height: 20.0,

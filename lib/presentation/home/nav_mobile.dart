@@ -3,12 +3,14 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
 import 'package:portfolio/presentation/common_widgets/logo_widget.dart';
 import 'package:portfolio/presentation/home/navigation_item.dart';
+import 'package:portfolio/presentation/home/provider/selected_menu.dart';
 
 class NavMobile extends ConsumerWidget {
-  final Function() navigateToContact;
+  final SelectedMenuProvider selectedMenuProvider;
+
   const NavMobile({
     super.key,
-    required this.navigateToContact,
+    required this.selectedMenuProvider,
   });
 
   @override
@@ -21,20 +23,16 @@ class NavMobile extends ConsumerWidget {
           const DrawerHeader(
             child: LogoWidget(),
           ),
-          Expanded(
-            child: ListView(
-              shrinkWrap: true,
-              children: [
-                ...dataRepository.getMenu().map(
-                  (e) {
-                    return Padding(
-                      padding: const EdgeInsets.only(bottom: 5.0),
-                      child: NavigationItem(menu: e),
-                    );
-                  },
+          ...dataRepository.getMenu(context).map(
+            (e) {
+              return Padding(
+                padding: const EdgeInsets.only(bottom: 5.0),
+                child: NavigationItem(
+                  menu: e,
+                  selectedMenuProvider: selectedMenuProvider,
                 ),
-              ],
-            ),
+              );
+            },
           ),
         ],
       ),

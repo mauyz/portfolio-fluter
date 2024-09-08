@@ -11,7 +11,8 @@ class SchoolCareerList extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final listFormation = ref.read(dataRepositoryProvider).getFormation();
+    final listFormation =
+        ref.read(dataRepositoryProvider).getFormations(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

@@ -17,7 +17,7 @@ class HomeSection extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final infos = ref.read(dataRepositoryProvider).getInfos();
+    final infos = ref.read(dataRepositoryProvider).getInfos(context);
     final deviceWidth = MediaQuery.sizeOf(context).width;
     final deviceHeight = MediaQuery.sizeOf(context).height - 120;
     return ConstrainedBox(

@@ -31,7 +31,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Développeur d\'application Android"),
         "bacDegree": MessageLookupByLibrary.simpleMessage("BAC Série C"),
         "bioContent": MessageLookupByLibrary.simpleMessage(
-            "Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa.\nJe possède une solide expérience dans la conception, le développement et la mise en production d\'applications.\n\nAu cours des quatre dernières années, j\'ai développé une expertise notable dans les langages Dart, Java et Kotlin.\nJ\'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l\'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l\'exploration de nouvelles technologies.\n\nActuellement, je me forme de manière autonome sur le framework Jetpack Compose, qui est en vogue pour les applications cross-plateforme.\nParallèlement, je suis une formation sur Spring Boot pour enrichir mes compétences en backend et rester à la pointe des évolutions technologiques."),
+            "Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa.\nJe possède une solide expérience dans la conception, le développement et la mise en production d\'applications.\n\nAu cours des quatre dernières années, j\'ai développé une expertise notable dans les langages Dart, Java et Kotlin.\nJ\'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l\'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l\'exploration de nouvelles technologies.\n\nActuellement, je me forme de manière autonome sur le framework Jetpack Compose, qui est un framework d\'interface utilisateur déclaratif basé sur Kotlin.\nParallèlement, je suis une formation sur Spring Boot pour enrichir mes compétences en backend et rester à la pointe des évolutions technologiques."),
         "cantOpenContactError": m0,
         "careerProIntro": MessageLookupByLibrary.simpleMessage(
             "Mon parcours professionnel en informatique est marqué par plusieurs expériences enrichissantes, tant au travers d\'emplois que de stages.\nCelles-ci m\'ont permis de développer des compétences solides dans ce domaine en constante évolution.\n\nVoici quelques-unes des expériences professionnelles que j\'ai acquises au cours de ces dernières années :"),
@@ -66,7 +66,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "gitHubEndIntro": MessageLookupByLibrary.simpleMessage(
             ", où je partage des projets et des codes open-sources."),
         "gitHubIntro": MessageLookupByLibrary.simpleMessage(
-            "Je vous invite aussi à explorer mon dépôt "),
+            "Je vous invite aussi à explorer mon "),
         "home": MessageLookupByLibrary.simpleMessage("Accueil"),
         "iam": MessageLookupByLibrary.simpleMessage("Je suis"),
         "internship": MessageLookupByLibrary.simpleMessage("Stage"),

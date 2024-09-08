@@ -67,7 +67,7 @@ class AnimatedWelcomeState extends ConsumerState<AnimatedWelcome>
                   onPressed: () {
                     final menuAboutContext = ref
                         .read(dataRepositoryProvider)
-                        .getMenu()
+                        .getMenu(context)
                         .elementAt(1)
                         .key
                         .currentContext;
