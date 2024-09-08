@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
+import 'package:portfolio/generated/l10n.dart';
 import 'package:portfolio/presentation/about/about_section.dart';
+import 'package:portfolio/presentation/common_widgets/theme_switcher.dart';
 import 'package:portfolio/presentation/home/contacts_widget.dart';
 import 'package:portfolio/presentation/common_widgets/responsive_widget.dart';
 import 'package:portfolio/presentation/project/project_section.dart';
@@ -37,7 +39,30 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
     final menu = ref.read(dataRepositoryProvider).getMenu();
     final isMobile = ResponsiveWidget.isMobile(context);
     return Scaffold(
-      appBar: isMobile ? AppBar() : null,
+      appBar: isMobile
+          ? AppBar(
+              backgroundColor:
+                  Theme.of(context).colorScheme.primary.withOpacity(0.1),
+              actions: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 10.0),
+                  child: TextButton(
+                    onPressed: _navigateToContacts,
+                    child: Text(
+                      S.current.contactTitle,
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                  ),
+                ),
+                const Padding(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 8.0,
+                  ),
+                  child: ThemeSwitcher(),
+                ),
+              ],
+            )
+          : null,
       drawer: isMobile
           ? NavMobile(
               navigateToContact: _navigateToContacts,
@@ -82,7 +107,7 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
                     const SizedBox(
                       height: 50,
                     ),
-                     FooterSection(key: footerKey),
+                    FooterSection(key: footerKey),
                   ],
                 ),
               ),
