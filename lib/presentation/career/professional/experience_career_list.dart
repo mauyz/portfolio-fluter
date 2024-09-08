@@ -11,7 +11,8 @@ class ExperienceCareerList extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final listExperience = ref.read(dataRepositoryProvider).getExperience();
+    final listExperience =
+        ref.read(dataRepositoryProvider).getExperiences(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

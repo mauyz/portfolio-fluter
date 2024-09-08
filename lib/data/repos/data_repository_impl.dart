@@ -1,6 +1,7 @@
+import 'package:flutter/material.dart';
 import 'package:portfolio/core/constants/experience_constants.dart';
 import 'package:portfolio/core/constants/formation_constants.dart';
-import 'package:portfolio/core/constants/info_constants.dart';
+import 'package:portfolio/core/constants/infos_constants.dart';
 import 'package:portfolio/core/constants/menu_constants.dart';
 import 'package:portfolio/core/constants/project_constants.dart';
 import 'package:portfolio/core/constants/stack_constants.dart';
@@ -17,33 +18,33 @@ part 'data_repository_impl.g.dart';
 
 class DataRepositoryImpl implements DataRepository {
   @override
-  Set<Menu> getMenu() {
-    return menu;
+  Set<Menu> getMenu(BuildContext context) {
+    return getMenuList(context);
   }
 
   @override
-  Infos getInfos() {
-    return infos;
+  Infos getInfos(BuildContext context) {
+    return getInfosData(context);
   }
 
   @override
-  Set<Formation> getFormation() {
-    return formations;
+  Set<Formation> getFormations(BuildContext context) {
+    return getFormationList(context);
   }
 
   @override
-  Set<Experience> getExperience() {
-    return experiences;
+  Set<Experience> getExperiences(BuildContext context) {
+    return getExperienceList(context);
   }
 
   @override
-  Set<SkillCategory> getSkills() {
-    return skills;
+  Set<SkillCategory> getSkills(BuildContext context) {
+    return getSkillList(context);
   }
 
   @override
-  Set<Project> getProjects() {
-    return projects;
+  Set<Project> getProjects(BuildContext context) {
+    return getProjectList(context);
   }
 }
 

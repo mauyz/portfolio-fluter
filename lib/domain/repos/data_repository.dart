@@ -10,8 +10,8 @@ abstract class DataRepository {
   const DataRepository();
   Set<Menu> getMenu(BuildContext context);
   Infos getInfos(BuildContext context);
-  Set<Formation> getFormation(BuildContext context);
-  Set<Experience> getExperience(BuildContext context);
+  Set<Formation> getFormations(BuildContext context);
+  Set<Experience> getExperiences(BuildContext context);
   Set<SkillCategory> getSkills(BuildContext context);
   Set<Project> getProjects(BuildContext context);
 }
