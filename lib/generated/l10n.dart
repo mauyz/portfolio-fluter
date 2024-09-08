@@ -210,10 +210,10 @@ class S {
     );
   }
 
-  /// `Développeur autodidacte et diplômé de l'École Nationale d'Informatique de Fianarantsoa.\nJe possède une solide expérience dans la conception, le développement et la mise en production d'applications.\n\nAu cours des quatre dernières années, j'ai développé une expertise notable dans les langages Dart, Java et Kotlin.\nJ'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l'exploration de nouvelles technologies.\n\nActuellement, je me forme de manière autonome sur le framework Jetpack Compose, qui est en vogue pour les applications cross-plateforme.\nParallèlement, je suis une formation sur Spring Boot pour enrichir mes compétences en backend et rester à la pointe des évolutions technologiques.`
+  /// `Développeur autodidacte et diplômé de l'École Nationale d'Informatique de Fianarantsoa.\nJe possède une solide expérience dans la conception, le développement et la mise en production d'applications.\n\nAu cours des quatre dernières années, j'ai développé une expertise notable dans les langages Dart, Java et Kotlin.\nJ'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l'exploration de nouvelles technologies.\n\nActuellement, je me forme de manière autonome sur le framework Jetpack Compose, qui est un framework d'interface utilisateur déclaratif basé sur Kotlin.\nParallèlement, je suis une formation sur Spring Boot pour enrichir mes compétences en backend et rester à la pointe des évolutions technologiques.`
   String get bioContent {
     return Intl.message(
-      'Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa.\nJe possède une solide expérience dans la conception, le développement et la mise en production d\'applications.\n\nAu cours des quatre dernières années, j\'ai développé une expertise notable dans les langages Dart, Java et Kotlin.\nJ\'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l\'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l\'exploration de nouvelles technologies.\n\nActuellement, je me forme de manière autonome sur le framework Jetpack Compose, qui est en vogue pour les applications cross-plateforme.\nParallèlement, je suis une formation sur Spring Boot pour enrichir mes compétences en backend et rester à la pointe des évolutions technologiques.',
+      'Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa.\nJe possède une solide expérience dans la conception, le développement et la mise en production d\'applications.\n\nAu cours des quatre dernières années, j\'ai développé une expertise notable dans les langages Dart, Java et Kotlin.\nJ\'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l\'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l\'exploration de nouvelles technologies.\n\nActuellement, je me forme de manière autonome sur le framework Jetpack Compose, qui est un framework d\'interface utilisateur déclaratif basé sur Kotlin.\nParallèlement, je suis une formation sur Spring Boot pour enrichir mes compétences en backend et rester à la pointe des évolutions technologiques.',
       name: 'bioContent',
       desc: '',
       args: [],
@@ -620,10 +620,10 @@ class S {
     );
   }
 
-  /// `Je vous invite aussi à explorer mon dépôt `
+  /// `Je vous invite aussi à explorer mon `
   String get gitHubIntro {
     return Intl.message(
-      'Je vous invite aussi à explorer mon dépôt ',
+      'Je vous invite aussi à explorer mon ',
       name: 'gitHubIntro',
       desc: '',
       args: [],
@@ -657,6 +657,7 @@ class AppLocalizationDelegate extends LocalizationsDelegate<S> {
   List<Locale> get supportedLocales {
     return const <Locale>[
       Locale.fromSubtags(languageCode: 'fr'),
+      Locale.fromSubtags(languageCode: 'en'),
     ];
   }
 
