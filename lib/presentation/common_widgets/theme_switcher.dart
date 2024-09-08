@@ -9,7 +9,7 @@ class ThemeSwitcher extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return IconButton(
       icon: Icon(
-        ref.read(appThemeModeProvider) == ThemeMode.light
+        Theme.of(context).brightness == Brightness.light
             ? Icons.dark_mode
             : Icons.light_mode,
       ),
