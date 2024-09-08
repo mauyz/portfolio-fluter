@@ -37,7 +37,7 @@ class NavigationItem extends ConsumerWidget {
         children: children,
       ),
     );
-    final selectedMenu = ref.watch(selectedMenuProvider);
+    final selectedMenu = ref.watch(selectedMenuProvider(context));
     final selected = selectedMenu.index == menu.index;
     onTapMenu () {
       Scrollable.ensureVisible(

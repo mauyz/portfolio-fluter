@@ -6,6 +6,7 @@ import 'package:portfolio/presentation/about/about_section.dart';
 import 'package:portfolio/presentation/common_widgets/theme_switcher.dart';
 import 'package:portfolio/presentation/home/contacts_widget.dart';
 import 'package:portfolio/presentation/common_widgets/responsive_widget.dart';
+import 'package:portfolio/presentation/home/language_menu.dart';
 import 'package:portfolio/presentation/project/project_section.dart';
 import 'package:portfolio/presentation/career/career_section.dart';
 import 'package:portfolio/presentation/footer/footer_section.dart';
@@ -36,7 +37,7 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final menu = ref.read(dataRepositoryProvider).getMenu();
+    final menu = ref.refresh(dataRepositoryProvider).getMenu(context);
     final isMobile = ResponsiveWidget.isMobile(context);
     return Scaffold(
       appBar: isMobile
@@ -45,7 +46,7 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
                   Theme.of(context).colorScheme.primary.withOpacity(0.1),
               actions: [
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 10.0),
+                  padding: const EdgeInsets.symmetric(horizontal: 10.0),
                   child: TextButton(
                     onPressed: _navigateToContacts,
                     child: Text(
@@ -55,9 +56,14 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
                   ),
                 ),
                 const Padding(
-                  padding: EdgeInsets.symmetric(
-                    horizontal: 8.0,
+                  padding: EdgeInsets.only(
+                    left: 10.0,
+                    right: 5.0,
                   ),
+                  child: LanguageMenu(),
+                ),
+                const Padding(
+                  padding: EdgeInsets.only(right: 8.0),
                   child: ThemeSwitcher(),
                 ),
               ],
@@ -124,7 +130,8 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
             horizontal: 5.0,
           ),
           child: ContactsWidget(
-            contacts: ref.read(dataRepositoryProvider).getInfos().contacts,
+            contacts:
+                ref.read(dataRepositoryProvider).getInfos(context).contacts,
           ),
         ),
       ),
@@ -138,7 +145,7 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
   }
 
   void _onScroll() {
-    final setMenu = ref.read(dataRepositoryProvider).getMenu();
+    final setMenu = ref.read(dataRepositoryProvider).getMenu(context);
     for (final menu in setMenu) {
       final keyContext = menu.key.currentContext;
       if (keyContext != null) {
@@ -148,7 +155,7 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
         // Check if the widget is within the visible screen area
         if (position.dy >= 0 &&
             position.dy <= MediaQuery.sizeOf(context).height) {
-          ref.read(selectedMenuProvider.notifier).update(menu);
+          ref.read(selectedMenuProvider(context).notifier).update(menu);
           break;
         }
       }

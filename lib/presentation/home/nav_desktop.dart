@@ -4,6 +4,7 @@ import 'package:portfolio/data/repos/data_repository_impl.dart';
 import 'package:portfolio/generated/l10n.dart';
 import 'package:portfolio/presentation/common_widgets/logo_widget.dart';
 import 'package:portfolio/presentation/common_widgets/theme_switcher.dart';
+import 'package:portfolio/presentation/home/language_menu.dart';
 import 'package:portfolio/presentation/home/navigation_item.dart';
 
 class NavDesktop extends ConsumerWidget {
@@ -27,7 +28,7 @@ class NavDesktop extends ConsumerWidget {
           InkWell(
             onTap: () {
               final homeMenuContext =
-                  dataRepository.getMenu().elementAt(0).key.currentContext;
+                  dataRepository.getMenu(context).elementAt(0).key.currentContext;
               if (homeMenuContext != null) {
                 Scrollable.ensureVisible(
                   homeMenuContext,
@@ -39,7 +40,7 @@ class NavDesktop extends ConsumerWidget {
             child: const LogoWidget(),
           ),
           const Spacer(),
-          ...dataRepository.getMenu().map(
+          ...dataRepository.getMenu(context).map(
             (e) {
               return Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -59,6 +60,13 @@ class NavDesktop extends ConsumerWidget {
                 style: Theme.of(context).textTheme.titleMedium,
               ),
             ),
+          ),
+          const Padding(
+            padding: EdgeInsets.only(
+              left: 10.0,
+              right: 5.0,
+            ),
+            child: LanguageMenu(),
           ),
           const ThemeSwitcher(),
         ],

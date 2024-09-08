@@ -25,7 +25,7 @@ class NavMobile extends ConsumerWidget {
             child: ListView(
               shrinkWrap: true,
               children: [
-                ...dataRepository.getMenu().map(
+                ...dataRepository.getMenu(context).map(
                   (e) {
                     return Padding(
                       padding: const EdgeInsets.only(bottom: 5.0),
