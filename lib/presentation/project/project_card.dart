@@ -102,46 +102,39 @@ class ProjectCard extends StatelessWidget {
                 height: 30.0,
               ),
               if (project.links.isNotEmpty)
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
+                Wrap(
+
+                  crossAxisAlignment: WrapCrossAlignment.center,
+                  alignment: WrapAlignment.end,
+                  spacing: 8.0,
+                  runSpacing: 8.0,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(top: 4.0),
+                      padding: const EdgeInsets.symmetric(horizontal: 5.0),
                       child: Text(
                         S.current.viewMore,
                         style: Theme.of(context).textTheme.bodyLarge,
                       ),
                     ),
-                    Expanded(
-                      child: Padding(
-                        padding: const EdgeInsets.only(left: 10.0),
-                        child: Wrap(
-                          crossAxisAlignment: WrapCrossAlignment.center,
-                          spacing: 8.0,
-                          runSpacing: 8.0,
-                          children: project.links.map(
-                            (e) {
-                              return Tooltip(
-                                message: e.value,
-                                child: FilledButton.tonalIcon(
-                                  onPressed: () {
-                                    openLink(context, e.value);
-                                  },
-                                  icon: Icon(
-                                    e.icon,
-                                    size: 16,
-                                  ),
-                                  label: Text(e.name),
-                                ),
-                              );
+                    ...project.links.map(
+                      (e) {
+                        return Tooltip(
+                          message: e.value,
+                          child: FilledButton.tonalIcon(
+                            onPressed: () {
+                              openLink(context, e.value);
                             },
-                          ).toList(),
-                        ),
-                      ),
-                    ),
+                            icon: Icon(
+                              e.icon,
+                              size: 16,
+                            ),
+                            label: Text(e.name),
+                          ),
+                        );
+                      },
+                    )
                   ],
-                )
+                ),
             ],
           ),
         ),

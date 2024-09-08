@@ -19,7 +19,7 @@ class NavDesktop extends ConsumerWidget {
     return Container(
       color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
       padding: const EdgeInsets.symmetric(
-        vertical: 10.0,
+        vertical: 8.0,
         horizontal: 20.0,
       ),
       child: Row(

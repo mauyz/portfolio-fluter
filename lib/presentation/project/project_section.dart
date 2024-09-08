@@ -8,9 +8,9 @@ import 'package:portfolio/presentation/common_widgets/section_title_widget.dart'
 import 'package:portfolio/presentation/project/github_intro.dart';
 import 'package:portfolio/presentation/project/project_card.dart';
 
-class ContactSection extends ConsumerWidget {
+class ProjectSection extends ConsumerWidget {
   final Menu menu;
-  ContactSection({
+  ProjectSection({
     required this.menu,
   }) : super(key: menu.key);
 
