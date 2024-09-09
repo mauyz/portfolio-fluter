@@ -14,9 +14,10 @@ I use some helpful packages like :
 - [percent_indicator](https://pub.dev/packages/percent_indicator)
 </br></br>
 <img src="https://github.com/user-attachments/assets/e510e63f-4d51-46f5-9589-57d94b8e703d">
- <img src="https://github.com/user-attachments/assets/6514d013-766f-42ec-986e-4655f9a1c354">
+</br></br>
+<img src="https://github.com/user-attachments/assets/6514d013-766f-42ec-986e-4655f9a1c354">
 
-<br>
+</br></br>
 
 Includes the following sections :
 - Home
