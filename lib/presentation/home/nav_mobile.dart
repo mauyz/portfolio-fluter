@@ -23,16 +23,21 @@ class NavMobile extends ConsumerWidget {
           const DrawerHeader(
             child: LogoWidget(),
           ),
-          ...dataRepository.getMenu(context).map(
-            (e) {
-              return Padding(
-                padding: const EdgeInsets.only(bottom: 5.0),
-                child: NavigationItem(
-                  menu: e,
-                  selectedMenuProvider: selectedMenuProvider,
-                ),
-              );
-            },
+          Expanded(
+            child: ListView(
+              shrinkWrap: true,
+              children: dataRepository.getMenu(context).map(
+                (e) {
+                  return Padding(
+                    padding: const EdgeInsets.only(bottom: 5.0),
+                    child: NavigationItem(
+                      menu: e,
+                      selectedMenuProvider: selectedMenuProvider,
+                    ),
+                  );
+                },
+              ).toList(),
+            ),
           ),
         ],
       ),
