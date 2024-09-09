@@ -1,6 +1,6 @@
 ## My Portfolio
 
-is a responsive and multi-platform application (version english soon) written in [Flutter](https://docs.flutter.dev/). 
+is a responsive and multi-platform application written in [Flutter](https://docs.flutter.dev/). 
 
 I use some helpful packages like : 
 
