@@ -17,29 +17,29 @@ class NavMobile extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final dataRepository = ref.read(dataRepositoryProvider);
     return Drawer(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          const DrawerHeader(
-            child: LogoWidget(),
-          ),
-          Expanded(
-            child: ListView(
-              shrinkWrap: true,
-              children: dataRepository.getMenu(context).map(
-                (e) {
-                  return Padding(
-                    padding: const EdgeInsets.only(bottom: 5.0),
-                    child: NavigationItem(
-                      menu: e,
-                      selectedMenuProvider: selectedMenuProvider,
-                    ),
-                  );
-                },
-              ).toList(),
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const DrawerHeader(
+              child: Center(
+                child: LogoWidget(),
+              ),
             ),
-          ),
-        ],
+            ...dataRepository.getMenu(context).map(
+              (e) {
+                return Padding(
+                  padding: const EdgeInsets.only(bottom: 5.0),
+                  child: NavigationItem(
+                    menu: e,
+                    selectedMenuProvider: selectedMenuProvider,
+                  ),
+                );
+              },
+            ),
+          ],
+        ),
       ),
     );
   }
