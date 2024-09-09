@@ -166,10 +166,18 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
 
   void _navigateToContacts() {
     if (scrollController.hasClients) {
+      final buildContext = context;
       Scrollable.ensureVisible(
         footerKey.currentContext!,
         duration: const Duration(milliseconds: 500),
         curve: Curves.easeOut,
+      ).whenComplete(
+        () {
+          if (buildContext.mounted) {
+            ref.read(selectedMenuProvider(buildContext).notifier).update(
+                ref.read(dataRepositoryProvider).getMenu(buildContext).last);
+          }
+        },
       );
     }
   }

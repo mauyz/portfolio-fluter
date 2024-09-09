@@ -6,6 +6,7 @@ import 'package:portfolio/domain/entities/contact.dart';
 import 'package:portfolio/generated/l10n.dart';
 import 'package:portfolio/presentation/common_widgets/animator.dart';
 import 'package:portfolio/presentation/common_widgets/on_hover_container.dart';
+import 'package:portfolio/presentation/common_widgets/responsive_widget.dart';
 import 'package:portfolio/presentation/footer/copyright_widget.dart';
 
 class FooterSection extends ConsumerWidget {
@@ -16,12 +17,11 @@ class FooterSection extends ConsumerWidget {
     final infos = ref.read(dataRepositoryProvider).getInfos(context);
     return Container(
       decoration: BoxDecoration(
-        color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
-        borderRadius: const BorderRadius.only(
-          topLeft: Radius.circular(50.0),
-          topRight: Radius.circular(50.0),
-        )
-      ),
+          color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+          borderRadius: const BorderRadius.only(
+            topLeft: Radius.circular(50.0),
+            topRight: Radius.circular(50.0),
+          )),
       child: Align(
         alignment: Alignment.center,
         child: Column(
@@ -32,7 +32,7 @@ class FooterSection extends ConsumerWidget {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(
-                horizontal: 20.0,
+                horizontal: 10.0,
               ),
               child: Text(
                 S.of(context).footerIntro.toUpperCase(),
@@ -50,12 +50,12 @@ class FooterSection extends ConsumerWidget {
               child: Text(
                 S.of(context).contactMe,
                 textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.titleSmall,
+                style: Theme.of(context).textTheme.titleMedium,
               ),
             ),
-
             Padding(
-              padding: const EdgeInsets.all(20.0),
+              padding: EdgeInsets.all(
+                  ResponsiveWidget.isMobile(context) ? 10.0 : 20.0),
               child: Wrap(
                 spacing: 20.0,
                 runSpacing: 20.0,
@@ -64,20 +64,19 @@ class FooterSection extends ConsumerWidget {
                     child: OnHoverContainer(
                       child: Card(
                         child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                            vertical: 20.0,
-                            horizontal: 10.0,
-                          ),
+                          padding: const EdgeInsets.all(20.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Icon(
                                 Icons.location_on,
-                                size: 48,
+                                size: 36,
                                 color: Theme.of(context).colorScheme.error,
                               ),
                               Padding(
-                                padding: const EdgeInsets.all(8.0),
+                                padding: const EdgeInsets.symmetric(
+                                  vertical: 8.0,
+                                ),
                                 child: Text(
                                   "Antananarivo, Madagascar",
                                   style: Theme.of(context).textTheme.titleSmall,
@@ -96,14 +95,13 @@ class FooterSection extends ConsumerWidget {
                     },
                   ).map(
                     (contact) {
-                      return Row(
-                        mainAxisSize: MainAxisSize.min,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: contact.values.map(
-                          (e) {
-                            return Flexible(
-                              child: Padding(
-                                padding: const EdgeInsets.only(right: 0.0),
+                      if (contact.values.length > 1) {
+                        return Row(
+                          mainAxisSize: MainAxisSize.min,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: contact.values.map(
+                            (e) {
+                              return Flexible(
                                 child: WidgetAnimator(
                                   child: OnHoverContainer(
                                     child: Card(
@@ -115,22 +113,22 @@ class FooterSection extends ConsumerWidget {
                                           openContact(context, contact);
                                         },
                                         child: Padding(
-                                          padding: const EdgeInsets.symmetric(
-                                            vertical: 20.0,
-                                            horizontal: 10.0,
-                                          ),
+                                          padding: const EdgeInsets.all(20.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.min,
                                             children: [
                                               Icon(
                                                 contact.icon,
-                                                size: 48,
+                                                size: 36,
                                                 color: Theme.of(context)
                                                     .colorScheme
                                                     .error,
                                               ),
                                               Padding(
-                                                padding: const EdgeInsets.all(8.0),
+                                                padding:
+                                                    const EdgeInsets.symmetric(
+                                                  vertical: 8.0,
+                                                ),
                                                 child: SelectableText(
                                                   e,
                                                   style: Theme.of(context)
@@ -145,10 +143,52 @@ class FooterSection extends ConsumerWidget {
                                     ),
                                   ),
                                 ),
+                              );
+                            },
+                          ).toList(),
+                        );
+                      }
+                      return WidgetAnimator(
+                        child: OnHoverContainer(
+                          child: Card(
+                            child: InkWell(
+                              borderRadius: const BorderRadius.all(
+                                Radius.circular(12.0),
                               ),
-                            );
-                          },
-                        ).toList(),
+                              onTap: () {
+                                openContact(context, contact);
+                              },
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                  vertical: 20.0,
+                                  horizontal: 10.0,
+                                ),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Icon(
+                                      contact.icon,
+                                      size: 36,
+                                      color:
+                                          Theme.of(context).colorScheme.error,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                        vertical: 8.0,
+                                      ),
+                                      child: SelectableText(
+                                        contact.values.first,
+                                        style: Theme.of(context)
+                                            .textTheme
+                                            .titleSmall,
+                                      ),
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
                       );
                     },
                   ),

@@ -580,10 +580,10 @@ class S {
     );
   }
 
-  /// `Collaborons et construisons des belles choses !`
+  /// `Construisons des belles choses !`
   String get footerIntro {
     return Intl.message(
-      'Collaborons et construisons des belles choses !',
+      'Construisons des belles choses !',
       name: 'footerIntro',
       desc: '',
       args: [],

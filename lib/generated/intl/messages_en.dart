@@ -59,7 +59,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "flutterDeveloper":
             MessageLookupByLibrary.simpleMessage("Flutter developer"),
         "footerIntro": MessageLookupByLibrary.simpleMessage(
-            "Let\'s work together and build beautiful things !"),
+            "Let\'s build beautiful things !"),
         "framework": MessageLookupByLibrary.simpleMessage("Framework"),
         "freelance": MessageLookupByLibrary.simpleMessage("Freelance"),
         "freelanceDesc": MessageLookupByLibrary.simpleMessage(
