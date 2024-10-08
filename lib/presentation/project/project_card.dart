@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/core/utils.dart';
+import 'package:portfolio/data/strategy/link_strategy.dart';
 import 'package:portfolio/domain/entities/project.dart';
 import 'package:portfolio/generated/l10n.dart';
 import 'package:portfolio/presentation/common_widgets/on_hover_container.dart';
@@ -122,7 +122,7 @@ class ProjectCard extends StatelessWidget {
                           message: e.value,
                           child: FilledButton.tonalIcon(
                             onPressed: () {
-                              openLink(context, e.value);
+                              LinkStrategy().open(context, e.value);
                             },
                             icon: Icon(
                               e.icon,
