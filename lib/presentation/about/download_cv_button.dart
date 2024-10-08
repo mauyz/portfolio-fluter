@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:portfolio/core/utils.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
+import 'package:portfolio/data/strategy/link_strategy.dart';
 import 'package:portfolio/generated/l10n.dart';
 
 class DownloadCvButton extends ConsumerWidget {
@@ -11,7 +11,7 @@ class DownloadCvButton extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return FilledButton(
       onPressed: () {
-        openLink(
+        LinkStrategy().open(
           context,
           ref.read(dataRepositoryProvider).getInfos(context).cvLink,
         );

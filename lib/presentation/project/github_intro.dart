@@ -1,7 +1,7 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/core/constants/contact_constants.dart';
-import 'package:portfolio/core/utils.dart';
+import 'package:portfolio/data/strategy/link_strategy.dart';
 import 'package:portfolio/generated/l10n.dart';
 
 class GithubIntro extends StatelessWidget {
@@ -24,7 +24,7 @@ class GithubIntro extends StatelessWidget {
                 ),
             recognizer: TapGestureRecognizer()
               ..onTap = () {
-                openLink(context, github.values.first);
+                LinkStrategy().open(context, github.values.first);
               },
           ),
           TextSpan(
