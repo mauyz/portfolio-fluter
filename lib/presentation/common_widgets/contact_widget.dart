@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/core/utils.dart';
+import 'package:portfolio/core/contact_util.dart';
 import 'package:portfolio/domain/entities/contact.dart';
 import 'package:unicons/unicons.dart';
 
