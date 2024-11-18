@@ -104,7 +104,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Explore some of the projects I\'ve worked on."),
         "projectTitle": MessageLookupByLibrary.simpleMessage("Projects"),
         "quadientDesc": MessageLookupByLibrary.simpleMessage(
-            "Mobile application to collect information by scanning an envelope"),
+            "Mobile application for collecting company informatio"),
         "sinceMai2024": MessageLookupByLibrary.simpleMessage("Since May 2024"),
         "skillIntro": MessageLookupByLibrary.simpleMessage(
             "Throughout my career, I have acquired and honed a diverse set of skills in IT development, spanning various programming languages, frameworks, and tools.\n\nThese competencies allow me to design and implement technical solutions that are tailored to the unique requirements of each project."),

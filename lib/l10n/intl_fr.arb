@@ -46,7 +46,7 @@
   "framework": "Framework",
   "database": "Base des données",
   "toolsApi": "Outils et API",
-  "quadientDesc": "Application mobile pour collecter des informations via le scan d'un enveloppe",
+  "quadientDesc": "Application mobile permettant de collecter des informations sur les entreprises",
   "constitutionDesc": "Application web et mobile qui permet d'explorer le contenu de la constitution de Madagascar",
   "feelinDesc": "Plateforme d'analyse des vidéos en basant sur les expressions faciales et une suite des questions",
   "viewMore": "Voir sur :",
