@@ -31,7 +31,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Développeur d\'application Android"),
         "bacDegree": MessageLookupByLibrary.simpleMessage("BAC Série C"),
         "bioContent": MessageLookupByLibrary.simpleMessage(
-            "Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa.\nJe possède une solide expérience dans la conception, le développement et la mise en production d\'applications.\n\nAu cours des quatre dernières années, j\'ai développé une expertise notable dans les langages Dart, Java et Kotlin.\nJ\'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l\'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l\'exploration de nouvelles technologies.\n\nActuellement, je me forme de manière autonome sur le framework Jetpack Compose, qui est un framework d\'interface utilisateur déclaratif basé sur Kotlin.\nParallèlement, je suis une formation sur Spring Boot pour enrichir mes compétences en backend et rester à la pointe des évolutions technologiques."),
+            "Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa, Madagascar.\nJe possède une solide expérience dans la conception, le développement et la mise en production d\'applications.\n\nAu cours des quatre dernières années, j\'ai acquis une solide expertise en programmation avec les langages Dart, Java et Kotlin.\nJ\'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l\'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l\'exploration de nouvelles technologies.\n\nJe me forme actuellement de manière autonome aux frameworks React Native et Ionic pour approfondir mes compétences en développement mobile.\n\nEn parallèle, je me perfectionne sur Spring et Symfony afin de renforcer mes connaissances en backend et de rester à jour avec les avancées technologiques."),
         "cantOpenContactError": m0,
         "careerProIntro": MessageLookupByLibrary.simpleMessage(
             "Mon parcours professionnel en informatique est marqué par plusieurs expériences enrichissantes, tant au travers d\'emplois que de stages.\nCelles-ci m\'ont permis de développer des compétences solides dans ce domaine en constante évolution.\n\nVoici quelques-unes des expériences professionnelles que j\'ai acquises au cours de ces dernières années :"),
@@ -40,14 +40,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "closeTitle": MessageLookupByLibrary.simpleMessage("Fermer"),
         "constitutionDesc": MessageLookupByLibrary.simpleMessage(
             "Application web et mobile qui permet d\'explorer le contenu de la constitution de Madagascar"),
-        "consultantDeveloperFlutter": MessageLookupByLibrary.simpleMessage(
-            "Consultant développeur flutter"),
+        "consultantDeveloperFlutter":
+            MessageLookupByLibrary.simpleMessage("Développeur consultant"),
         "contactMe": MessageLookupByLibrary.simpleMessage(
             "Si vous voulez qu\'on travaille ensemble, n\'hésitez pas à me contacter."),
         "contactTitle": MessageLookupByLibrary.simpleMessage("Contact"),
         "database": MessageLookupByLibrary.simpleMessage("Base des données"),
-        "devMobileTitle":
-            MessageLookupByLibrary.simpleMessage("Développeur mobile medior"),
+        "devMobileTitle": MessageLookupByLibrary.simpleMessage(
+            "Développeur d\'application mobile"),
         "downloadCV":
             MessageLookupByLibrary.simpleMessage("Télécharger mon CV"),
         "emayaDesc": MessageLookupByLibrary.simpleMessage(
@@ -72,7 +72,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "internship": MessageLookupByLibrary.simpleMessage("Stage"),
         "introContent": MessageLookupByLibrary.simpleMessage("Je m\'appelle"),
         "jlConsultingDesc": MessageLookupByLibrary.simpleMessage(
-            "Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nMise en production Play Store"),
+            "Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nDéveloppement API REST en Symfony"),
         "language":
             MessageLookupByLibrary.simpleMessage("Langages de programmations"),
         "licenceDesc": MessageLookupByLibrary.simpleMessage(
@@ -91,7 +91,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "onnOlepDesc": MessageLookupByLibrary.simpleMessage(
             "Administration et configuration des serveurs Linux et Windows\nAutomatisation des tâches récurrentes à l’aide de scripts Bash, Shell et PHP\nGestion d’un parc informatique contenant 120 postes de travail"),
         "parcourTitle": MessageLookupByLibrary.simpleMessage("Parcours"),
-        "passionnateTech":
+        "passionateTech":
             MessageLookupByLibrary.simpleMessage("Passionné des technologies"),
         "portfolioDesc": MessageLookupByLibrary.simpleMessage(
             "Ce site web où j\'expose mes parcours, mes compétences ainsi que mes projets personnels et professionnels"),
@@ -103,7 +103,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Explorez quelques-uns des projets sur lesquels j\'ai travaillé."),
         "projectTitle": MessageLookupByLibrary.simpleMessage("Projets"),
         "quadientDesc": MessageLookupByLibrary.simpleMessage(
-            "Application mobile pour collecter des informations via le scan d\'un enveloppe"),
+            "Application mobile permettant de collecter des informations sur les entreprises"),
         "sinceMai2024": MessageLookupByLibrary.simpleMessage("Depuis Mai 2024"),
         "skillIntro": MessageLookupByLibrary.simpleMessage(
             "Tout au long de mon parcours, j\'ai acquis et affiné un ensemble de compétences en développement informatique, couvrant divers langages, frameworks, et outils.\n\nCes compétences me permettent de concevoir et de mettre en œuvre des solutions techniques adaptées aux besoins spécifiques de chaque projet."),

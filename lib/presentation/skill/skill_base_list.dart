@@ -27,6 +27,7 @@ class SkillBaseList extends StatelessWidget {
           child: SizedBox(
             child: Wrap(
               alignment: WrapAlignment.start,
+              spacing: 12.0,
               children: skill.list.map(
                     (e) {
                   return SkillCard(

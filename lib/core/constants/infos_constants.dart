@@ -12,7 +12,7 @@ Infos getInfosData(BuildContext context) {
     titles: [
       S.of(context).softwareIng,
       S.of(context).devMobileTitle,
-      S.of(context).passionnateTech
+      S.of(context).passionateTech
     ],
     cvLink: currentLanguageCode == "fr"
         ? "https://drive.google.com/file/d/1p7o2lF3p7SPBT6XIhu0Aee1LxOnd5Kbb"

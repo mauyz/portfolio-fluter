@@ -32,7 +32,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Android application developer"),
         "bacDegree": MessageLookupByLibrary.simpleMessage("BAC Option C"),
         "bioContent": MessageLookupByLibrary.simpleMessage(
-            "Self-taught developer and a graduate of the Ecole Nationale d\'Informatique of Fianarantsoa. I have solid experience in the design, development, and deployment of applications.\n\nOver the past four years, I have developed significant expertise in Dart, Java, and Kotlin. I have primarily focused on mobile development, utilizing the Flutter framework and Android SDK.\n\nPassionate about programming, I regularly dedicate time to staying updated with the latest technological trends and exploring new innovations.\n\nCurrently, I am independently training on Jetpack Compose, a declarative user interface framework based on Kotlin.\nSimultaneously, I am taking a course on Spring Boot to enhance my backend skills and stay current with technological advancements."),
+            "Self-taught developer and a graduate of the Ecole Nationale d\'Informatique of Fianarantsoa, Madagascar. I have solid experience in the design, development, and deployment of applications.\n\nOver the past four years, I\'ve acquired solid programming expertise in Dart, Java and Kotlin. I have primarily focused on mobile development, utilizing the Flutter framework and Android SDK.\n\nPassionate about programming, I regularly dedicate time to staying updated with the latest technological trends and exploring new innovations.\n\nI am currently self-learning the React Native and Ionic frameworks to deepen my mobile development skills.\n\nAt the same time, I am enhancing my knowledge of Spring and Symfony to strengthen my backend expertise and stay updated with technological advancements."),
         "cantOpenContactError": m0,
         "careerProIntro": MessageLookupByLibrary.simpleMessage(
             "My career path in IT has been marked by a number of enriching experiences, both through jobs and internships.\nThese have enabled me to develop solid skills in this constantly evolving field.\n\nHere are just a few of the professional experiences I\'ve acquired over the last few years:"),
@@ -41,14 +41,14 @@ class MessageLookup extends MessageLookupByLibrary {
         "closeTitle": MessageLookupByLibrary.simpleMessage("Close"),
         "constitutionDesc": MessageLookupByLibrary.simpleMessage(
             "Web and mobile application to explore the contents of the Constitution of Madagascar"),
-        "consultantDeveloperFlutter": MessageLookupByLibrary.simpleMessage(
-            "Consultant flutter developer"),
+        "consultantDeveloperFlutter":
+            MessageLookupByLibrary.simpleMessage("Consultant developer"),
         "contactMe": MessageLookupByLibrary.simpleMessage(
             "If you\'d like us to work together, please don\'t hesitate to contact me."),
         "contactTitle": MessageLookupByLibrary.simpleMessage("Contact"),
         "database": MessageLookupByLibrary.simpleMessage("Database"),
-        "devMobileTitle":
-            MessageLookupByLibrary.simpleMessage("Medior mobile developer"),
+        "devMobileTitle": MessageLookupByLibrary.simpleMessage(
+            "Mobile application developer"),
         "downloadCV":
             MessageLookupByLibrary.simpleMessage("Download my resume"),
         "emayaDesc": MessageLookupByLibrary.simpleMessage(
@@ -73,7 +73,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "internship": MessageLookupByLibrary.simpleMessage("Internship"),
         "introContent": MessageLookupByLibrary.simpleMessage("I am"),
         "jlConsultingDesc": MessageLookupByLibrary.simpleMessage(
-            "Application maintenance\nDevelopment of new functionalities\nIntegration of visuals in line with mock-ups and the user experience\nPlay Store production launch"),
+            "Application maintenance\nDevelopment of new functionalities\nIntegration of visuals in line with mock-ups and the user experience\nREST API development in Symfony"),
         "language":
             MessageLookupByLibrary.simpleMessage("Programming languages"),
         "licenceDesc": MessageLookupByLibrary.simpleMessage(
@@ -92,7 +92,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "onnOlepDesc": MessageLookupByLibrary.simpleMessage(
             "Administration and configuration of Linux and Windows servers\nAutomation of recurring tasks using Bash, Shell and PHP scripts\nManagement of a computer park containing 120 workstations"),
         "parcourTitle": MessageLookupByLibrary.simpleMessage("Careers"),
-        "passionnateTech":
+        "passionateTech":
             MessageLookupByLibrary.simpleMessage("Technology enthusiast"),
         "portfolioDesc": MessageLookupByLibrary.simpleMessage(
             "This website where I present my career path, my skills and my personal and professional projects"),
@@ -104,7 +104,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Explore some of the projects I\'ve worked on."),
         "projectTitle": MessageLookupByLibrary.simpleMessage("Projects"),
         "quadientDesc": MessageLookupByLibrary.simpleMessage(
-            "Mobile application to collect information by scanning an envelope"),
+            "Mobile application for collecting company informatio"),
         "sinceMai2024": MessageLookupByLibrary.simpleMessage("Since May 2024"),
         "skillIntro": MessageLookupByLibrary.simpleMessage(
             "Throughout my career, I have acquired and honed a diverse set of skills in IT development, spanning various programming languages, frameworks, and tools.\n\nThese competencies allow me to design and implement technical solutions that are tailored to the unique requirements of each project."),

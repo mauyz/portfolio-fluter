@@ -1,4 +1,6 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:portfolio/data/strategy/link_strategy.dart';
 
 class BioWidget extends StatelessWidget {
   final String text;
@@ -27,11 +29,14 @@ class BioWidget extends StatelessWidget {
       for (String word in [
         "Dart",
         "Java",
+        "Ecole Nationale d'Informatique",
         "Kotlin",
         "Flutter",
         "Android SDK",
-        "Jetpack Compose",
-        "Spring Boot",
+        "React Native",
+        "Ionic",
+        "Spring",
+        "Symfony",
       ]) {
         int index = remainingText.indexOf(word);
         if (index != -1 && (earliestIndex == -1 || index < earliestIndex)) {
@@ -63,12 +68,25 @@ class BioWidget extends StatelessWidget {
       }
 
       spans.add(
-        TextSpan(
-          text: matchedWord,
-          style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                color: Theme.of(context).colorScheme.error,
+        matchedWord.contains("Ecole")
+            ? TextSpan(
+                text: matchedWord,
+                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                      color: Colors.blue,
+                      decoration: TextDecoration.underline,
+                      decorationColor: Colors.blue,
+                    ),
+                recognizer: TapGestureRecognizer()
+                  ..onTap = () {
+                    LinkStrategy().open(context, "https://eni.mg");
+                  },
+              )
+            : TextSpan(
+                text: matchedWord,
+                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                      color: Theme.of(context).colorScheme.error,
+                    ),
               ),
-        ),
       );
       remainingText =
           remainingText.substring(earliestIndex + matchedWord.length);

@@ -43,10 +43,6 @@ Set<Project> getProjectList(BuildContext context) {
           name: "GitLab",
           icon: "GitLab",
         ),
-        Skill(
-          name: "Jira",
-          icon: "Jira",
-        ),
       },
     ),
     Project(
@@ -124,6 +120,10 @@ Set<Project> getProjectList(BuildContext context) {
         Skill(
           name: "GraphQL",
           icon: "GraphQL",
+        ),
+        Skill(
+          name: "Rest API",
+          icon: "api",
         ),
         Skill(
           name: "SQLite",
