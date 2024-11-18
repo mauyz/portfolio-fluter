@@ -50,10 +50,10 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Développeur mobile medior`
+  /// `Développeur d'application mobile`
   String get devMobileTitle {
     return Intl.message(
-      'Développeur mobile medior',
+      'Développeur d\'application mobile',
       name: 'devMobileTitle',
       desc: '',
       args: [],
@@ -210,10 +210,10 @@ class S {
     );
   }
 
-  /// `Développeur autodidacte et diplômé de l'École Nationale d'Informatique de Fianarantsoa.\nJe possède une solide expérience dans la conception, le développement et la mise en production d'applications.\n\nAu cours des quatre dernières années, j'ai développé une expertise notable dans les langages Dart, Java et Kotlin.\nJ'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l'exploration de nouvelles technologies.\n\nActuellement, je me forme de manière autonome sur le framework Jetpack Compose, qui est un framework d'interface utilisateur déclaratif basé sur Kotlin.\nParallèlement, je suis une formation sur Spring Boot pour enrichir mes compétences en backend et rester à la pointe des évolutions technologiques.`
+  /// `Développeur autodidacte et diplômé de l'École Nationale d'Informatique de Fianarantsoa, Madagascar.\nJe possède une solide expérience dans la conception, le développement et la mise en production d'applications.\n\nAu cours des quatre dernières années, j'ai acquis une solide expertise en programmation avec les langages Dart, Java et Kotlin.\nJ'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l'exploration de nouvelles technologies.\n\nJe me forme actuellement de manière autonome aux frameworks React Native et Ionic pour approfondir mes compétences en développement mobile.\n\nEn parallèle, je me perfectionne sur Spring et Symfony afin de renforcer mes connaissances en backend et de rester à jour avec les avancées technologiques.`
   String get bioContent {
     return Intl.message(
-      'Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa.\nJe possède une solide expérience dans la conception, le développement et la mise en production d\'applications.\n\nAu cours des quatre dernières années, j\'ai développé une expertise notable dans les langages Dart, Java et Kotlin.\nJ\'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l\'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l\'exploration de nouvelles technologies.\n\nActuellement, je me forme de manière autonome sur le framework Jetpack Compose, qui est un framework d\'interface utilisateur déclaratif basé sur Kotlin.\nParallèlement, je suis une formation sur Spring Boot pour enrichir mes compétences en backend et rester à la pointe des évolutions technologiques.',
+      'Développeur autodidacte et diplômé de l\'École Nationale d\'Informatique de Fianarantsoa, Madagascar.\nJe possède une solide expérience dans la conception, le développement et la mise en production d\'applications.\n\nAu cours des quatre dernières années, j\'ai acquis une solide expertise en programmation avec les langages Dart, Java et Kotlin.\nJ\'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l\'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l\'exploration de nouvelles technologies.\n\nJe me forme actuellement de manière autonome aux frameworks React Native et Ionic pour approfondir mes compétences en développement mobile.\n\nEn parallèle, je me perfectionne sur Spring et Symfony afin de renforcer mes connaissances en backend et de rester à jour avec les avancées technologiques.',
       name: 'bioContent',
       desc: '',
       args: [],
@@ -241,10 +241,10 @@ class S {
   }
 
   /// `Passionné des technologies`
-  String get passionnateTech {
+  String get passionateTech {
     return Intl.message(
       'Passionné des technologies',
-      name: 'passionnateTech',
+      name: 'passionateTech',
       desc: '',
       args: [],
     );

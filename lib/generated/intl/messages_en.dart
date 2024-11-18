@@ -32,7 +32,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Android application developer"),
         "bacDegree": MessageLookupByLibrary.simpleMessage("BAC Option C"),
         "bioContent": MessageLookupByLibrary.simpleMessage(
-            "Self-taught developer and a graduate of the Ecole Nationale d\'Informatique of Fianarantsoa. I have solid experience in the design, development, and deployment of applications.\n\nOver the past four years, I have developed significant expertise in Dart, Java, and Kotlin. I have primarily focused on mobile development, utilizing the Flutter framework and Android SDK.\n\nPassionate about programming, I regularly dedicate time to staying updated with the latest technological trends and exploring new innovations.\n\nCurrently, I am independently training on Jetpack Compose, a declarative user interface framework based on Kotlin.\nSimultaneously, I am taking a course on Spring Boot to enhance my backend skills and stay current with technological advancements."),
+            "Self-taught developer and a graduate of the Ecole Nationale d\'Informatique of Fianarantsoa, Madagascar. I have solid experience in the design, development, and deployment of applications.\n\nOver the past four years, I\'ve acquired solid programming expertise in Dart, Java and Kotlin. I have primarily focused on mobile development, utilizing the Flutter framework and Android SDK.\n\nPassionate about programming, I regularly dedicate time to staying updated with the latest technological trends and exploring new innovations.\n\nI am currently self-learning the React Native and Ionic frameworks to deepen my mobile development skills.\n\nAt the same time, I am enhancing my knowledge of Spring and Symfony to strengthen my backend expertise and stay updated with technological advancements."),
         "cantOpenContactError": m0,
         "careerProIntro": MessageLookupByLibrary.simpleMessage(
             "My career path in IT has been marked by a number of enriching experiences, both through jobs and internships.\nThese have enabled me to develop solid skills in this constantly evolving field.\n\nHere are just a few of the professional experiences I\'ve acquired over the last few years:"),
@@ -47,8 +47,8 @@ class MessageLookup extends MessageLookupByLibrary {
             "If you\'d like us to work together, please don\'t hesitate to contact me."),
         "contactTitle": MessageLookupByLibrary.simpleMessage("Contact"),
         "database": MessageLookupByLibrary.simpleMessage("Database"),
-        "devMobileTitle":
-            MessageLookupByLibrary.simpleMessage("Medior mobile developer"),
+        "devMobileTitle": MessageLookupByLibrary.simpleMessage(
+            "Mobile application developer"),
         "downloadCV":
             MessageLookupByLibrary.simpleMessage("Download my resume"),
         "emayaDesc": MessageLookupByLibrary.simpleMessage(
@@ -92,7 +92,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "onnOlepDesc": MessageLookupByLibrary.simpleMessage(
             "Administration and configuration of Linux and Windows servers\nAutomation of recurring tasks using Bash, Shell and PHP scripts\nManagement of a computer park containing 120 workstations"),
         "parcourTitle": MessageLookupByLibrary.simpleMessage("Careers"),
-        "passionnateTech":
+        "passionateTech":
             MessageLookupByLibrary.simpleMessage("Technology enthusiast"),
         "portfolioDesc": MessageLookupByLibrary.simpleMessage(
             "This website where I present my career path, my skills and my personal and professional projects"),
