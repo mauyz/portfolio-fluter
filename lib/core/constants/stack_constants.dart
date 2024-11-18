@@ -118,6 +118,10 @@ Set<SkillCategory> getSkillList(BuildContext context) {
           icon: "Android Studio",
         ),
         Skill(
+          name: "VS Code",
+          icon: "vscode",
+        ),
+        Skill(
           name: "Xcode",
           icon: "Xcode",
         ),
