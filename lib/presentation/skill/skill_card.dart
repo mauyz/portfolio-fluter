@@ -15,7 +15,7 @@ class SkillCard extends StatelessWidget {
     final note = skill.note;
     return OnHoverContainer(
       child: Card(
-        elevation: 1.0,
+        elevation: 0.0,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: note != null
@@ -42,8 +42,8 @@ class SkillCard extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(horizontal: 8.0),
                           child: Image.asset(
                             "assets/images/${skill.icon}.png",
-                            width: 24.0,
-                            height: 24.0,
+                            width: 96.0,
+                            height: 96.0,
                           ),
                         ),
                         Flexible(
@@ -55,37 +55,32 @@ class SkillCard extends StatelessWidget {
                     ),
                   ),
                 )
-              : Padding(
-                  padding: const EdgeInsets.symmetric(
-                    vertical: 10.0,
+              : Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(12.0),
+                    child: Image.asset(
+                      "assets/images/${skill.icon}.png",
+                      width: 96.0,
+                      height: 96.0,
+                      color:
+                          (Theme.of(context).brightness == Brightness.dark &&
+                                  (skill.name == "GitHub" || skill.name == "Symfony"))
+                              ? Colors.white
+                              : null,
+                    ),
                   ),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(12.0),
-                        child: Image.asset(
-                          "assets/images/${skill.icon}.png",
-                          width: 36.0,
-                          height: 36.0,
-                          color:
-                              (Theme.of(context).brightness == Brightness.dark &&
-                                      skill.name == "GitHub")
-                                  ? Colors.white
-                                  : null,
-                        ),
+                  Flexible(
+                    child: Padding(
+                      padding: const EdgeInsets.only(right: 8.0),
+                      child: Text(
+                        skill.name,
                       ),
-                      Flexible(
-                        child: Padding(
-                          padding: const EdgeInsets.only(right: 8.0),
-                          child: Text(
-                            skill.name,
-                          ),
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
-                ),
+                ],
+              ),
         ),
       ),
     );

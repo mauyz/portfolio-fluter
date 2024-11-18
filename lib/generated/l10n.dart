@@ -80,10 +80,10 @@ class S {
     );
   }
 
-  /// `Consultant développeur flutter`
+  /// `Développeur consultant`
   String get consultantDeveloperFlutter {
     return Intl.message(
-      'Consultant développeur flutter',
+      'Développeur consultant',
       name: 'consultantDeveloperFlutter',
       desc: '',
       args: [],
@@ -390,10 +390,10 @@ class S {
     );
   }
 
-  /// `Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nMise en production Play Store`
+  /// `Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nDéveloppement API REST en Symfony`
   String get jlConsultingDesc {
     return Intl.message(
-      'Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nMise en production Play Store',
+      'Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nDéveloppement API REST en Symfony',
       name: 'jlConsultingDesc',
       desc: '',
       args: [],

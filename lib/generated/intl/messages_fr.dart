@@ -40,8 +40,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "closeTitle": MessageLookupByLibrary.simpleMessage("Fermer"),
         "constitutionDesc": MessageLookupByLibrary.simpleMessage(
             "Application web et mobile qui permet d\'explorer le contenu de la constitution de Madagascar"),
-        "consultantDeveloperFlutter": MessageLookupByLibrary.simpleMessage(
-            "Consultant développeur flutter"),
+        "consultantDeveloperFlutter":
+            MessageLookupByLibrary.simpleMessage("Développeur consultant"),
         "contactMe": MessageLookupByLibrary.simpleMessage(
             "Si vous voulez qu\'on travaille ensemble, n\'hésitez pas à me contacter."),
         "contactTitle": MessageLookupByLibrary.simpleMessage("Contact"),
@@ -72,7 +72,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "internship": MessageLookupByLibrary.simpleMessage("Stage"),
         "introContent": MessageLookupByLibrary.simpleMessage("Je m\'appelle"),
         "jlConsultingDesc": MessageLookupByLibrary.simpleMessage(
-            "Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nMise en production Play Store"),
+            "Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nDéveloppement API REST en Symfony"),
         "language":
             MessageLookupByLibrary.simpleMessage("Langages de programmations"),
         "licenceDesc": MessageLookupByLibrary.simpleMessage(
