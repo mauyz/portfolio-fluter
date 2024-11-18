@@ -6,7 +6,7 @@ class HelloWorldWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      "Hello world ",
+      "{ Hello world }",
       style: Theme.of(context).textTheme.titleLarge,
     );
   }

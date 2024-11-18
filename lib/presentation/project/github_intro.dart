@@ -21,6 +21,7 @@ class GithubIntro extends StatelessWidget {
             style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                   color: Colors.blue,
                   decoration: TextDecoration.underline,
+                  decorationColor: Colors.blue,
                 ),
             recognizer: TapGestureRecognizer()
               ..onTap = () {
