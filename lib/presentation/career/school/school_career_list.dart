@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
 import 'package:portfolio/generated/l10n.dart';
+import 'package:portfolio/presentation/about/custom_content_widget.dart';
 import 'package:portfolio/presentation/career/career_category_title.dart';
 import 'package:portfolio/presentation/career/school/school_item_widget.dart';
 import 'package:portfolio/presentation/common_widgets/responsive_widget.dart';
@@ -22,8 +23,8 @@ class SchoolCareerList extends ConsumerWidget {
         const SizedBox(
           height: 10.0,
         ),
-        Text(
-          S.current.careerScholIntro,
+        CustomContentWidget(
+          text: S.current.careerScholIntro,
           style: Theme.of(context).textTheme.bodyMedium,
         ),
         const SizedBox(
