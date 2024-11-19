@@ -23,7 +23,8 @@ class SkillCard extends StatelessWidget {
                   radius: 40.0,
                   percent: note / 100,
                   progressColor: Theme.of(context).colorScheme.error,
-                  backgroundColor: Theme.of(context).colorScheme.primaryContainer,
+                  backgroundColor:
+                      Theme.of(context).colorScheme.primaryContainer,
                   animateFromLastPercent: true,
                   animation: true,
                   center: Text(
@@ -56,31 +57,35 @@ class SkillCard extends StatelessWidget {
                   ),
                 )
               : Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(12.0),
-                    child: Image.asset(
-                      "assets/images/${skill.icon}.png",
-                      width: 96.0,
-                      height: 96.0,
-                      color:
-                          (Theme.of(context).brightness == Brightness.dark &&
-                                  (skill.name == "GitHub" || skill.name == "Symfony"))
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Flexible(
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Image.asset(
+                          "assets/images/${skill.icon}.png",
+                          width: 96.0,
+                          height: 96.0,
+                          fit: BoxFit.fitWidth,
+                          color: (Theme.of(context).brightness ==
+                                      Brightness.dark &&
+                                  (skill.name == "GitHub" ||
+                                      skill.name == "Symfony"))
                               ? Colors.white
                               : null,
-                    ),
-                  ),
-                  Flexible(
-                    child: Padding(
-                      padding: const EdgeInsets.only(right: 8.0),
-                      child: Text(
-                        skill.name,
+                        ),
                       ),
                     ),
-                  ),
-                ],
-              ),
+                    Flexible(
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 8.0),
+                        child: Text(
+                          skill.name,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
         ),
       ),
     );

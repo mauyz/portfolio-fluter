@@ -2,9 +2,14 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/data/strategy/link_strategy.dart';
 
-class BioWidget extends StatelessWidget {
+class CustomContentWidget extends StatelessWidget {
   final String text;
-  const BioWidget({super.key, required this.text});
+  final TextStyle? style;
+  const CustomContentWidget({
+    super.key,
+    required this.text,
+    this.style,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -21,13 +26,16 @@ class BioWidget extends StatelessWidget {
   List<TextSpan> _getSpans(BuildContext context) {
     List<TextSpan> spans = [];
     String remainingText = text;
+    final textStyle = style ?? Theme.of(context).textTheme.bodyLarge;
 
     while (remainingText.isNotEmpty) {
       int earliestIndex = -1;
       String matchedWord = '';
 
-      for (String word in [
+      for (String word in {
         "Dart",
+        "{",
+        "}",
         "Java",
         "Ecole Nationale d'Informatique",
         "Kotlin",
@@ -37,7 +45,7 @@ class BioWidget extends StatelessWidget {
         "Ionic",
         "Spring",
         "Symfony",
-      ]) {
+      }) {
         int index = remainingText.indexOf(word);
         if (index != -1 && (earliestIndex == -1 || index < earliestIndex)) {
           earliestIndex = index;
@@ -49,7 +57,7 @@ class BioWidget extends StatelessWidget {
         spans.add(
           TextSpan(
             text: remainingText,
-            style: Theme.of(context).textTheme.bodyLarge,
+            style: textStyle,
           ),
         );
         break;
@@ -62,20 +70,20 @@ class BioWidget extends StatelessWidget {
               0,
               earliestIndex,
             ),
-            style: Theme.of(context).textTheme.bodyLarge,
+            style: textStyle,
           ),
         );
       }
 
       spans.add(
-        matchedWord.contains("Ecole")
+        matchedWord == "Ecole Nationale d'Informatique"
             ? TextSpan(
                 text: matchedWord,
-                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                      color: Colors.blue,
-                      decoration: TextDecoration.underline,
-                      decorationColor: Colors.blue,
-                    ),
+                style: textStyle?.copyWith(
+                  color: Colors.blue,
+                  decoration: TextDecoration.underline,
+                  decorationColor: Colors.blue,
+                ),
                 recognizer: TapGestureRecognizer()
                   ..onTap = () {
                     LinkStrategy().open(context, "https://eni.mg");
@@ -83,9 +91,9 @@ class BioWidget extends StatelessWidget {
               )
             : TextSpan(
                 text: matchedWord,
-                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                      color: Theme.of(context).colorScheme.error,
-                    ),
+                style: textStyle?.copyWith(
+                  color: Theme.of(context).colorScheme.error,
+                ),
               ),
       );
       remainingText =
