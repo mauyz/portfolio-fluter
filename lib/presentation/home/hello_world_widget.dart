@@ -8,7 +8,7 @@ class HelloWorldWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomContentWidget(
       text: "{ Hello world }",
-      style: Theme.of(context).textTheme.displayLarge,
+      style: Theme.of(context).textTheme.displayMedium,
     );
   }
 }
