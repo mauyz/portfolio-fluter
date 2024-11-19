@@ -3,7 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/data/repos/data_repository_impl.dart';
 import 'package:portfolio/domain/entities/menu.dart';
 import 'package:portfolio/presentation/about/about_image_widget.dart';
-import 'package:portfolio/presentation/about/bio_widget.dart';
+import 'package:portfolio/presentation/about/custom_content_widget.dart';
 import 'package:portfolio/presentation/about/download_cv_button.dart';
 import 'package:portfolio/presentation/about/job_titles_widget.dart';
 import 'package:portfolio/presentation/common_widgets/section_card.dart';
@@ -77,7 +77,7 @@ class AboutSection extends ConsumerWidget {
               padding: const EdgeInsets.all(
                 10.0,
               ),
-              child: BioWidget(text: infos.bio),
+              child: CustomContentWidget(text: infos.bio),
             ),
             const Padding(
               padding: EdgeInsets.all(10.0),
@@ -120,7 +120,7 @@ class AboutSection extends ConsumerWidget {
                         const SizedBox(
                           height: 15.0,
                         ),
-                        BioWidget(text: infos.bio),
+                        CustomContentWidget(text: infos.bio),
                         const SizedBox(
                           height: 20.0,
                         ),
