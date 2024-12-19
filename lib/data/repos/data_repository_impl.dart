@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/core/constants/experience_constants.dart';
 import 'package:portfolio/core/constants/formation_constants.dart';
 import 'package:portfolio/core/constants/infos_constants.dart';
@@ -49,6 +50,6 @@ class DataRepositoryImpl implements DataRepository {
 }
 
 @Riverpod(keepAlive: true)
-DataRepository dataRepository(DataRepositoryRef re) {
+DataRepository dataRepository(Ref re) {
   return DataRepositoryImpl();
 }
