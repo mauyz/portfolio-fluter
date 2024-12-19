@@ -60,7 +60,7 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
       appBar: isMobile
           ? AppBar(
               backgroundColor:
-                  Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                  Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
               actions: [
                 ...rightMenu,
                 const SizedBox(width: 8.0),
@@ -121,7 +121,7 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
       bottomNavigationBar: IntrinsicHeight(
         child: Container(
           alignment: Alignment.centerRight,
-          color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+          color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
           padding: const EdgeInsets.symmetric(
             vertical: 2.0,
             horizontal: 5.0,

@@ -16,7 +16,7 @@ class FooterSection extends ConsumerWidget {
     final infos = ref.read(dataRepositoryProvider).getInfos(context);
     return Container(
       decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+          color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
           borderRadius: const BorderRadius.only(
             topLeft: Radius.circular(50.0),
             topRight: Radius.circular(50.0),
