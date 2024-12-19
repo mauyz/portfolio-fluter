@@ -28,7 +28,7 @@ class WelcomeWidget extends ConsumerWidget {
           onPressed: () {
             final menuAboutContext = ref
                 .read(dataRepositoryProvider)
-                .getMenu(context)
+                .getMenu()
                 .elementAt(1)
                 .key
                 .currentContext;
