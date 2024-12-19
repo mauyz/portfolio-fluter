@@ -19,8 +19,8 @@ part 'data_repository_impl.g.dart';
 
 class DataRepositoryImpl implements DataRepository {
   @override
-  Set<Menu> getMenu(BuildContext context) {
-    return getMenuList(context);
+  Set<Menu> getMenu() {
+    return getMenuList();
   }
 
   @override
