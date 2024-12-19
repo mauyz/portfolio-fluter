@@ -649,6 +649,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Gestion des tâches`
+  String get taskManager {
+    return Intl.message(
+      'Gestion des tâches',
+      name: 'taskManager',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Une simple application de gestion des tâches utile pour apprendre les meilleures pratiques de Flutter`
+  String get taskManagerDesc {
+    return Intl.message(
+      'Une simple application de gestion des tâches utile pour apprendre les meilleures pratiques de Flutter',
+      name: 'taskManagerDesc',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

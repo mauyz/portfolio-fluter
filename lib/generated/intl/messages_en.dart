@@ -113,6 +113,9 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Software engineer"),
         "systemAdministrator": MessageLookupByLibrary.simpleMessage(
             "Systems and network administrator"),
+        "taskManager": MessageLookupByLibrary.simpleMessage("Task manager"),
+        "taskManagerDesc": MessageLookupByLibrary.simpleMessage(
+            "A simple task management application useful for learning Flutter best practices"),
         "techTitle": MessageLookupByLibrary.simpleMessage("Technologies"),
         "toolsApi": MessageLookupByLibrary.simpleMessage("Tools and APIs"),
         "viewMore": MessageLookupByLibrary.simpleMessage("View on :"),
