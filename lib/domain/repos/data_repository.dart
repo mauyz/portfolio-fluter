@@ -8,7 +8,7 @@ import 'package:portfolio/domain/entities/skill_category.dart';
 
 abstract class DataRepository {
   const DataRepository();
-  Set<Menu> getMenu(BuildContext context);
+  Set<Menu> getMenu();
   Infos getInfos(BuildContext context);
   Set<Formation> getFormations(BuildContext context);
   Set<Experience> getExperiences(BuildContext context);

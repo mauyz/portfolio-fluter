@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:portfolio/domain/entities/menu.dart';
 import 'package:portfolio/presentation/common_widgets/responsive_widget.dart';
-import 'package:portfolio/presentation/home/provider/selected_menu.dart';
 
 class NavigationItem extends ConsumerWidget {
   final Menu menu;
-  final SelectedMenuProvider selectedMenuProvider;
+  final NotifierProvider selectedMenuProvider;
   const NavigationItem({
     super.key,
     required this.menu,

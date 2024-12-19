@@ -60,5 +60,7 @@
   "skillIntro": "Throughout my career, I have acquired and honed a diverse set of skills in IT development, spanning various programming languages, frameworks, and tools.\n\nThese competencies allow me to design and implement technical solutions that are tailored to the unique requirements of each project.",
   "gitHubIntro": "I also invite you to explore my ",
   "gitHubEndIntro": ", where I share projects and open-source code.",
-  "projectListIntro": "Explore some of the projects I've worked on."
+  "projectListIntro": "Explore some of the projects I've worked on.",
+  "taskManager": "Task manager",
+  "taskManagerDesc": "A simple task management application useful for learning Flutter best practices"
 }

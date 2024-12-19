@@ -54,13 +54,13 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
       ),
       const ThemeSwitcher(),
     ];
-    final navigationMenu = ref.read(dataRepositoryProvider).getMenu(context);
+    final navigationMenu = ref.read(dataRepositoryProvider).getMenu();
     final isMobile = ResponsiveWidget.isMobile(context);
     return Scaffold(
       appBar: isMobile
           ? AppBar(
               backgroundColor:
-                  Theme.of(context).colorScheme.primary.withOpacity(0.1),
+                  Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
               actions: [
                 ...rightMenu,
                 const SizedBox(width: 8.0),
@@ -68,7 +68,7 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
             )
           : null,
       drawer: isMobile
-          ? NavMobile(selectedMenuProvider: selectedMenuProvider(context))
+          ? NavMobile(selectedMenuProvider: selectedMenuProvider)
           : null,
       body: Column(
         mainAxisSize: MainAxisSize.min,
@@ -76,7 +76,7 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
           if (!isMobile)
             NavDesktop(
               rightMenu: rightMenu,
-              selectedMenuProvider: selectedMenuProvider(context),
+              selectedMenuProvider: selectedMenuProvider,
             ),
           Expanded(
             child: Scrollbar(
@@ -121,7 +121,7 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
       bottomNavigationBar: IntrinsicHeight(
         child: Container(
           alignment: Alignment.centerRight,
-          color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
+          color: Theme.of(context).colorScheme.primary.withValues(alpha: 0.1),
           padding: const EdgeInsets.symmetric(
             vertical: 2.0,
             horizontal: 5.0,
@@ -142,7 +142,7 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
   }
 
   void _onScroll() {
-    final navigationMenu = ref.read(dataRepositoryProvider).getMenu(context);
+    final navigationMenu = ref.read(dataRepositoryProvider).getMenu();
     for (final menu in navigationMenu) {
       final keyContext = menu.key.currentContext;
       if (keyContext != null) {
@@ -152,7 +152,7 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
         // Check if the widget is within the visible screen area
         if (position.dy >= 0 &&
             position.dy <= MediaQuery.sizeOf(context).height) {
-          ref.read(selectedMenuProvider(context).notifier).update(menu);
+          ref.read(selectedMenuProvider.notifier).update(menu);
           break;
         }
       }
@@ -174,8 +174,8 @@ class _HomeDesktopState extends ConsumerState<HomePage> {
       ).whenComplete(
         () {
           if (buildContext.mounted) {
-            ref.read(selectedMenuProvider(buildContext).notifier).update(
-                ref.read(dataRepositoryProvider).getMenu(buildContext).last);
+            ref.read(selectedMenuProvider.notifier).update(
+                ref.read(dataRepositoryProvider).getMenu().last);
           }
         },
       );

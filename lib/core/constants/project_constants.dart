@@ -147,6 +147,34 @@ Set<Project> getProjectList(BuildContext context) {
         Skill(
           name: "Dart",
           icon: "Dart",
+        ),
+        Skill(
+          name: "Flutter",
+          icon: "Flutter",
+          note: 80,
+        ),
+        Skill(
+          name: "SQLite",
+          icon: "SQLite",
+          note: 80,
+        ),
+      },
+    ),
+    Project(
+      title: S.of(context).taskManager,
+      preview: "taskmanager",
+      description: S.of(context).taskManagerDesc,
+      links: {
+        ProjectLink(
+          name: "GitHub",
+          icon: UniconsLine.github,
+          value: "https://github.com/mauyz/task_manager_app",
+        ),
+      },
+      stacks: {
+        Skill(
+          name: "Dart",
+          icon: "Dart",
           note: 80,
         ),
         Skill(

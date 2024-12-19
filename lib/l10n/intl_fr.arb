@@ -60,5 +60,7 @@
   "skillIntro": "Tout au long de mon parcours, j'ai acquis et affiné un ensemble de compétences en développement informatique, couvrant divers langages, frameworks, et outils.\n\nCes compétences me permettent de concevoir et de mettre en œuvre des solutions techniques adaptées aux besoins spécifiques de chaque projet.",
   "gitHubIntro": "Je vous invite aussi à explorer mon ",
   "gitHubEndIntro": ", où je partage des projets et des codes open-sources.",
-  "projectListIntro": "Explorez quelques-uns des projets sur lesquels j'ai travaillé."
+  "projectListIntro": "Explorez quelques-uns des projets sur lesquels j'ai travaillé.",
+  "taskManager": "Gestion des tâches",
+  "taskManagerDesc": "Une simple application de gestion des tâches utile pour apprendre les meilleures pratiques de Flutter"
 }
