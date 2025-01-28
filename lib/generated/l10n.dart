@@ -510,10 +510,10 @@ class S {
     );
   }
 
-  /// `Application web et mobile qui permet d'explorer le contenu de la constitution de Madagascar`
+  /// `Application web et mobile qui permet d'explorer la constitution de Madagascar`
   String get constitutionDesc {
     return Intl.message(
-      'Application web et mobile qui permet d\'explorer le contenu de la constitution de Madagascar',
+      'Application web et mobile qui permet d\'explorer la constitution de Madagascar',
       name: 'constitutionDesc',
       desc: '',
       args: [],
@@ -665,6 +665,16 @@ class S {
     return Intl.message(
       'Une simple application de gestion des tâches utile pour apprendre les meilleures pratiques de Flutter',
       name: 'taskManagerDesc',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Une application sert à explorer le code du travail Malagasy`
+  String get workcodeDesc {
+    return Intl.message(
+      'Une application sert à explorer le code du travail Malagasy',
+      name: 'workcodeDesc',
       desc: '',
       args: [],
     );

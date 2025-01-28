@@ -8,6 +8,40 @@ import 'package:unicons/unicons.dart';
 Set<Project> getProjectList(BuildContext context) {
   return {
     Project(
+      title: "Contrat du travail Malagasy",
+      preview: "workcode",
+      description: S.of(context).workcodeDesc,
+      links: {
+        ProjectLink(
+          name: "Play store",
+          icon: UniconsLine.google_play,
+          value:
+              "https://play.google.com/store/apps/details?id=com.eightgroup.madagascar_workcoode",
+        ),
+      },
+      stacks: {
+        Skill(
+          name: "Dart",
+          icon: "Dart",
+          note: 80,
+        ),
+        Skill(
+          name: "Flutter",
+          icon: "Flutter",
+          note: 80,
+        ),
+        Skill(
+          name: "SQLite",
+          icon: "SQLite",
+          note: 80,
+        ),
+        Skill(
+          name: "Github",
+          icon: "GitHub",
+        ),
+      },
+    ),
+    Project(
       title: "Quadient Scan",
       preview: "quadient",
       description: S.of(context).quadientDesc,
