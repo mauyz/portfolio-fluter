@@ -39,7 +39,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "Mon parcours académique en informatique a été marqué par des formations rigoureuses, notamment à l\'Ecole Nationale d\'Informatique (ENI) de Fianarantsoa.\nAvant cela, j\'ai obtenu un baccalauréat scientifique, qui a posé les bases de mon intérêt pour les sciences et les technologies."),
         "closeTitle": MessageLookupByLibrary.simpleMessage("Fermer"),
         "constitutionDesc": MessageLookupByLibrary.simpleMessage(
-            "Application web et mobile qui permet d\'explorer le contenu de la constitution de Madagascar"),
+            "Application web et mobile qui permet d\'explorer la constitution de Madagascar"),
         "consultantDeveloperFlutter":
             MessageLookupByLibrary.simpleMessage("Développeur consultant"),
         "contactMe": MessageLookupByLibrary.simpleMessage(

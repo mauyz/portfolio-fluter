@@ -510,10 +510,10 @@ class S {
     );
   }
 
-  /// `Application web et mobile qui permet d'explorer le contenu de la constitution de Madagascar`
+  /// `Application web et mobile qui permet d'explorer la constitution de Madagascar`
   String get constitutionDesc {
     return Intl.message(
-      'Application web et mobile qui permet d\'explorer le contenu de la constitution de Madagascar',
+      'Application web et mobile qui permet d\'explorer la constitution de Madagascar',
       name: 'constitutionDesc',
       desc: '',
       args: [],

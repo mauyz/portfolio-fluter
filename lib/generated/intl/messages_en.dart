@@ -40,7 +40,7 @@ class MessageLookup extends MessageLookupByLibrary {
             "My academic career in IT has been defined by rigorous training, particularly at the Ecole Nationale d\'Informatique (ENI) in Fianarantsoa.\nPrior to that, I earned a scientific baccalaureate, which sparked and solidified my interest in science and technology."),
         "closeTitle": MessageLookupByLibrary.simpleMessage("Close"),
         "constitutionDesc": MessageLookupByLibrary.simpleMessage(
-            "Web and mobile application to explore the contents of the Constitution of Madagascar"),
+            "Web and mobile application to explore the Constitution of Madagascar"),
         "consultantDeveloperFlutter":
             MessageLookupByLibrary.simpleMessage("Consultant developer"),
         "contactMe": MessageLookupByLibrary.simpleMessage(
