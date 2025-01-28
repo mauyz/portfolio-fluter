@@ -669,6 +669,16 @@ class S {
       args: [],
     );
   }
+
+  /// `Une application sert à explorer le code du travail Malagasy`
+  String get workcodeDesc {
+    return Intl.message(
+      'Une application sert à explorer le code du travail Malagasy',
+      name: 'workcodeDesc',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -121,6 +121,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "viewMore": MessageLookupByLibrary.simpleMessage("View on :"),
         "welcomeTitle":
             MessageLookupByLibrary.simpleMessage("Welcome to my portfolio"),
-        "whoIam": MessageLookupByLibrary.simpleMessage("Who am I ?")
+        "whoIam": MessageLookupByLibrary.simpleMessage("Who am I ?"),
+        "workcodeDesc": MessageLookupByLibrary.simpleMessage(
+            "An application is used to explore the Malagasy labor code")
       };
 }

@@ -62,5 +62,6 @@
   "gitHubEndIntro": ", where I share projects and open-source code.",
   "projectListIntro": "Explore some of the projects I've worked on.",
   "taskManager": "Task manager",
-  "taskManagerDesc": "A simple task management application useful for learning Flutter best practices"
+  "taskManagerDesc": "A simple task management application useful for learning Flutter best practices",
+  "workcodeDesc": "An application is used to explore the Malagasy labor code"
 }
