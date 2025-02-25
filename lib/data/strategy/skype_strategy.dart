@@ -33,6 +33,7 @@ class SkypeStrategy implements ContactStrategy {
                     ListTile(
                       leading: Icon(
                         Icons.call,
+                        size: 24.0,
                         color: Theme.of(context).colorScheme.error,
                       ),
                       title: Text(
@@ -56,6 +57,7 @@ class SkypeStrategy implements ContactStrategy {
                     ListTile(
                       leading: Icon(
                         Icons.chat,
+                        size: 24.0,
                         color: Theme.of(context).colorScheme.error,
                       ),
                       title: Text(
