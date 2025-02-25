@@ -33,11 +33,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "bacDegree": MessageLookupByLibrary.simpleMessage("BAC Option C"),
         "bioContent": MessageLookupByLibrary.simpleMessage(
             "Self-taught developer and a graduate of the Ecole Nationale d\'Informatique of Fianarantsoa, Madagascar. I have solid experience in the design, development, and deployment of applications.\n\nOver the past four years, I\'ve acquired solid programming expertise in Dart, Java and Kotlin. I have primarily focused on mobile development, utilizing the Flutter framework and Android SDK.\n\nPassionate about programming, I regularly dedicate time to staying updated with the latest technological trends and exploring new innovations.\n\nI am currently self-learning the React Native and Ionic frameworks to deepen my mobile development skills.\n\nAt the same time, I am enhancing my knowledge of Spring and Symfony to strengthen my backend expertise and stay updated with technological advancements."),
+        "callText": MessageLookupByLibrary.simpleMessage("Call"),
         "cantOpenContactError": m0,
         "careerProIntro": MessageLookupByLibrary.simpleMessage(
             "My career path in IT has been marked by a number of enriching experiences, both through jobs and internships.\nThese have enabled me to develop solid skills in this constantly evolving field.\n\nHere are just a few of the professional experiences I\'ve acquired over the last few years:"),
         "careerScholIntro": MessageLookupByLibrary.simpleMessage(
             "My academic career in IT has been defined by rigorous training, particularly at the Ecole Nationale d\'Informatique (ENI) in Fianarantsoa.\nPrior to that, I earned a scientific baccalaureate, which sparked and solidified my interest in science and technology."),
+        "chatText": MessageLookupByLibrary.simpleMessage("Chat"),
         "closeTitle": MessageLookupByLibrary.simpleMessage("Close"),
         "constitutionDesc": MessageLookupByLibrary.simpleMessage(
             "Web and mobile application to explore the Constitution of Madagascar"),
