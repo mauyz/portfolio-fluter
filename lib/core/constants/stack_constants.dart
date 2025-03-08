@@ -19,8 +19,8 @@ Set<SkillCategory> getSkillList(BuildContext context) {
           //note: 60,
         ),
         Skill(
-          name: "Kotlin",
-          icon: "Kotlin",
+          name: "Javascript",
+          icon: "Javascript",
           //note: 50,
         ),
         Skill(
@@ -44,20 +44,20 @@ Set<SkillCategory> getSkillList(BuildContext context) {
           //note: 80,
         ),
         Skill(
+          name: "ReactJS",
+          icon: "ReactJS",
+          //note: 80,
+        ),
+        Skill(
           name: "Symfony",
           icon: "symfony",
           //note: 60,
         ),
         Skill(
           name: "Spring Boot",
-          icon: "Spring",
+          icon: "SpringBoot",
           // note: 50,
-        ),
-        Skill(
-          name: "Hibernate",
-          icon: "Hibernate",
-          //note: 50,
-        ),
+        )
       },
     ),
     SkillCategory(
@@ -124,6 +124,14 @@ Set<SkillCategory> getSkillList(BuildContext context) {
         Skill(
           name: "Xcode",
           icon: "Xcode",
+        ),
+        Skill(
+          name: "Docker",
+          icon: "Docker",
+        ),
+        Skill(
+          name: "Fastlane",
+          icon: "Fastlane",
         ),
       },
     ),
