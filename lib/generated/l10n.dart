@@ -210,10 +210,10 @@ class S {
     );
   }
 
-  /// `Développeur autodidacte et diplômé de l'Ecole Nationale d'Informatique de Fianarantsoa, Madagascar.\nJe possède une solide expérience dans la conception, le développement et la mise en production d'applications.\n\nAu cours des quatre dernières années, j'ai acquis une solide expertise en programmation avec les langages Dart, Java et Kotlin.\nJ'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l'exploration de nouvelles technologies.\n\nJe me forme actuellement de manière autonome aux frameworks React Native et Ionic pour approfondir mes compétences en développement mobile.\n\nEn parallèle, je me perfectionne sur Spring et Symfony afin de renforcer mes connaissances en backend et de rester à jour avec les avancées technologiques.`
+  /// `Développeur autodidacte et diplômé de l'Ecole Nationale d'Informatique de Fianarantsoa, Madagascar.\nJe possède une solide expérience dans la conception, le développement et la mise en production d'applications.\n\nAu cours des quatre dernières années, j'ai acquis une solide expertise en programmation avec les langages Dart, Java et Kotlin.\nJ'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l'exploration de nouvelles technologies.\n\nJe me forme actuellement de manière autonome au framework ReactJS pour approfondir mes compétences en développement frontend.\n\nEn parallèle, je me perfectionne sur Spring Boot et Symfony afin de renforcer mes connaissances en backend et de rester à jour avec les avancées technologiques.`
   String get bioContent {
     return Intl.message(
-      'Développeur autodidacte et diplômé de l\'Ecole Nationale d\'Informatique de Fianarantsoa, Madagascar.\nJe possède une solide expérience dans la conception, le développement et la mise en production d\'applications.\n\nAu cours des quatre dernières années, j\'ai acquis une solide expertise en programmation avec les langages Dart, Java et Kotlin.\nJ\'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l\'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l\'exploration de nouvelles technologies.\n\nJe me forme actuellement de manière autonome aux frameworks React Native et Ionic pour approfondir mes compétences en développement mobile.\n\nEn parallèle, je me perfectionne sur Spring et Symfony afin de renforcer mes connaissances en backend et de rester à jour avec les avancées technologiques.',
+      'Développeur autodidacte et diplômé de l\'Ecole Nationale d\'Informatique de Fianarantsoa, Madagascar.\nJe possède une solide expérience dans la conception, le développement et la mise en production d\'applications.\n\nAu cours des quatre dernières années, j\'ai acquis une solide expertise en programmation avec les langages Dart, Java et Kotlin.\nJ\'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l\'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l\'exploration de nouvelles technologies.\n\nJe me forme actuellement de manière autonome au framework ReactJS pour approfondir mes compétences en développement frontend.\n\nEn parallèle, je me perfectionne sur Spring Boot et Symfony afin de renforcer mes connaissances en backend et de rester à jour avec les avancées technologiques.',
       name: 'bioContent',
       desc: '',
       args: [],
@@ -390,10 +390,10 @@ class S {
     );
   }
 
-  /// `Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nDéveloppement API REST en Symfony`
+  /// `Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nConception et développement des API REST`
   String get jlConsultingDesc {
     return Intl.message(
-      'Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nDéveloppement API REST en Symfony',
+      'Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nConception et développement des API REST',
       name: 'jlConsultingDesc',
       desc: '',
       args: [],

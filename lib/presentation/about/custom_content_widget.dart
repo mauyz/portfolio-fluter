@@ -41,9 +41,8 @@ class CustomContentWidget extends StatelessWidget {
         "Kotlin",
         "Flutter",
         "Android SDK",
-        "React Native",
-        "Ionic",
-        "Spring",
+        "ReactJS",
+        "Spring Boot",
         "Symfony",
       }) {
         int index = remainingText.indexOf(word);
