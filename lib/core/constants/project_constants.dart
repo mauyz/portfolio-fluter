@@ -36,8 +36,16 @@ Set<Project> getProjectList(BuildContext context) {
           note: 80,
         ),
         Skill(
+          name: "Google Admob",
+          icon: "GoogleAdmob",
+        ),
+        Skill(
           name: "Github",
           icon: "GitHub",
+        ),
+        Skill(
+          name: "Fastlane",
+          icon: "Fastlane",
         ),
       },
     ),
@@ -113,8 +121,16 @@ Set<Project> getProjectList(BuildContext context) {
           note: 80,
         ),
         Skill(
-          name: "GitLab",
-          icon: "GitLab",
+          name: "Google Admob",
+          icon: "GoogleAdmob",
+        ),
+        Skill(
+          name: "GitHub",
+          icon: "GitHub",
+        ),
+        Skill(
+          name: "Fastlane",
+          icon: "Fastlane",
         ),
       },
     ),
@@ -192,6 +208,10 @@ Set<Project> getProjectList(BuildContext context) {
           icon: "SQLite",
           note: 80,
         ),
+        Skill(
+          name: "GitHub",
+          icon: "GitHub",
+        ),
       },
     ),
     Project(
@@ -220,6 +240,10 @@ Set<Project> getProjectList(BuildContext context) {
           name: "SQLite",
           icon: "SQLite",
           note: 80,
+        ),
+        Skill(
+          name: "GitHub",
+          icon: "GitHub",
         ),
       },
     ),
