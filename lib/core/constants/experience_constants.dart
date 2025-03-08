@@ -16,10 +16,12 @@ Set<Experience> getExperienceList(BuildContext context) {
         "PHP",
         "Flutter",
         "Symfony",
+        "Spring Boot",
         "REST API",
         "MySQL",
         "Git",
         "Fastlane",
+        "Docker"
       },
     ),
     Experience(

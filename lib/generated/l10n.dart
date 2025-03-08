@@ -390,10 +390,10 @@ class S {
     );
   }
 
-  /// `Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nDéveloppement API REST en Symfony`
+  /// `Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nConception et développement des API REST`
   String get jlConsultingDesc {
     return Intl.message(
-      'Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nDéveloppement API REST en Symfony',
+      'Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nConception et développement des API REST',
       name: 'jlConsultingDesc',
       desc: '',
       args: [],

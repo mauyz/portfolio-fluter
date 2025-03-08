@@ -75,7 +75,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "internship": MessageLookupByLibrary.simpleMessage("Internship"),
         "introContent": MessageLookupByLibrary.simpleMessage("I am"),
         "jlConsultingDesc": MessageLookupByLibrary.simpleMessage(
-            "Application maintenance\nDevelopment of new functionalities\nIntegration of visuals in line with mock-ups and the user experience\nREST API development in Symfony"),
+            "Application maintenance\nDevelopment of new functionalities\nIntegration of visuals in line with mock-ups and the user experience\nDesign and development of REST APIs"),
         "language":
             MessageLookupByLibrary.simpleMessage("Programming languages"),
         "licenceDesc": MessageLookupByLibrary.simpleMessage(

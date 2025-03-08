@@ -35,7 +35,7 @@
   "masterDesc": "In-depth training in web, mobile and desktop programming\nDevelopment of network programming skills\nAdvanced administration and security of computer systems and networks",
   "licenceDesc": "Training in the basics of algorithms and programming\nTraining in the administration of computer systems and networks\nIntroduction to relational databases",
   "professionalTitle": "Professional",
-  "jlConsultingDesc": "Application maintenance\nDevelopment of new functionalities\nIntegration of visuals in line with mock-ups and the user experience\nREST API development in Symfony",
+  "jlConsultingDesc": "Application maintenance\nDevelopment of new functionalities\nIntegration of visuals in line with mock-ups and the user experience\nDesign and development of REST APIs",
   "neoshoreDesc": "Collaborate with the team to design and implement new platform functionalities\nApply modifications in alignment with technical specifications and requirements\nMonitor application logs to ensure optimal performance and early issue detection\nMaintain a high-quality user experience through continuous improvements\nEnhance performance and resolve bugs to ensure smooth application functionality\nManage content updates and oversee the publication of new versions on the Play Store and App Store",
   "freelanceDesc": "Design and development of a clinic management application\nDevelopment of a dating application for the Comorian and Mahoran community",
   "onnOlepDesc": "Administration and configuration of Linux and Windows servers\nAutomation of recurring tasks using Bash, Shell and PHP scripts\nManagement of a computer park containing 120 workstations",
