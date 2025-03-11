@@ -195,20 +195,8 @@ class FooterSection extends ConsumerWidget {
                 vertical: 8.0,
                 horizontal: 20,
               ),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  Flexible(
-                    child: Text(
-                      "Made with Flutter and Love 💜",
-                      style: Theme.of(context).textTheme.titleSmall,
-                    ),
-                  ),
-                  const Flexible(
-                    child: CopyrightWidget(),
-                  ),
-                ],
+              child: const Flexible(
+                child: CopyrightWidget(),
               ),
             ),
             const SizedBox(

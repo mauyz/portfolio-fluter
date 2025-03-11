@@ -6,7 +6,6 @@ final phone = Contact(
   icon: Icons.call,
   values: [
     "+261 34 90 637 88 ",
-    "+261 32 92 037 67",
   ],
   type: ContactType.phone,
 );
