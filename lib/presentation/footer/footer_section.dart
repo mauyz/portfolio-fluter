@@ -195,9 +195,7 @@ class FooterSection extends ConsumerWidget {
                 vertical: 8.0,
                 horizontal: 20,
               ),
-              child: const Flexible(
-                child: CopyrightWidget(),
-              ),
+              child: CopyrightWidget(),
             ),
             const SizedBox(
               height: 20,
