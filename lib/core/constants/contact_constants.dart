@@ -25,15 +25,6 @@ final linkedIn = Contact(
   ],
   type: ContactType.link,
 );
-
-final skype = Contact(
-  icon: UniconsLine.skype,
-  values: [
-    "live:tsiorymauyz",
-  ],
-  type: ContactType.skype,
-);
-
 final github = Contact(
   icon: UniconsLine.github,
   values: [

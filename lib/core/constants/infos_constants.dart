@@ -23,8 +23,7 @@ Infos getInfosData(BuildContext context) {
     contacts: {
       phone,
       mail,
-      linkedIn,
-      skype,
+      linkedIn
     },
   );
 }
