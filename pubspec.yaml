@@ -34,16 +34,16 @@ dependencies:
   unicons: ^3.0.0
   flutter_localizations:
     sdk: flutter
-  intl_utils: ^2.8.7
-  intl: ^0.19.0
+  intl_utils: ^2.8.11
+  intl: ^0.20.2
   flutter_riverpod: ^2.6.1
   riverpod: ^2.6.1
   riverpod_annotation: ^2.6.1
-  shared_preferences: ^2.5.2
+  shared_preferences: ^2.5.3
   animated_text_kit: ^4.2.3
-  url_launcher: ^6.3.1
-  percent_indicator: ^4.2.4
-  flutter_svg: ^2.0.17
+  url_launcher: ^6.3.2
+  percent_indicator: ^4.2.5
+  flutter_svg: ^2.2.1
 
 dev_dependencies:
   flutter_test:
