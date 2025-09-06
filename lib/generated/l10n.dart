@@ -18,8 +18,10 @@ class S {
   static S? _current;
 
   static S get current {
-    assert(_current != null,
-        'No instance of S was loaded. Try to initialize the S delegate before accessing S.current.');
+    assert(
+      _current != null,
+      'No instance of S was loaded. Try to initialize the S delegate before accessing S.current.',
+    );
     return _current!;
   }
 
@@ -41,8 +43,10 @@ class S {
 
   static S of(BuildContext context) {
     final instance = S.maybeOf(context);
-    assert(instance != null,
-        'No instance of S present in the widget tree. Did you add S.delegate in localizationsDelegates?');
+    assert(
+      instance != null,
+      'No instance of S present in the widget tree. Did you add S.delegate in localizationsDelegates?',
+    );
     return instance!;
   }
 
@@ -102,12 +106,7 @@ class S {
 
   /// `Freelance`
   String get freelance {
-    return Intl.message(
-      'Freelance',
-      name: 'freelance',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Freelance', name: 'freelance', desc: '', args: []);
   }
 
   /// `Développeur flutter`
@@ -142,32 +141,17 @@ class S {
 
   /// `Stage`
   String get internship {
-    return Intl.message(
-      'Stage',
-      name: 'internship',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Stage', name: 'internship', desc: '', args: []);
   }
 
   /// `A propos`
   String get aboutTitle {
-    return Intl.message(
-      'A propos',
-      name: 'aboutTitle',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('A propos', name: 'aboutTitle', desc: '', args: []);
   }
 
   /// `Technologies`
   String get techTitle {
-    return Intl.message(
-      'Technologies',
-      name: 'techTitle',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Technologies', name: 'techTitle', desc: '', args: []);
   }
 
   /// `Expériences`
@@ -182,32 +166,17 @@ class S {
 
   /// `Contact`
   String get contactTitle {
-    return Intl.message(
-      'Contact',
-      name: 'contactTitle',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Contact', name: 'contactTitle', desc: '', args: []);
   }
 
   /// `Mode sombre`
   String get modeDark {
-    return Intl.message(
-      'Mode sombre',
-      name: 'modeDark',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Mode sombre', name: 'modeDark', desc: '', args: []);
   }
 
   /// `Qui suis-je ?`
   String get whoIam {
-    return Intl.message(
-      'Qui suis-je ?',
-      name: 'whoIam',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Qui suis-je ?', name: 'whoIam', desc: '', args: []);
   }
 
   /// `Développeur autodidacte et diplômé de l'Ecole Nationale d'Informatique de Fianarantsoa, Madagascar.\nJe possède une solide expérience dans la conception, le développement et la mise en production d'applications.\n\nAu cours des quatre dernières années, j'ai acquis une solide expertise en programmation avec les langages Dart, Java et Kotlin.\nJ'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l'exploration de nouvelles technologies.\n\nJe me forme actuellement de manière autonome au framework ReactJS pour approfondir mes compétences en développement frontend.\n\nEn parallèle, je me perfectionne sur Spring Boot et Symfony afin de renforcer mes connaissances en backend et de rester à jour avec les avancées technologiques.`
@@ -252,12 +221,7 @@ class S {
 
   /// `Accueil`
   String get home {
-    return Intl.message(
-      'Accueil',
-      name: 'home',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Accueil', name: 'home', desc: '', args: []);
   }
 
   /// `Bienvenu dans mon portfolio`
@@ -272,52 +236,27 @@ class S {
 
   /// `Je suis`
   String get iam {
-    return Intl.message(
-      'Je suis',
-      name: 'iam',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Je suis', name: 'iam', desc: '', args: []);
   }
 
   /// `Parcours`
   String get parcourTitle {
-    return Intl.message(
-      'Parcours',
-      name: 'parcourTitle',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Parcours', name: 'parcourTitle', desc: '', args: []);
   }
 
   /// `Compétences`
   String get skillTitle {
-    return Intl.message(
-      'Compétences',
-      name: 'skillTitle',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Compétences', name: 'skillTitle', desc: '', args: []);
   }
 
   /// `Projets`
   String get projectTitle {
-    return Intl.message(
-      'Projets',
-      name: 'projectTitle',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Projets', name: 'projectTitle', desc: '', args: []);
   }
 
   /// `Fermer`
   String get closeTitle {
-    return Intl.message(
-      'Fermer',
-      name: 'closeTitle',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Fermer', name: 'closeTitle', desc: '', args: []);
   }
 
   /// `Impossible d'ouvrir {contactType}`
@@ -342,12 +281,7 @@ class S {
 
   /// `le lien`
   String get linkTitle {
-    return Intl.message(
-      'le lien',
-      name: 'linkTitle',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('le lien', name: 'linkTitle', desc: '', args: []);
   }
 
   /// `Académique`
@@ -442,12 +376,7 @@ class S {
 
   /// `BAC Série C`
   String get bacDegree {
-    return Intl.message(
-      'BAC Série C',
-      name: 'bacDegree',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('BAC Série C', name: 'bacDegree', desc: '', args: []);
   }
 
   /// `Télécharger mon CV`
@@ -472,12 +401,7 @@ class S {
 
   /// `Framework`
   String get framework {
-    return Intl.message(
-      'Framework',
-      name: 'framework',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Framework', name: 'framework', desc: '', args: []);
   }
 
   /// `Base des données`
@@ -492,12 +416,7 @@ class S {
 
   /// `Outils et API`
   String get toolsApi {
-    return Intl.message(
-      'Outils et API',
-      name: 'toolsApi',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Outils et API', name: 'toolsApi', desc: '', args: []);
   }
 
   /// `Application mobile permettant de collecter des informations sur les entreprises`
@@ -532,12 +451,7 @@ class S {
 
   /// `Voir sur :`
   String get viewMore {
-    return Intl.message(
-      'Voir sur :',
-      name: 'viewMore',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Voir sur :', name: 'viewMore', desc: '', args: []);
   }
 
   /// `Ce site web où j'expose mes parcours, mes compétences ainsi que mes projets personnels et professionnels`
@@ -552,12 +466,7 @@ class S {
 
   /// `Mode clair`
   String get lightMode {
-    return Intl.message(
-      'Mode clair',
-      name: 'lightMode',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Mode clair', name: 'lightMode', desc: '', args: []);
   }
 
   /// `Mon parcours professionnel en informatique est marqué par plusieurs expériences enrichissantes, tant au travers d'emplois que de stages.\nCelles-ci m'ont permis de développer des compétences solides dans ce domaine en constante évolution.\n\nVoici quelques-unes des expériences professionnelles que j'ai acquises au cours de ces dernières années :`
@@ -682,22 +591,12 @@ class S {
 
   /// `Chat`
   String get chatText {
-    return Intl.message(
-      'Chat',
-      name: 'chatText',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Chat', name: 'chatText', desc: '', args: []);
   }
 
   /// `Appeler`
   String get callText {
-    return Intl.message(
-      'Appeler',
-      name: 'callText',
-      desc: '',
-      args: [],
-    );
+    return Intl.message('Appeler', name: 'callText', desc: '', args: []);
   }
 }
 

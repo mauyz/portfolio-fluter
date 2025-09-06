@@ -13,10 +13,15 @@ Set<Project> getProjectList(BuildContext context) {
       description: S.of(context).workcodeDesc,
       links: {
         ProjectLink(
-          name: "Play store",
-          icon: UniconsLine.google_play,
+          name: "APKPure",
+          icon: Icons.public,
           value:
-              "https://play.google.com/store/apps/details?id=com.eightgroup.madagascar_workcoode",
+              "https://apkpure.com/fr/code-du-travail-malagasy/com.eightgroup.madagascar_workcoode",
+        ),
+        ProjectLink(
+            name: "GitHub",
+            icon: UniconsLine.github,
+            value: "https://github.com/mauyz/madagascar_workcode"
         ),
       },
       stacks: {
@@ -88,20 +93,25 @@ Set<Project> getProjectList(BuildContext context) {
       },
     ),
     Project(
-      title: "Constitution Malagasy",
+      title: "Constitution Malagasy Explorer",
       preview: "constitution",
       description: S.of(context).constitutionDesc,
       links: {
         ProjectLink(
-          name: "Play store",
-          icon: UniconsLine.google_play,
+          name: "APKPure",
+          icon: Icons.public,
           value:
-              "https://play.google.com/store/apps/details?id=com.eightgroup.mauyz.constitution",
+              "https://apkpure.com/fr/constitution-malagasy-explorer/com.eightgroup.mauyz.constitution",
         ),
         ProjectLink(
           name: "Web",
           icon: Icons.public,
           value: "https://constitutionmg.vercel.app/",
+        ),
+        ProjectLink(
+            name: "GitHub",
+            icon: UniconsLine.github,
+            value: "https://github.com/mauyz/madagascar_constitution"
         ),
       },
       stacks: {
@@ -138,14 +148,7 @@ Set<Project> getProjectList(BuildContext context) {
       title: "Feelin",
       preview: "feelin",
       description: S.of(context).feelinDesc,
-      links: {
-        ProjectLink(
-          name: "Play store",
-          icon: UniconsLine.google_play,
-          value:
-              "https://play.google.com/store/apps/details?id=eu.feelin.feelinApp",
-        ),
-      },
+      links: {},
       stacks: {
         Skill(
           name: "Dart",
