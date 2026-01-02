@@ -41,9 +41,7 @@ class CustomContentWidget extends StatelessWidget {
         "Kotlin",
         "Flutter",
         "Android SDK",
-        "ReactJS",
-        "Spring Boot",
-        "Symfony",
+        "TypeScript",
       }) {
         int index = remainingText.indexOf(word);
         if (index != -1 && (earliestIndex == -1 || index < earliestIndex)) {

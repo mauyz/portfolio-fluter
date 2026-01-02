@@ -32,7 +32,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "bacDegree": MessageLookupByLibrary.simpleMessage("BAC Option C"),
     "bioContent": MessageLookupByLibrary.simpleMessage(
-      "Self-taught developer and a graduate of the Ecole Nationale d\'Informatique of Fianarantsoa, Madagascar. I have solid experience in the design, development, and deployment of applications.\n\nOver the past four years, I\'ve acquired solid programming expertise in Dart, Java and Kotlin. I have primarily focused on mobile development, utilizing the Flutter framework and Android SDK.\n\nPassionate about programming, I regularly dedicate time to staying updated with the latest technological trends and exploring new innovations.\n\nI am currently self-learning the ReactJS framework to deepen my frontend development skills.\n\nAt the same time, I am enhancing my knowledge of Spring Boot and Symfony to strengthen my backend expertise and stay updated with technological advancements.",
+      "Self-taught developer and a graduate of the Ecole Nationale d\'Informatique of Fianarantsoa, Madagascar. I have solid experience in the design, development, and deployment of applications.\n\nOver the past four years, I\'ve acquired solid programming expertise in Dart, TypeScript, Java and Kotlin. I have primarily focused on mobile development, utilizing the Flutter framework and Android SDK.\n\nPassionate about programming, I regularly dedicate time to staying updated with the latest technological trends and exploring new innovations.",
     ),
     "callText": MessageLookupByLibrary.simpleMessage("Call"),
     "cantOpenContactError": m0,
@@ -88,7 +88,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "internship": MessageLookupByLibrary.simpleMessage("Internship"),
     "introContent": MessageLookupByLibrary.simpleMessage("I am"),
     "jlConsultingDesc": MessageLookupByLibrary.simpleMessage(
-      "Application maintenance\nDevelopment of new functionalities\nIntegration of visuals in line with mock-ups and the user experience\nDesign and development of REST APIs",
+      "Application maintenance\nDevelopment of new functionalities\nIntegration of visuals in line with mock-ups and the user experience\nDesign and development of APIs",
     ),
     "language": MessageLookupByLibrary.simpleMessage("Programming languages"),
     "licenceDesc": MessageLookupByLibrary.simpleMessage(

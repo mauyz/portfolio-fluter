@@ -179,10 +179,10 @@ class S {
     return Intl.message('Qui suis-je ?', name: 'whoIam', desc: '', args: []);
   }
 
-  /// `Développeur autodidacte et diplômé de l'Ecole Nationale d'Informatique de Fianarantsoa, Madagascar.\nJe possède une solide expérience dans la conception, le développement et la mise en production d'applications.\n\nAu cours des quatre dernières années, j'ai acquis une solide expertise en programmation avec les langages Dart, Java et Kotlin.\nJ'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l'exploration de nouvelles technologies.\n\nJe me forme actuellement de manière autonome au framework ReactJS pour approfondir mes compétences en développement frontend.\n\nEn parallèle, je me perfectionne sur Spring Boot et Symfony afin de renforcer mes connaissances en backend et de rester à jour avec les avancées technologiques.`
+  /// `Développeur autodidacte et diplômé de l'Ecole Nationale d'Informatique de Fianarantsoa, Madagascar.\nJe possède une solide expérience dans la conception, le développement et la mise en production d'applications.\n\nAu cours des quatre dernières années, j'ai acquis une solide expertise en programmation avec les langages Dart, TypeScript, Java et Kotlin.\nJ'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l'exploration de nouvelles technologies.`
   String get bioContent {
     return Intl.message(
-      'Développeur autodidacte et diplômé de l\'Ecole Nationale d\'Informatique de Fianarantsoa, Madagascar.\nJe possède une solide expérience dans la conception, le développement et la mise en production d\'applications.\n\nAu cours des quatre dernières années, j\'ai acquis une solide expertise en programmation avec les langages Dart, Java et Kotlin.\nJ\'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l\'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l\'exploration de nouvelles technologies.\n\nJe me forme actuellement de manière autonome au framework ReactJS pour approfondir mes compétences en développement frontend.\n\nEn parallèle, je me perfectionne sur Spring Boot et Symfony afin de renforcer mes connaissances en backend et de rester à jour avec les avancées technologiques.',
+      'Développeur autodidacte et diplômé de l\'Ecole Nationale d\'Informatique de Fianarantsoa, Madagascar.\nJe possède une solide expérience dans la conception, le développement et la mise en production d\'applications.\n\nAu cours des quatre dernières années, j\'ai acquis une solide expertise en programmation avec les langages Dart, TypeScript, Java et Kotlin.\nJ\'ai particulièrement travaillé sur le développement mobile en utilisant le framework Flutter ainsi que l\'Android SDK.\n\nPassionné par la programmation, je consacre régulièrement du temps à la veille technologique et à l\'exploration de nouvelles technologies.',
       name: 'bioContent',
       desc: '',
       args: [],
@@ -324,10 +324,10 @@ class S {
     );
   }
 
-  /// `Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nConception et développement des API REST`
+  /// `Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nConception et développement des API`
   String get jlConsultingDesc {
     return Intl.message(
-      'Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nConception et développement des API REST',
+      'Maintenance applicative\nDéveloppement des nouvelles fonctionnalités\nIntégration des visuels en respectant les maquettes et l’expérience utilisateur\nConception et développement des API',
       name: 'jlConsultingDesc',
       desc: '',
       args: [],
