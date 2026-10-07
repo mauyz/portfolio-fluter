@@ -15,10 +15,10 @@ Infos getInfosData(BuildContext context) {
       S.of(context).passionateTech
     ],
     cvLink: currentLanguageCode == "fr"
-        ? "https://drive.google.com/file/d/1p7o2lF3p7SPBT6XIhu0Aee1LxOnd5Kbb"
-            "/view?usp=sharing"
-        : "https://drive.google.com/file/d/1GqmEcq5uKQxB2VxhU4liRW00L8LmGFKi"
-            "/view?usp=sharing",
+        ? "https://drive.google.com/file/d/1UftfOyznclp3W27f1dnUihO5XsXQ2V0m"
+        "/view?usp=drive_link"
+        : "https://drive.google.com/file/d/1yW9ckvB-ck4kWOLg5YZSKwnxqaFptTPN"
+        "/view?usp=drive_link",
     bio: S.of(context).bioContent,
     contacts: {
       phone,
